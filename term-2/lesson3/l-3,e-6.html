@@ -1,0 +1,44 @@
+<html>
+
+<body>
+    <a href="../../index.html">back to home</a>
+    <br>
+    Enter age:
+    <input type="text" value="12" id="age">
+    <br>
+    <input type="submit" onclick="checkAge()">
+    <br>
+    <div id="result" style="width:50% ;min-height: 100px;  border: 1px solid darkorange; padding:10px ; margin:10px ;">
+    </div>
+    <script type="text/javascript">
+
+        function checkAge() {
+            var textbox = document.getElementById("age");
+            var result = document.getElementById("result")
+            console.log(textbox.value)
+            //    alert(textbox.value);
+            var age = textbox.value;
+
+            if (age > 18) {
+                alert("checkage")
+                result.innerText = "Qualifies"
+            }
+            else {
+                alert("checkage")
+                result.innerText = "not Qualifies"
+            }
+
+        }
+
+        // var age = 18;
+        // if (age > 18) {
+        //     document.write("<ins>Qualifies for driving</ins>");
+        // }
+        // else {
+        //     document.write("<b>not Qualifies for driving</b>")
+        // }
+
+    </script>
+</body>
+
+</html>

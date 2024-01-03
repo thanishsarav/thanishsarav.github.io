@@ -1,0 +1,47 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <a href="../../index.html">back to home</a>
+    <br>
+    <br>
+    <input type="text" id="myid"/>
+    <input type="submit" onclick="getnumber()"/>
+    <br>
+    <div id="number" style="width: 500px; height: 500px; border: 10px solid rgb(201, 11, 244);  color:rgb(253, 6, 6);
+     background-color:rgb(217, 255, 0); font-size: xx-large; font-family: inherit; overflow: scroll;">
+    </div>
+    <br>
+    <script type="text/javascript">
+        function getnumber() {
+            var textnumber = document.getElementById("myid");
+            var cnt = parseInt(textnumber.value);
+            var numbersection = document.getElementById("number");
+            alert(textnumber.value);
+            console.log(numbersection);
+
+
+            if (isNaN(cnt)) {
+                alert("you want to type a number");
+            } else {
+                alert("verygood you have type a number");
+                var x = 0;
+                var text ="";
+               
+                while (x < cnt)
+                {
+                    text += "<br>" + x;
+                    x++;
+                }
+
+                console.log(text)
+                numbersection.innerHTML = text;
+            }
+        }
+    </script>
+</body>
+
+</html>

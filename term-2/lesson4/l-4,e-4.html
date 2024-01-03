@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <style>
+        #element {
+            border: 5px solid rgb(10, 251, 10);
+            color: rgb(11, 252, 244);
+            font-size: xxx-large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: darkolivegreen;
+        }
+
+        #submit {
+            border: 5px solid rgb(10, 251, 10);
+            color: rgb(11, 252, 244);
+            font-size: xxx-large;
+            background-color: darkolivegreen;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="../../index.html">back to home</a>
+    <br>
+    <input type="text" id='element'>
+    <br>
+    <input type="submit" id='submit' onclick="getelement()">
+    <br>
+    <br>
+    <div style="border: 10px solid rgb(243, 11, 251); width: 500px; height: 500px; color: rgb(13, 145, 8);
+    background-color: rgb(253, 70, 70); font-size:large; overflow: scroll;font-size: xx-large;" id="resultarea">
+    </div>
+    <br>
+    <br>
+    <h2><mark><i><ins><b>This</b><sup> Excercise</sup><small> about</small><del> the </del><sup> for
+                        loop</sup></ins></i></mark></h2>
+    <br>
+    <input type="text" value="">
+    <script type="text/javascript">
+
+        // var count;
+        // document.write("Numbers from 1 - 10" + "<br/>");
+        // for (count = 1; count < 10; count++) {
+        //     document.write(count);
+        //     document.write("<br/>");
+        // }
+        function getelement() {
+            var mytext = document.getElementById("element")
+            var count = parseInt(mytext.value)
+            var resultareasection = document.getElementById("resultarea")
+            alert(element.value)
+            if (isNaN(count)) {
+                alert("you have to type a number");
+            } else {
+                alert("super you had type a number");
+            }
+            var text = "";
+            var g = 0;
+            // do {
+            //     text += "<br>" + g;
+            //     g++;
+            // } while (g < count);
+            for (g = 0; g < count; g++)
+            {
+                text += "<br>" + g;
+            }
+                console.log(text)
+                resultareasection.innerHTML = text
+          }
+
+    </script>
+</body>
+
+</html>

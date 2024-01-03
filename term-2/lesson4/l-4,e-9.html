@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function lighton()
+            {
+                document.getElementById('myimage').src = "../../images/pokemon.jpg";
+            }
+            function lightoff()
+            {
+                document.getElementById('myimage').src = "../../images/LEO3.jpg";
+            }
+
+        </script>
+    </head>
+    <body>
+        <a href="../../index.html">back to home</a>
+        <br>
+        <input type="text">
+<img id="myimage" onmousedown="lighton()" onmouseup="lightoff()" src="../../images/pokemon.jpg" width="100" height="180">
+<p onmouseout="style.color= 'yellow'">click mouse and down</p>
+
+    </body>
+</html>

@@ -1,0 +1,13 @@
+ <svg width="100%" height="300px" style="fill:rgb(13, 17, 244);"  version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g id="R1" transform="translate(250 250)">
+      <ellipse rx="100" ry="0" opacity=".3">
+        <animate  attributeName="transform" type="rotate" dur="5s" from="0" to="360" repeatCount="indefinite" />
+        <animate attributeName="cx" dur="3s" values="-20; 220; -20" repeatCount="indefinite" from="red" to="blue"/>
+        <animate attributeName="ry" dur="3s" values="10; 60; 10" repeatCount="indefinite" from="red" to="blue"/>
+      </ellipse>
+    </g>
+    <use href="#R1" transform="rotate(72 390 150)" />
+    <use href="#R1" transform="rotate(144 390 150)" />
+    <use href="#R1" transform="rotate(216 390 150)" />
+    <use href="#R1" transform="rotate(288 390 150)" />
+  </svg>

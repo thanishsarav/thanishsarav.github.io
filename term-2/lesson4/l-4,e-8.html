@@ -1,0 +1,23 @@
+<html>
+
+<body>
+    <a href="../../index.html">back to home</a>
+    <br>
+    <input type="text">
+    <br>
+    <script type="text/javascript">
+        function checkbookname() {
+
+            var mytextfieds = document.getElementById('mytext');
+            if (mytextfieds.value != "")
+            alert("you entered: " +mytextfieds.value)
+            else
+            alert("would you please enter some text?");
+        }   
+    </script>
+    <input type="text" id='mytext'>
+    <br>
+    <input type="button" onclick='checkbookname()' value="submit">
+</body>
+
+</html>

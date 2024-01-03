@@ -1,0 +1,8 @@
+
+    <svg height="500" width="1000" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <rect x="100" y="100" width="700" height="500" stroke="green" stroke-width="4" fill="yellow" />
+        <rect x="150" y="150" width="650" height="450" stroke="green" stroke-width="4" fill="red" />
+        <rect x="200" y="200" width="600" height="400" stroke="green" stroke-width="4" fill="blue" />
+        <rect x="250" y="250" width="550" height="350" stroke="green" stroke-width="4" fill="green" />
+        <rect x="300" y="300" width="500" height="300" stroke="green" stroke-width="4" fill="orange" />
+    </svg>

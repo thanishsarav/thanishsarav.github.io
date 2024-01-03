@@ -1,0 +1,28 @@
+ <svg height="500" width="1000" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <rect x="50" y="20" rx="20" ry="20" width="200" height="200" style="stroke: rgb(130, 16, 245);fill:aquamarine;
+            stroke-width: 5px;opacity:0.5" />
+        <rect x="60" y="30" rx="20" ry="20" width="200" height="200" style="stroke: rgb(132, 9, 255);fill:aquamarine;
+            stroke-width:5px;opacity:0.5" />
+        <rect x="70" y="40" rx="20" ry="20" width="200" height="200" style="stroke: rgb(132, 9, 255);fill:aquamarine;
+            stroke-width:5px;opacity:0.5" />
+        <rect x="80" y="50" rx="20" ry="20" width="200" height="200" style="stroke: rgb(132, 9, 255);fill:aquamarine;
+            stroke-width:5px;opacity:0.5" />
+        <rect x="90" y="60" rx="20" ry="20" width="200" height="200" style="stroke: rgb(132, 9, 255);fill:aquamarine;
+            stroke-width:5px;opacity:0.5" />
+        <rect x="100" y="70" rx="20" ry="20" width="200" height="200" style="stroke: rgb(132, 9, 255);fill:aquamarine;
+            stroke-width:5px;opacity:0.5" />
+        <rect x="110" y="80" rx="20" ry="20" width="200" height="200" style="stroke: rgb(132, 9, 255);fill:aquamarine;
+            stroke-width:5px;opacity:0.5" />
+        <rect x="120" y="90" rx="20" ry="20" width="200" height="200" style="stroke: rgb(132, 9, 255);fill:aquamarine;
+            stroke-width:5px;opacity:0.5" />
+        <rect x="130" y="100" rx="20" ry="20" width="200" height="200" style="stroke: rgb(132, 9, 255);fill:aquamarine;
+            stroke-width:5px;opacity:0.5" />
+        <rect x="140" y="110" rx="20" ry="20" width="200" height="200" style="stroke: rgb(132, 9, 255);fill:aquamarine;
+            stroke-width:5px;opacity:0.5" />
+        <rect x="150" y="120" rx="20" ry="20" width="200" height="200" style="stroke: rgb(132, 9, 255);fill:aquamarine;
+            stroke-width:5px;opacity:0.5" />
+        <rect x="160" y="130" rx="20" ry="20" width="200" height="200" style="stroke: rgb(132, 9, 255);fill:aquamarine;
+            stroke-width:5px;opacity:0.5" />
+        <rect x="170" y="140" rx="20" ry="20" width="200" height="200" style="stroke: rgb(132, 9, 255);fill:aquamarine;
+            stroke-width:5px;opacity:0.5" />
+    </svg>

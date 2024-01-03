@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <style>
+        #number {
+            border: 5px solid rgb(10, 251, 10);
+            color: rgb(11, 252, 244);
+            font-size: xxx-large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: darkolivegreen;
+        }
+
+        #submit {
+            border: 5px solid rgb(10, 251, 10);
+            color: rgb(11, 252, 244);
+            font-size: xxx-large;
+            background-color: darkolivegreen;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+    </style>
+</head>
+
+<body>
+    <a href="../../index.html">back to home</a>
+    <br>
+    <input type="text" id='number'>
+    <input type="submit" id='submit' onclick="getElement()">
+    <br>
+    <div style="border: 5px solid darkblue; width: 500px; height: 500px; color: blue; font-size:large; overflow: scroll;" id="output">
+    </div>
+    <h1>while with sting</h1>
+    <script type="text/javascript">
+
+        // var text = "";
+        // var i = 0;
+        // while (i < 20) {
+        //     text += "<br>" + i;
+        //     i++;
+        // }
+        // document.write(text);
+
+        function getElement() {
+
+            var mytextbox = document.getElementById("number")
+            var count = parseInt(mytextbox.value);
+
+            alert(number.value)
+            var outputSection = document.getElementById("output");
+            console.log(outputSection);
+
+            if (isNaN(count)) {
+                alert("You should type a number");
+            } else {
+                alert(" Good you have typed a number");
+                var x = 0;
+                var text = "";
+               
+                while (x < count) {
+                    text += "<br>" + x;
+                    x++;
+                }
+
+                console.log(text)
+                outputSection.innerHTML = text;
+            }
+        }
+    </script>
+</body>
+
+</html>

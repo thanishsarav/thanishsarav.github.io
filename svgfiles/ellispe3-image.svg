@@ -1,0 +1,7 @@
+   <svg height="140" width="500"  version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="200" cy="80" rx="100" ry="50" style="fill: firebrick;"/>
+             <ellipse cx="180" cy="70" rx="90" ry="40" style="fill:lime;"/>
+             <ellipse cx="160" cy="60" rx="80" ry="30" style="fill:white;"/>
+             <ellipse cx="140" cy="50" rx="70" ry="20" style="fill:forestgreen;"/>
+             <ellipse cx="120" cy="40" rx="60" ry="10" style="fill:rgb(12, 247, 12);"/>
+  </svg>

@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <style>
+            #count {
+                border: 5px solid rgb(10, 251, 10);
+                color: rgb(11, 252, 244);
+                font-size: xxx-large;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                background-color: darkolivegreen;
+            }
+    
+            #submit {
+                border: 5px solid rgb(10, 251, 10);
+                color: rgb(11, 252, 244);
+                font-size: xxx-large;
+                background-color: darkolivegreen;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+        </style>
+    </head>
+<body>
+    <a href="../../index.html">back to home</a>
+    <br>
+    <input type="text" id="count">
+    <br>
+    <input type="submit" id="submit" value="submit" onclick="getCount()">
+    <br>
+    <h1> while loop</h1>
+<h2 style="margin: 0;">output</h2>
+    <div id="result"
+        style="width: 500px; height: 5000px; border: 10px solid rgb(105, 7, 127); color:rgb(253, 6, 6);
+         background-color:gold; font-size: xx-large; font-family: inherit;">
+    </div>
+
+    <script type="text/javascript">
+
+        // var count = 1;
+
+        //      while (count < 1000) {
+        //         document.write("current count: " + count + "<br>");
+        //          count++;
+        //    }
+        function getCount() {
+            var resultSection = document.getElementById("result");
+            var textbox = document.getElementById("count");
+            var cnt = parseInt(textbox.value);
+
+         resultSection.innerText += "pushpa \n"; // =>  resultSection.innerText = resultSection.innerText + "Pushpa";
+        }
+            if (isNaN(cnt)) {
+                alert("You should type a number");
+            } else {
+                alert(" GOod.  you have typed a number");
+                var i = 0;
+                while (i < cnt) {
+                    resultSection.innerText += i + "\n";
+                    alert(resultSection.innerText);
+                    i++;
+                }
+            }
+
+
+
+
+       
+
+
+
+    </script>
+</body>
+
+</html>

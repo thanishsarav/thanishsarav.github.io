@@ -1,5 +1,409 @@
 <html>
-  <body>
-    Thanish Website in Github
-  </body>
+
+<head>
+    <title>thanish webside</title>
+</head>
+<style>
+    h1 {
+        color: rgb(54, 16, 243), rgb(51, 153, 75);
+        text-align: center;
+        font-size: xxx-large;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    #p01 {
+        color: maroon;
+        font-size: large;
+        text-align: right;
+    }
+
+    table {
+        width: 100%;
+        border: 10px solid rgb(46, 5, 250);
+        background-color:lightgreen;
+        border-spacing: 15px;
+    }
+
+    td {
+        vertical-align: top;
+        border: 10px solid rgb(201, 7, 255);
+    }
+
+    img {
+        height: 400px;
+        width: 400px;
+    }
+
+    ins {
+        font-size: larger;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: x-large;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+    }
+
+    li {
+        font-size: large;
+        color: rgb(32, 134, 6);
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+    }
+
+    script {
+        text-align: center;
+    }
+</style>
+
+<body style="background-color:rgb(77, 255, 0);">
+    <br>
+    <svg width="10000" height="225">
+        <g transform="translate(100,100)">
+            <text id="TextElement" x="190" y="1" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:100px ">
+                Thanish website
+                <animateMotion path="M 0 0 L 100 100" dur="3s" fill="freeze" />
+                <animate attributeName="fill" from="rgb(77, 255, 0)" dur="8s" to="rgb(255, 64, 0)"  fill="freeze" />
+            </text>
+        </g>
+
+    </svg>
+    <hr>
+    <hr>
+    <canvas id="canvas" width="400" height="400" style="background-color:rgb(77, 255, 0)">
+    </canvas>
+    <img src="images/thanish.jpg">
+    <script type="text/javascript">
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+        let radius = canvas.height / 2;
+        ctx.translate(radius, radius);
+        radius = radius * 0.90
+        setInterval(drawClock, 1000);
+
+        function drawClock() {
+            drawFace(ctx, radius);
+            drawNumbers(ctx, radius);
+            drawTime(ctx, radius);
+        }
+
+        function drawFace(ctx, radius) {
+            const grad = ctx.createRadialGradient(0, 0, radius * 0.95, 0, 0, radius * 1.05);
+            grad.addColorStop(0, '#333');
+            grad.addColorStop(0.5, 'white');
+            grad.addColorStop(1, '#333');
+            ctx.beginPath();
+            ctx.arc(0, 0, radius, 0, 2 * Math.PI);
+            ctx.fillStyle = 'white';
+            ctx.fill();
+            ctx.strokeStyle = grad;
+            ctx.lineWidth = radius * 0.1;
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(0, 0, radius * 0.1, 0, 2 * Math.PI);
+            ctx.fillStyle = '#333';
+            ctx.fill();
+        }
+
+        function drawNumbers(ctx, radius) {
+            ctx.font = radius * 0.15 + "px arial";
+            ctx.textBaseline = "middle";
+            ctx.textAlign = "center";
+            for (let num = 1; num < 13; num++) {
+                let ang = num * Math.PI / 6;
+                ctx.rotate(ang);
+                ctx.translate(0, -radius * 0.85);
+                ctx.rotate(-ang);
+                ctx.fillText(num.toString(), 0, 0);
+                ctx.rotate(ang);
+                ctx.translate(0, radius * 0.85);
+                ctx.rotate(-ang);
+            }
+        }
+
+        function drawTime(ctx, radius) {
+            const now = new Date();
+            let hour = now.getHours();
+            let minute = now.getMinutes();
+            let second = now.getSeconds();
+            //hour
+            hour = hour % 12;
+            hour = (hour * Math.PI / 6) +
+                (minute * Math.PI / (6 * 60)) +
+                (second * Math.PI / (360 * 60));
+            drawHand(ctx, hour, radius * 0.5, radius * 0.07);
+            //minute
+            minute = (minute * Math.PI / 30) + (second * Math.PI / (30 * 60));
+            drawHand(ctx, minute, radius * 0.8, radius * 0.07);
+            // second
+            second = (second * Math.PI / 30);
+            drawHand(ctx, second, radius * 0.9, radius * 0.02);
+        }
+
+        function drawHand(ctx, pos, length, width) {
+            ctx.beginPath();
+            ctx.lineWidth = width;
+            ctx.lineCap = "round";
+            ctx.moveTo(0, 0);
+            ctx.rotate(pos);
+            ctx.lineTo(0, -length);
+            ctx.stroke();
+            ctx.rotate(-pos);
+        }
+
+    </script>
+    
+    <table>
+        <tr>
+            <td>
+                <ol type="A">
+                    <h3 onmouseout="style.color='darkblue'" onmouseover="style.color='brown'"><ins>TERM-1</ins></h3>
+                    <li>
+                        <ins onmouseout="style.color='brown'" onmouseover="style.color='blue'">Lesson-1</ins>
+                        <ol type="a">
+                            <li><a href="term-1/lesson-1/excercise-1.1.html">Excercsie-1.1</a> </li>
+                            <li><a href="term-1/lesson-1/excercise-1.2.html">Excercise-1.2</a></li>
+                            <li><a href="term-1/lesson-1/excercise-1.3.html">Excercise-1.3</a></li>
+                            <li><a href="term-1/lesson-1/excercise-1,4.html"> Excercise-4</a></li>
+                            <li><a href="term-1/lesson-1/excercise-1,5.html"> Excercise-5</a></li>
+                            <li><a href="term-1/lesson-1/excercise-1,6.html"> Excercise-6</a></li>
+                        </ol>
+                    </li>
+                    <hr>
+                    <hr>
+                    <li>
+                        <ins onmouseout="style.color='brown'" onmouseover="style.color='blue'">Lesson-2</ins>
+                        <ol type="a">
+                            <li><a href="term-1/lesson-2/excercise-2.1,2.html"> Excercise-1,2</a></li>
+                            <li><a href="term-1/lesson-2/excercise-2,3.html"> Excercise-3</a></li>
+                            <li><a href="term-1/lesson-2/excercise-2.4,5.html"> Excercise-4,5</a></li>
+                            <li><a href="term-1/lesson-2/excercise-2.6.html"> Excercise-6</a></li>
+                            <li><a href="term-1/lesson-2/excercise-2.7,8,9.html"> Excercise-7,8,9</a></li>
+                            <li><a href="term-1/lesson-2/excercise-2.10,11.html"> Excercise-10,11</a></li>
+                            <li><a href="term-1/lesson-2/excercise-2.12,13,14.html"> Excercise-12,13,14</a></li>
+                            <li><a href="term-1/lesson-2/excercise-2.15.html"> Excercise-15</a></li>
+                            <li><a href="term-1/lesson-2/excercise-2.16.html"> Excercise-16</a></li>
+                            <li><a href="term-1/lesson-2/excercise-2.17,18.html"> Excercise-17,18</a></li>
+                            <li><a href="term-1/lesson-2/excercise-2.19,20.html"> Excercise-19,20</a></li>
+                            <li><a href="term-1/lesson-2/excercise-2.21.html"> Excercise-21</a></li>
+                            <li><a href="term-1/lesson-2/excercise-2.22,23.html"> Excercise-22,23</a></li>
+
+                        </ol>
+                    </li>
+
+                    <hr>
+                    <hr>
+
+
+
+                    <li>
+                        <ins onmouseout="style.color='brown'" onmouseover="style.color='blue'">Lesson-3</ins>
+                        <ol type="a">
+                            <li><a href="term-1/lesson-3/excercise-3.1.html"> Excercise-1</a></li>
+                            <li><a href="term-1/lesson-3/excercise-3.2.html"> Excercise-2</a></li>
+                            <li><a href="term-1/lesson-3/excercise-3.3.html"> Excercise-3</a></li>
+                            <li><a href="term-1/lesson-3/excercise-3.4.html"> Excercise-4</a></li>
+                            <li><a href="term-1/lesson-3/excercise-3.5,6,7.html"> Excercise-5,6,7</a></li>
+                            <li><a href="term-1/lesson-3/excercise-3.8.html"> Excercise-8</a></li>
+                        </ol>
+                    </li>
+                    <hr>
+                    <hr>
+                    <li>
+                        <ins onmouseout="style.color='brown'" onmouseover="style.color='blue'"> Lesson-4</ins>
+                        <ol type="a">
+                            <li><a href="term-1/lesson-4/excercise-4.1,2,3,4.html">Excercise-1,2,3,4</a></li>
+                            <li><a href="term-1/lesson-4/excercise-4.5,6,7,8,9,10.html">Excercise-5,6,7,8,9,10</a></li>
+                            <li><a href="term-1/lesson-4/excercise-4.11.html">Excercise-11</a></li>
+                            <li><a href="term-1/lesson-4/excercise-4.12.html">Excercise-12</a></li>
+                            <li><a href="term-1/lesson-4/excercise-4.13.html"> Excercise-13</a></li>
+                            <li><a href="term-1/lesson-4/excercise-4.14.html"> Excercise-14</a></li>
+                            <li><a href="term-1/lesson-4/excercise-4.15.html"> Excercise-15</a></li>
+                            <li><a href="term-1/lesson-4/excercise-4.16.html"> Excercise-16</a></li>
+                            <li><a href="term-1/lesson-4/excercise-4.17.html"> Excercise-17</a></li>
+                            <li><a href="term-1/lesson-4/excercise-4.18.html"> Excercise-18</a></li>
+                            <li><a href="term-1/lesson-4/excercise-4.19.html"> Excercise-19</a></li>
+                            <li><a href="term-1/lesson-4/excercise-4.20.html"> Excercise-20</a></li>
+                            <li><a href="term-1/lesson-4/excercise-4.21.html"> Excercise-21</a></li>
+                            <li><a href="term-1/lesson-4/excercise-4.22.html"> Excercise-22</a></li>
+
+                        </ol>
+
+                    </li>
+                    <hr>
+                    <hr>
+                    <li>
+                        <ins onmouseout="style.color='brown'" onmouseover="style.color='blue'">Lesson-5</ins>
+                        <ol type="a">
+                            <li><a href="term-1/lesson-5/excercise-5.1.html">Excercise-1</a></li>
+                            <li><a href="term-1/lesson-5/excercise-5.2.html">Excercise-2</a></li>
+                            <li><a href="term-1/lesson-5/excercise-5.3.html">Excercise-3</a></li>
+                            <li><a href="term-1/lesson-5/excercise-5.4.html"> Excercise-4</a></li>
+                            <li><a href="term-1/lesson-5/excercise-5.5.html">Excercise-5</a></li>
+                            <li><a href="term-1/lesson-5/excercise-5.6.html">Excercise-6</a></li>
+                            <li><a href="term-1/lesson-5/excercise-5.7.html">Excercise-7</a></li>
+                            <li><a href="term-1/lesson-5/excercise-5.8.html">Excercise-8</a></li>
+                            <li><a href="term-1/lesson-5/excercise-5.9.html">Excercise-9</a></li>
+                            <li><a href="term-1/lesson-5/excercise-5.10.html">Excercise-10</a></li>
+                            <li><a href="term-1/lesson-5/excercise-5.11.html">Excercise-11</a></li>
+                            <li><a href="term-1/lesson-5/excercise-5.12.html">Excercise-12</a></li>
+
+
+                        </ol>
+                    </li>
+                    <hr>
+                    <hr>
+
+            </td>
+            <td>
+                <h3 onmouseout="style.color='darkblue'" onmouseover="style.color='brown'"><ins>TERM-2</ins></h3>
+                <ol type="A">
+                    <li>
+                        <ins onmouseout="style.color='brown'" onmouseover="style.color='blue'">Lesson-1</ins>
+                        <ol type="a">
+                            <li><a href="term-2/lesson1/t2-l1-e1.html">excercise-1</a></li>
+                            <li><a href="term-2/lesson1/l-1-e2.html">excercise-2</a></li>
+                            <li><a href="term-2/lesson1/l-1,e-3.html">excercise-3</a></li>
+                            <li><a href="term-2/lesson1/l-1,e-4.html">excercise-4</a></li>
+                            <li><a href="term-2/lesson1/l-1,e-5.html">excercise-5</a></li>
+                            <li><a href="term-2/lesson1/l-1,e-6.html">excercise-6</a></li>
+                            <li><a href="term-2/lesson1/l-1,e-7.html">excercise-7</a></li>
+                            <li><a href="term-2/lesson1/l-1,e-8.html">excercise-8</a></li>
+                            <li><a href="term-2/lesson1/l-1,e-9.html">excercise-9</a></li>
+                            <li><a href="term-2/lesson1/l-1,e-10.html">excercise-10</a></li>
+                            <li><a href="term-2/lesson1/l-1,e-11.html">excercise-11</a></li>
+                            <li><a href="term-2/lesson1/l-1,e-12.html">excercise-12</a></li>
+                            <li><a href="term-2/lesson1/l-1,e-13.html">excercise-13</a></li>
+                            <li><a href="term-2/lesson1/l-1,e-14.html">excercise-14</a></li>
+                            <li><a href="term-2/lesson1/l-1,e-15.html">excercise-15</a></li>
+                            <li><a href="term-2/lesson1/l-1,e-16.html">excercise-16</a></li>
+                            <li><a href="term-2/lesson1/l-1,e-17.html">excercise-17</a></li>
+                            <li><a href="term-2/lesson1/l-1,e-18.html">excercise-18</a></li>
+                            <li><a href="term-2/lesson1/l-1,e-19.html">excercise-19</a></li>
+                            <li><a href="term-2/lesson1/l-1,e-20.html">excercise-20</a></li>
+                            <li><a href="term-2/lesson1/l-1,e-21.html">excercise-21</a></li>
+                            <li><a href="term-2/lesson1/l-1,e-23.html">excercise-22</a></li>
+                            <li><a href="term-2/lesson1/l-1,Q-3.4.html">excercise-23</a></li>
+                            <li><a href="term-2/lesson1/l-1,Q-3.2.html">excercise-24</a></li>
+                            <li><a href="term-2/lesson1/l-1,Q-3.3.html">excercise-25</a></li>
+                        </ol>
+                    </li>
+                    <hr>
+                    <hr>
+                    <li>
+                        <ins onmouseout="style.color='brown'" onmouseover="style.color='blue'">Lesson-2</ins>
+                        <ol type="a">
+                            <li><a href="term-2/lesson2/l-2,e-1.html">excercise-1</a></li>
+                            <li><a href="term-2/lesson2/l-2,e-2.html">excercise-2</a></li>
+                            <li><a href="term-2/lesson2/l-2,e-3.html">excercise-3</a></li>
+                            <li><a href="term-2/lesson2/l-2,e-4.html">excercise-4</a></li>
+                            <li><a href="term-2/lesson2/l-2,e-5.html">excercise-5</a></li>
+
+                        </ol>
+                    </li>
+                    <hr>
+                    <hr>
+                    <li>
+                        <ins onmouseout="style.color='brown'" onmouseover="style.color='blue'">Lesson-3</ins>
+                        <ol type="a">
+                            <li><a href="term-2/lesson3/l-3,e-1.html">excercise-1</a></li>
+                            <li><a href="term-2/lesson3/l-3,e-2.html">excercise-2</a></li>
+                            <li><a href="term-2/lesson3/l-3,e-3.html">excercise-3</a></li>
+                            <li><a href="term-2/lesson3/l-3,e-4.html">excercise-4</a></li>
+                            <li><a href="term-2/lesson3/l-3,e-5.html">excercise-5</a></li>
+                            <li><a href="term-2/lesson3/l-3,e-6.html">excercise-6</a></li>
+                            <li><a href="term-2/lesson3/l-3,e-7.html">excercise-7</a></li>
+                            <li><a href="term-2/lesson3/l-3,e-8.html">excercise-8</a></li>
+                            <li><a href="term-2/lesson3/l-3,e-9.html">excercise-9</a></li>
+                        </ol>
+                    </li>
+                    <hr>
+                    <hr>
+                    <li>
+                        <ins onmouseout="style.color='brown'" onmouseover="style.color='blue'">Lesson-4</ins>
+                        <ol type="a">
+                            <li><a href="term-2/lesson4/l-4,e-1.html">excercise-1</a></li>
+                            <li><a href="term-2/lesson4/l-4,e-2.html">excercise-2</a></li>
+                            <li><a href="term-2/lesson4/l-4,e-3.html">excercise-3</a></li>
+                            <li><a href="term-2/lesson4/l-4,e-4.html">excercise-4</a></li>
+                            <li><a href="term-2/lesson4/l-4,e-5.html">excercise-5</a></li>
+                            <li><a href="term-2/lesson4/l-4,e-6.html">excercise-6</a></li>
+                            <li><a href="term-2/lesson4/l-4,e-7.html">excercise-7</a></li>
+                            <li><a href="term-2/lesson4/l-4,e-8.html">excercise-8</a></li>
+                            <li><a href="term-2/lesson4/l-4,e-9.html">excercise-9</a></li>
+                            <li><a href="term-2/lesson4/l-4,e-10.html">excercise-10</a></li>
+                        </ol>
+                    </li>
+
+            </td>
+            <td>
+                <h3 onmouseout="style.color='darkblue'" onmouseover="style.color='brown'"><ins> ASSIGNMENTS</ins></h3>
+                <ol>
+                    <li>
+                        <ins onmouseout="style.color='brown'" onmouseover="style.color='blue'"> Assignments</ins>
+                        <ol type="a">
+                            <li><a href="assignments/assignments-1.html"> Assignments-1</a></li>
+                            <li><a href="assignments/assignment-2.html"> Assignments-2</a></li>
+                            <li><a href="assignments/assignments-3.html"> Assignments-3</a></li>
+                            <li><a href="assignments/familytree.html">Familytree</a></li>
+                            <li><a href="assignments/timetable.html">timetable</a></li>
+                            <li><a href="svgfiles/svgimagelist.html">My SVG Images</a></li>
+                        </ol>
+                    </li>
+                    <hr>
+                    <hr>
+                    <li>
+                        <ins onmouseout="style.color='brown'" onmouseover="style.color='blue'">pratice</ins>
+                        <ol type="a">
+                            <li><a href="assignments/practice/task3.html">while loop</a></li>
+                            <li><a href="assignments/practice/task4.html">for loop</a></li>
+                            <li><a href="assignments/practice/task5.html">do while loop</a></li>
+                        </ol>
+                    </li>
+            </td>
+             <td>
+               
+                <h3 onmouseout="style.color='darkblue'" onmouseover="style.color='brown'"><ins>Subjects noties</ins></h3>
+                <ol>
+                     <li><a href="noties/cs.html">C.S</a></li>
+                    <li><a href="noties/english.html">English</a></li>
+                    <li><a href="noties/maths.html">Maths</a></li>
+                    <li><a href="noties/tamil.html">Tamil</a></li>
+                    <li><a href="noties/sicence/physics.html">physics</a></li>
+                    <li><a href="noties/sicence/chemistry.html">chemistry</a></li>
+                    <li><a href="noties/sicence/biology.html">biology</a></li>
+                    <li><a href="noties/social.html/history.html">History</a></li>
+                    <li><a href="noties/social.html/civise.html">Civise</a></li>
+                    <li><a href="noties/social.html/geography.html">Geography</a></li>
+                    <li><a href="noties/hindi.html">Hindi</a></li> 
+                </ol>
+                <a href="task.html">tasks</a>
+                <br>
+                <a href="activity.html">My Activity Log</a>
+                <br>
+            </td> 
+            <td>
+                <h3 onmouseout="style.color='darkblue'" onmouseover="style.color='brown'"><ins>SVG FILES</ins></h3>
+                <ol>
+                     <li><a href="svgfiles/rectangle.html">rectangle</a></li>
+                    <li><a href="svgfiles/circle.html">circle</a></li>
+                    <li><a href="svgfiles/ellispe.html">ellipse</a></li>
+                    <li><a href="svgfiles/polygon.html">polygon</a></li>
+                    <li><a href="svgfiles/polyline.html">polyline</a></li>
+                    <li><a href="svgfiles/path.html">path</a></li>
+                    <li><a href="svgfiles/line.html">line</a></li>
+                    <li><a href="svgfiles/text.html">text</a></li>
+                    <li><a href="svgfiles/stoking.html">stoking</a></li>
+                    <li><a href="svgfiles/example.html">Examples</a></li>
+                    <li><a href="svgfiles/blureffects.html">feGaussianBlur</a></li>
+                    <li><a href="svgfiles/dropshadow.html">dropshadow</a></li> 
+                </ol>
+            </td>
+        </tr>
+
+    </table>
+</body>
+
 </html>

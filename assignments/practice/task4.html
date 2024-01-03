@@ -1,0 +1,39 @@
+<html>
+
+<body>
+    <a href="../../index.html">back to home</a>
+    <br>
+    <input type="text" id='input'>
+    <br>
+    <input type="submit" id='submit' onclick="getaelement()">
+    <br>
+    <br>
+    <div style="border: 10px solid rgb(243, 11, 251); width: 500px; height: 500px; color: rgb(13, 145, 8);
+        background-color: rgb(253, 70, 70); font-size:large; overflow: scroll;font-size: xx-large;" id="resultarea">
+    </div>
+    <br>
+    <script type="text/javascript">
+        function getaelement() {
+            var mytexta = document.getElementById("input")
+            var loop = parseInt(mytexta.value)
+            var resultSection = document.getElementById("resultarea")
+            alert(input.value)
+            if (isNaN(loop)) {
+                alert("you want to type a number")
+            } else {
+                alert("you have type a number")
+            }
+            text = "";
+            var f = 0;
+            for (f = 0; f < loop; f++) 
+            {
+                text += "<br>" + f;
+            }
+            console.log(text);
+            console.log(resultSection);
+            resultSection.innerHTML = text;
+        }
+    </script>
+</body>
+
+</html>

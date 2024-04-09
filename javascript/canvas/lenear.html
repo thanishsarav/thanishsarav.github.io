@@ -1,0 +1,71 @@
+<html>
+
+<body>
+    <a href="../../index.html">back to home</a>
+    <br>
+    <h1>HTML5 Canvas Linear Gradient</h1>
+
+    <canvas id="myCanvas" width="300" height="150" style="border:1px solid grey;"></canvas>
+
+    <script>
+        const c = document.getElementById("myCanvas");
+        const ctx = c.getContext("2d");
+
+        // Create linear gradient
+        const grad = ctx.createLinearGradient(0, 0, 280, 180);
+        grad.addColorStop(0, "lightblue");
+        grad.addColorStop(0.5, "purple");
+        grad.addColorStop(1, "darkblue");
+
+        // Fill outlined rectangle with gradient
+        ctx.lineWidth = 10;
+        ctx.strokeStyle = grad;
+        ctx.strokeRect(10, 10, 280, 130);
+    </script>
+    <br>
+    <h1>HTML5 Canvas Linear Gradient</h1>
+
+    <canvas id="myCanvas" width="300" height="150" style="border:1px solid grey;"></canvas>
+
+    <script>
+        const cs = document.getElementById("myCanvas");
+        const ctx = cs.getContext("2d");
+
+        // Create linear gradient
+        const grsad = ctx.createLinearGradient(0, 0, 0, 130);
+        grad.addColorStop(0, "lightblue");
+        grad.addColorStop(0.5, "purple");
+        grad.addColorStop(1, "darkblue");
+
+        // Fill circle with gradient
+        ctx.beginPath();
+        ctx.arc(145, 75, 65, 0, 2 * Math.PI);
+        ctx.fillStyle = grad;
+        ctx.fill();
+    </script>
+    <br>
+    <h1>HTML5 Canvas Linear Gradient</h1>
+
+    <canvas id="myCanvas" width="300" height="150" style="border:1px solid grey;"></canvas>
+
+    <script>
+        const cd = document.getElementById("myCanvas");
+        const ctx = cd.getContext("2d");
+
+        // Create linear gradient
+        const graad = ctx.createLinearGradient(0, 0, 280, 0);
+        grad.addColorStop(0, "lightblue");
+        grad.addColorStop(0.5, "purple");
+        grad.addColorStop(1, "darkblue");
+
+        // Fill outlined text with gradient
+        ctx.font = "50px Arial";
+        ctx.strokeStyle = grad;
+        ctx.strokeText("Hello World", 10, 80);
+    </script>
+
+
+
+</body>
+
+</html>

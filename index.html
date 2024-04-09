@@ -12,15 +12,16 @@
     }
 
     #p01 {
-        color: rgb(243, 65, 11);
+        color: rgb(9, 242, 9);
         font-size: large;
         text-align: right;
+
     }
 
     table {
         width: 100%;
         border: 10px solid rgb(46, 5, 250);
-        background-color:rgb(6, 255, 6);
+        background-color: rgb(6, 255, 6);
         border-spacing: 13px;
     }
 
@@ -30,52 +31,114 @@
     }
 
     img {
-        height: 400px;
-        width: 400px;
+        height: 410px;
+        width: 500px;
     }
 
     ins {
         font-size: larger;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         text-align: center;
     }
 
     h3 {
         font-size: x-large;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
     }
 
     li {
         font-size: large;
         color: rgb(32, 134, 6);
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         text-shadow: darkgreen;
     }
 
-   
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333333;
+    }
+
+    #t {
+        float: left;
+    }
+
+    #t a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+    #t a:hover {
+        background-color: #111111;
+    }
+
+    div {
+        width: 100px;
+        height: 100px;
+        background: rgb(248, 246, 246);
+        position: relative;
+        animation: mymove 5s infinite;
+    }
+
+    @keyframes mymove {
+        from {
+            left: 0px;
+        }
+
+        to {
+            left: 200px;
+        }
+    }
 </style>
 
-<body style="background-color:rgb(255, 238, 0);">
+<body onmouseover="style.background=' rgb(243, 65, 11)'">
+    <ul>
+        <li id="t"><a href="images/pain.jpg">Thanish</a></li>
+        <li id="t"><a href="#news">Thanish`s school</a></li>
+        <li id="t"><a href="#contact">Home</a></li>
+        <li id="t"><a href="images/games/game1.html">Aim</a></li>
+        <li id="t"><a href="#about">Achiuments</a></li>
+    </ul>
     <br>
     <hr>
     <hr>
-    <svg width="10000" height="220" > 
-        <g transform="translate(100,100)">
-            <text id="TextElement" x="50" y="0 " style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size:150px ">
-                Thanish website
-                <animateMotion path="M 0 0 L 100 100" dur="5s" fill="freeze" />
-                <animate attributeName="fill" from="rgb(255, 238, 0)" dur="9s" to=" rgb(243, 65, 11) "  fill="freeze" />
-            </text>
-        </g>
+    <svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="400" style="fill: rgb(11, 243, 224) ;">
+            <animate attributeName="cx" begin="0s" dur="5s" from=" rgb(215, 9, 242);50" to="100%"
+                repeatCount="indefinite" fill="url(#grad4)" />
+
+        </circle>
+        <text x="50" y="120" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;fill: rgb(243, 65, 11) ;
+        font-size:130px ">THE NAVODAYA ACADEMY</text>
+    </svg>
+    <hr>
+    <hr>
+
+    <svg width="10000" height="220">
+        <circle cx="100" cy="100" r="600" style="fill: rgb(11, 243, 224) ;">
+            <animate attributeName="cx" begin="0s" dur="7s" from=" rgb(215, 9, 242);50" to="100%"
+                repeatCount="indefinite" fill="url(#grad4)" />
+        </circle>
+        <text id="TextElement" x="200" y="150 " style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size:150px;fill: rgb(243, 65, 11); ">
+            Thanish website
+            <animate attributeName="fill" from="rgb(255, 238, 0)" dur="7s" to=" rgb(243, 65, 11) " fill="freeze" />
+
+        </text>
 
     </svg>
     <hr>
     <hr>
+
     <canvas id="canvas" width="400" height="400" style="background-color:rgb(0, 255, 128);">
     </canvas>
-    <img src="images/thanish.jpg">
+    <img src="images/my file.jpg">
     <script type="text/javascript">
         const canvas = document.getElementById("canvas");
         const ctx = canvas.getContext("2d");
@@ -155,7 +218,7 @@
         }
 
     </script>
-    
+
     <table onmouseover="style.border='10px solid blue'" onmouseout="style.border='10px solid green'">
         <tr>
             <td onmouseover="style.border='10px solid blue'" onmouseout="style.border='10px solid red'">
@@ -216,7 +279,8 @@
                         <ins onmouseout="style.color='brown'" onmouseover="style.color='blue'"> Lesson-4</ins>
                         <ol type="a">
                             <li><a href="term-1/lesson-4/excercise-4.1,2,3,4.html">Excercise-1,2,3,4</a></li>
-                            <li><a href="term-1/lesson-4/excercise-4.5,6,7,8,9,10.html">Excercise-5,6,7,8,9,10</a></li>
+                            <li><a href="term-1/lesson-4/excercise-4.5,6,7,8,9,10.html">Excercise-5,6,7,8,9,10</a>
+                            </li>
                             <li><a href="term-1/lesson-4/excercise-4.11.html">Excercise-11</a></li>
                             <li><a href="term-1/lesson-4/excercise-4.12.html">Excercise-12</a></li>
                             <li><a href="term-1/lesson-4/excercise-4.13.html"> Excercise-13</a></li>
@@ -258,7 +322,7 @@
                     <hr>
 
             </td>
-            <td  onmouseover="style.border='10px solid blue'" onmouseout="style.border='10px solid red'">
+            <td onmouseover="style.border='10px solid blue'" onmouseout="style.border='10px solid red'">
                 <h3 onmouseout="style.color='darkblue'" onmouseover="style.color='brown'"><ins>TERM-2</ins></h3>
                 <ol type="A">
                     <li>
@@ -339,8 +403,9 @@
                     </li>
 
             </td>
-            <td  onmouseover="style.border='10px solid blue'" onmouseout="style.border='10px solid red'">
-                <h3 onmouseout="style.color='darkblue'" onmouseover="style.color='brown'"><ins> ASSIGNMENTS</ins></h3>
+            <td onmouseover="style.border='10px solid blue'" onmouseout="style.border='10px solid red'">
+                <h3 onmouseout="style.color='darkblue'" onmouseover="style.color='brown'"><ins> ASSIGNMENTS</ins>
+                </h3>
                 <ol>
                     <li>
                         <ins onmouseout="style.color='brown'" onmouseover="style.color='blue'"> Assignments</ins>
@@ -364,11 +429,12 @@
                         </ol>
                     </li>
             </td>
-             <td  onmouseover="style.border='10px solid blue'" onmouseout="style.border='10px solid red'">
-               
-                <h3 onmouseout="style.color='darkblue'" onmouseover="style.color='brown'"><ins>Subjects noties</ins></h3>
+            <td onmouseover="style.border='10px solid blue'" onmouseout="style.border='10px solid red'">
+
+                <h3 onmouseout="style.color='darkblue'" onmouseover="style.color='brown'"><ins>Subjects noties</ins>
+                </h3>
                 <ol>
-                     <li><a href="noties/cs.html">C.S</a></li>
+                    <li><a href="noties/cs.html">C.S</a></li>
                     <li><a href="noties/english.html">English</a></li>
                     <li><a href="noties/maths.html">Maths</a></li>
                     <li><a href="noties/tamil.html">Tamil</a></li>
@@ -378,7 +444,9 @@
                     <li><a href="noties/social.html/history.html">History</a></li>
                     <li><a href="noties/social.html/civise.html">Civise</a></li>
                     <li><a href="noties/social.html/geography.html">Geography</a></li>
-                    <li><a href="noties/hindi.html">Hindi</a></li> 
+                    <li><a href="noties/hindi.html">Hindi</a></li>
+                    <li><a href="noties/hometask.html/loops.html">hometask</a></li>
+
                 </ol>
                 <hr>
                 <hr>
@@ -392,14 +460,19 @@
                 <a href="assignments/croplist.html">Croplist</a>
                 <hr>
                 <hr>
-                <h3 onmouseout="style.color='darkblue'" onmouseover="style.color='brown'"><ins>Games in html</ins></h3>
+                <br>
+                <a href="noties/gimp.html">gimp</a>
+                <hr>
+                <hr>
+                <h3 onmouseout="style.color='darkblue'" onmouseover="style.color='brown'"><ins>Games in html</ins>
+                </h3>
                 <br>
                 <a href="images/games/game1.html">GAME-1</a>
-            </td> 
-            <td  onmouseover="style.border='10px solid blue'" onmouseout="style.border='10px solid red'">
+            </td>
+            <td onmouseover="style.border='10px solid blue'" onmouseout="style.border='10px solid red'">
                 <h3 onmouseout="style.color='darkblue'" onmouseover="style.color='brown'"><ins>SVG FILES</ins></h3>
                 <ol>
-                     <li><a href="svgfiles/rectangle.html">rectangle</a></li>
+                    <li><a href="svgfiles/rectangle.html">rectangle</a></li>
                     <li><a href="svgfiles/circle.html">circle</a></li>
                     <li><a href="svgfiles/ellispe.html">ellipse</a></li>
                     <li><a href="svgfiles/polygon.html">polygon</a></li>
@@ -410,18 +483,85 @@
                     <li><a href="svgfiles/stoking.html">stoking</a></li>
                     <li><a href="svgfiles/example.html">Examples</a></li>
                     <li><a href="svgfiles/blureffects.html">feGaussianBlur</a></li>
-                    <li><a href="svgfiles/dropshadow.html">dropshadow</a></li> 
+                    <li><a href="svgfiles/dropshadow.html">dropshadow</a></li>
+                    <li><a href="svgfiles/lyout.html">lyout</a></li>
+
+                </ol>
+                <h3 onmouseout="style.color='darkblue'" onmouseover="style.color='brown'"><ins>SVG FILES IN HTML</ins>
+                </h3>
+                <ol>
+                    <li><a href="html/colors.html">Colors in html</a></li>
+                    <li><a href="html/css.html">CSS styles</a></li>
+                    <li><a href="html/quotations.html">Quotation</a></li>
+                    <li><a href="html/pagetitle.html">Pagetitle</a></li>
+                    <li><a href="html/links.html">links</a></li>
+                    <li><a href="html/images.html">Images</a></li>
+                    <li><a href="html/favicon.html">Favicon</a></li>
+                    <li><a href="html/tables.html">Html Table</a></li>
+                    <li><a href="html/tableborder.html">Table Border</a></li>
+                    <li><a href="html/colspan&rowspan.html">colspan&rowspan</a></li>
+                    <li><a href="html/padding&spacing.html">padding&spacing</a></li>
+                    <li><a href="html/tableheaders.html">Table headers</a></li>
+                    <li><a href="html/tablesize.html">Table size</a></li>
+                    <li><a href="html/tablestyle.html">Table style</a></li>
+                    <li><a href="html/lists.html">list</a></li>
+                    <li><a href="html/block&inline.html">block&inline</a></li>
+                    <li><a href="html/div.html">div</a></li>
+                    <li><a href="html/colgroup.html">colgroup</a></li>
+                    <li><a href="html/id.html">id</a></li>
+                    <li><a href="html/head.html">head</a></li>
+                    <li><a href="html/iframs.html">iframe</a></li>
+                    <li><a href="html/javascript.html">javascript</a></li>
+                    <li><a href="html/filepath.html">filepath</a></li>
+                    <li><a href="html/lyout.html">layout</a></li>
+                    <li><a href="html/responsive.html">responsive</a></li>
+                    <li><a href="html/computercode.html">computercode</a></li>
+                    <li><a href="html/entities.html">entities</a></li>
+                    <li><a href="html/semantices.html">semantices</a></li>
                 </ol>
                 <hr>
                 <hr>
                 <h3 onmouseout="style.color='darkblue'" onmouseover="style.color='brown'"><ins>JavaScript</ins></h3>
                 <ol>
                     <li><a href="javascript/introduction.html">Introduction</a></li>
+                    <li><a href="javascript/output.html">Output</a></li>
+                    <li><a href="javascript/statments.html">statments</a></li>
+                    <li><a href="javascript/comment.html">comment</a></li>
+                    <li><a href="javascript/syntex.html">syntax</a></li>
+                    <li><a href="javascript/variables.html">Variables</a></li>
+                    <li><a href="javascript/tutorails point/operators.html">operators</a></li>
+                    <li><a href="javascript/tutorails point/if..else.html">if..else</a></li>
+
                 </ol>
             </td>
         </tr>
 
     </table>
+    <h2>SVG animateTransform Element</h2>
+
+    <svg width="200" height="180" xmlns="http://www.w3.org/2000/svg">
+        <rect x="30" y="30" height="110" width="110"
+            style="stroke:rgb(6, 252, 6);fill:rgb(25, 36, 228);stroke: width 3px;">
+            <animatetransform attributeName="transform" begin="0s" dur="0.1s" type="rotate" from="0 85 85"
+                to="360 85 85" repeatCount="indefinite" />
+        </rect>
+        <text x="65" y="85" style="fill:rgb(244, 244, 247);">Thanish</text>
+        Sorry, your browser does not support inline SVG.
+    </svg>
+    <br>
+    <h2>SVG animateMotion Element</h2>
+
+    <svg width="1000" height="1500" xmlns="http://www.w3.org/2000/svg">
+        <rect x="45" y="18" width="155" height="45" style="stroke:green;fill:none;">
+            <animateMotion path="M0,0 q60,100 100,0 q60,-20 100,0" begin="0s" dur="1s" repeatCount="indefinite" />
+        </rect>
+        <text x="50" y="50" style="font-family:Verdana;font-size:32">Thanish
+            <animateMotion path="M0,0 q60,100 100,0 q60,-20 100,0 550,150" begin="0s" dur="1s"
+                repeatCount="indefinite" />
+        </text>
+        Sorry, your browser does not support inline SVG.
+    </svg>
+    <div></div>
 </body>
 
 </html>

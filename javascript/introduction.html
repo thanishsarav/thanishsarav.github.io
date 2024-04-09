@@ -10,7 +10,7 @@
 
     <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">Click Me!</button>
     <br>
-    <br>
+    <hr>
     <h3>Example2</h3>
 
     <h2>What Can JavaScript Do?</h2>
@@ -24,6 +24,32 @@
     <img id="myImage" src="pic_bulboff.gif" style="width:100px">
 
     <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+    <br>
+    <hr>
+    <h3>Example3</h3>
+    <h1>JavaScript Can Change HTML Styles (CSS)</h1>
+    
+    <p id="mydemo">JavaScript can change the style of an HTML element.</p>
+
+<button type="button" onclick="document.getElementById('mydemo').style.border='5px solid rgb(9, 242, 207) ', Arial,
+ sans-serif">border</button>
+
+<button type="button" onclick="document.getElementById('mydemo').style.color=' rgb(161, 9, 242)'">Change color</button>
+<br>
+<button type="button" onclick="document.getElementById('mydemo').style.backgroundColor=' rgb(215, 242, 9)'">background-color</button>
+<br>
+<hr>
+<h3>Example4</h3>
+<h1>JavaScript Can Hide HTML Elements</h1>
+<h2>What Can JavaScript Do?</h2>
+
+<p id="thanish" style="display:none">JavaScript can hide and show the HTML elements.</p>
+
+<button type="button" onclick="document.getElementById('thanish').style.display='none'">hide the text </button>
+
+<button type="button" onclick="document.getElementById('thanish').style.display='block'">show the text</button>​
+
+
 </body>
 
 </html>

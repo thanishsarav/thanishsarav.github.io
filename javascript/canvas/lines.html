@@ -1,0 +1,85 @@
+<html>
+
+<body>
+    <a href="../../index.html">back to home</a>
+    <br>
+    <h1>HTML5 Canvas - Draw a Line</h1>
+
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+        Sorry, your browser does not support canvas.
+    </canvas>
+
+    <script>
+        // Create a canvas
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+
+        // Define a new path
+        ctx.beginPath();
+
+        // Set a start-point
+        ctx.moveTo(0, 0);
+
+        // Set an end-point
+        ctx.lineTo(200, 100);
+
+        // Draw it
+        ctx.stroke();
+    </script>
+    <br>
+    <h1>HTML5 Canvas - lineWidth Propery</h1>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const cansvas = document.getElementById("myCanvas");
+const cdx = cansvas.getContext("2d");
+
+cdx.beginPath();
+cdx.moveTo(0,0);
+cdx.lineTo(200,100);
+cdx.lineWidth = 10;
+cdx.stroke();
+</script>
+<br>
+<h1>HTML5 Canvas - strokeStyle Property</h1>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const canhvas = document.getElementById("myCanvas");
+const cjx = candvas.getContext("2d");
+
+ctx.beginPath();
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.lineWidth = 10;
+ctx.strokeStyle = "red";
+ctx.stroke();
+</script>
+<br>
+<h1>HTML5 Canvas - lineCap Property</h1>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const canqvas = document.getElementById("myCanvas");
+const ctx = canqvas.getContext("2d");
+
+ctx.moveTo(0,0);
+ctx.lineTo(175,75);
+ctx.lineWidth = 10;
+ctx.lineCap = "round";
+ctx.stroke();
+</script>
+
+
+</body>
+
+</html>

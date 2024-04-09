@@ -1,0 +1,76 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <a href="../index.html">back to home</a>
+    <br>
+    <h3>Example1</h3>
+    <h1>Using innerHTML</h1>
+    <br>
+    <h2>My First Web Page</h2>
+    <p>My First Paragraph.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = 24242 + 4242432;
+    </script>
+    <hr>
+    <h3>Example2</h3>
+    <h1>Using document.write()</h1>
+    <br>
+    <h2>My First Web Page</h2>
+    <p>My first paragraph.</p>
+
+    <p>Never call document.write after the document has finished loading.
+        It will overwrite the whole document.</p>
+
+    <script>
+        document.write(5 + 6);
+    </script>
+    <hr>
+    <h3>Example3</h3>
+    <br>
+    <h2>My First Web Page</h2>
+    <p>My first paragraph.</p>
+
+    <button type="button" onclick="document.write(1 + 99999999)">Try it</button>
+    <hr>
+    <h3>Example4</h3>
+    <h1>Using window.alert()</h1>
+    <br>
+    <h2>My First Web Page</h2>
+<p>My first paragraph.</p>
+
+<script>
+window.alert(2 + 997);
+</script>
+<hr>
+<h3>Example5</h3>
+<br>
+<h2>My First Web Page</h2>
+<p>My first paragraph.</p>
+
+<script>
+alert(7 + 2);
+</script>
+<hr>
+<h3>Example6</h3>
+<br>
+<h1>Using console.log()</h1>
+<h2>Activate Debugging</h2>
+
+<p>F12 on your keyboard will activate debugging.</p>
+<p>Then select "Console" in the debugger menu.</p>
+<p>Then click Run again.</p>
+
+<script>
+console.log(5 + 6);
+</script>
+
+</body>
+
+</html>

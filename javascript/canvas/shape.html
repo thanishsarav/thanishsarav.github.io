@@ -1,0 +1,37 @@
+<html>
+
+<body>
+    <a href="../../index.html">back to home</a>
+    <br>
+    <h1>HTML5 Canvas - Draw a Shape,The strokeStyle Property.</h1>
+
+   
+    <canvas id="myCanvas" width="200" height="125" style="border:1px solid #000000;">
+        
+    </canvas>
+
+    <script>
+        // Create a canvas:
+        let canvas = document.getElementById("myCanvas");
+        let ctx = canvas.getContext("2d");
+
+        // Define a new path:
+        ctx.beginPath();
+
+        // Define a start point
+        ctx.moveTo(100, 20);
+
+        // Define points
+        ctx.lineTo(180, 100);
+        ctx.lineTo(20, 100);
+        ctx.lineTo(100, 20);
+
+        // Draw it
+        ctx.strokeStyle = "red";
+        ctx.stroke();
+       
+    </script>
+
+</body>
+
+</html>

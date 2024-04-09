@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <a href="../../index.html">back to home</a>
+    <br>
+    <h1>HTML5 Canvas - rect(),The fillRect() Method,</h1>
+
+    <canvas id="myCanvas" width="300" height="150" style="border:1px solid black">
+        Sorry, your browser does not support canvas.
+    </canvas>
+
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+       
+        ctx.fillStyle = "pink";
+        ctx.rect(10, 10, 150, 100);
+        ctx.fillRect(10,10, 150,100);
+        ctx.fillStyle = "pink";
+        ctx.stroke();
+    </script>
+
+</body>
+
+</html>

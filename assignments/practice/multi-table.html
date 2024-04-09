@@ -1,0 +1,54 @@
+<html>
+
+<body>
+    <a href="../../index.html">back to home</a>
+    <br>
+    <input type="text" id="myid">
+    <input type="button" onclick="printTable()" value="loop">
+    <br>
+    <div id="table" style="border: 2px solid firebrick;color: rgb(79, 7, 146);background-color: azure;font-size: larger;
+    overflow: scroll;width: 300px;height: 300px;"></div>
+        <script type="text/javascript">
+
+            function  printTable() {
+               
+                var text = document.getElementById("myid");
+                
+                var number = parseInt(text.value);
+                
+                if (!number) {
+                    number = 2;
+                }
+                var table = document.getElementById("table")
+                
+
+                var tableHtml = "<table>";
+             
+                    
+
+                for (var o = 1; o <= 10; o++) {
+                    tableHtml += "<tr>" +
+                        "<td>" + number + "</td>" +
+                        "<td>x</td>" + "<td>" + o + "</td>" +
+                        "<td>=</td>" +
+                        "<td>" + (number * o) +
+                        "</td>" + "</tr>";
+
+                }
+                tableHtml += "</table>";
+            
+
+                table.innerHTML = tableHtml;
+
+                
+                
+             
+
+            }
+
+
+
+        </script>
+</body>
+
+</html>

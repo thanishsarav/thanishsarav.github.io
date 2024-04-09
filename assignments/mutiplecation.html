@@ -1,0 +1,59 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <a href="../index.html">back to home</a>
+    <br>
+    <h3><ins><b>Multiplecation table</b> What number you what</ins></h3>
+    <br>
+    <input type="text" id="myid" />
+    <input type="submit" onclick="printTable()" />
+    <br>
+    
+ 
+    <div id="table" style="border: 2px solid firebrick;color: rgb(79, 7, 146);background-color: azure;font-size: larger;
+    overflow: scroll;width: 300px;height: 300px;">
+
+    </div>
+
+    <br>
+    <script type="text/javascript">
+
+       
+
+        function printTable() {
+
+            var textnumber = document.getElementById("myid");
+            var number = parseInt(textnumber.value);
+            alert(number)
+            if(!number) {
+                number = 2;
+            }
+
+            var table = document.getElementById("table");
+
+            var tableHtml = "<table>";
+            
+
+            for (var i = 1; i <= 10; i++) {
+                tableHtml += "<tr>" +
+                    "<td>" + number + "</td>" +
+                    "<td>x</td>" +
+                    "<td>"+ i +"</td>" +
+                    "<td>=</td>" +
+                    "<td>" + (number * i) +  "</td>" +
+                    "</tr>";
+            }
+            tableHtml += "</table>";
+            table.innerHTML = tableHtml;
+
+        }
+    </script>
+  
+   
+</body>
+
+</html>

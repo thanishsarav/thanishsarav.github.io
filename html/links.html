@@ -1,0 +1,165 @@
+<html>
+
+<body>
+    <a href="../index.html">back to home</a>
+    <br><br>
+    <p> HTML Links - Hyperlinks<br><br>
+        HTML links are hyperlinks.<br><br>
+
+        You can click on a link and jump to another document.<br><br>
+
+        When you move the mouse over a link, the mouse arrow will turn into a little hand.<br><br>
+
+        Note: A link does not have to be text. A link can be an image or any other HTML element!<br><br>
+
+        HTML Links - Syntax<br><br>
+        The HTML <a> tag defines a hyperlink. It has the following syntax:<br><br>
+
+            <a href="url">link text</a><br><br>
+            The most important attribute of the <a> element is the href attribute, which indicates the link's
+                destination.<br><br>
+
+                The link text is the part that will be visible to the reader.<br><br>
+
+                Clicking on the link text, will send the reader to the specified URL address.<br><br>
+
+                Example:<br><br>
+                This example shows how to create a link to W3Schools.com:<br><br>
+
+                <a href="https://www.w3schools.com/">Visit W3Schools.com!</a><br><br>
+                By default, links will appear as follows in all browsers:<br><br>
+
+                An unvisited link is underlined and blue<br><br>
+                A visited link is underlined and purple<br><br>
+                An active link is underlined and red<br><br>
+                Tip: Links can of course be styled with CSS, to get another look!<br><br>
+
+                HTML Links - The target Attribute<br><br>
+                By default, the linked page will be displayed in the current browser window. To change this, you must
+                specify another target for the link.<br><br>
+
+                The target attribute specifies where to open the linked document.<br><br>
+
+                The target attribute can have one of the following values:<br><br>
+
+                _self - Default. Opens the document in the same window/tab as it was clicked<br><br>
+                _blank - Opens the document in a new window or tab<br><br>
+                _parent - Opens the document in the parent frame<br><br>
+                _top - Opens the document in the full body of the window<br><br>
+                Example:<br><br>
+                Use target="_blank" to open the linked document in a new browser window or tab:<br><br>
+
+                <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a><br><br>
+                Absolute URLs vs. Relative URLs<br><br>
+                Both examples above are using an absolute URL (a full web address) in the href attribute.<br><br>
+
+                A local link (a link to a page within the same website) is specified with a relative URL (without the
+                "https://www" part):<br><br>
+
+                Example:<br><br>
+                <h2>Absolute URLs</h2><br><br>
+                <p><a href="https://www.w3.org/">W3C</a></p><br><br>
+                <p><a href="https://www.google.com/">Google</a></p><br><br>
+
+                <h2>Relative URLs</h2><br><br>
+                <p><a href="html_images.asp">HTML Images</a></p><br><br>
+                <p><a href="/css/default.asp">CSS Tutorial</a></p><br><br></p>
+    <p> HTML Links - Use an Image as a Link<br><br>
+        To use an image as a link, just put the <img> tag inside the <a> tag:<br><br>
+
+            Example:<br><br>
+            <a href="default.asp"><br><br>
+                <img src="pain.jpg" alt="HTML tutorial" style="width:42px;height:42px;"><br><br>
+            </a>
+            Link to an Email Address<br><br>
+            Use mailto: inside the href attribute to create a link that opens the user's email program (to let
+            them send a new email):<br><br>
+
+            Example:<br><br>
+            <a href="https://thanishsarav.github.io/">Send email</a><br><br>
+            Button as a Link<br><br>
+            To use an HTML button as a link, you have to add some JavaScript code.<br><br>
+
+            JavaScript allows you to specify what happens at certain events, such as a click of a button:<br><br>
+
+            Example:<br><br>
+            <button onclick="document.location='default.asp'">HTML Tutorial</button><br><br>
+            Tip: Learn more about JavaScript in our JavaScript Tutorial.<br><br>
+
+            Link Titles:<br><br>
+            The title attribute specifies extra information about an element. The information is most often
+            shown as a tooltip text when the mouse moves over the element.<br><br>
+
+            Example:<br><br>
+            <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML
+                Tutorial</a><br><br>
+            More on Absolute URLs and Relative URLs<br><br>
+            Example:<br><br>
+            Use a full URL to link to a web page:<br><br>
+
+            <a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a><br><br>
+
+            Example:
+            Link to a page located in the html folder on the current web site:<br><br>
+
+            <a href="/html/default.asp">HTML tutorial</a><br><br>
+
+            Example:<br><br>
+            Link to a page located in the same folder as the current page:<br><br>
+
+            <a href="default.asp">HTML tutorial</a><br><br>
+
+            You can read more about file paths in the chapter HTML File Paths.<br><br>
+
+            Chapter Summary:<br><br>
+            Use the <a> element to define a link<br><br>
+                Use the href attribute to define the link address<br><br>
+                Use the target attribute to define where to open the linked document<br><br>
+                Use the <img> element (inside <a>) to use an image as a link<br><br>
+                    Use the mailto: scheme inside the href attribute to create a link that opens the user's
+                    email program
+                    HTML Link Tags<br><br>
+                    Tag Description<br><br>
+                    <a> Defines a hyperlink:<br><br>
+                        For a complete list of all available HTML tags, visit our HTML Tag Reference.
+    </p>
+  <p>  HTML Links - Different Colors<br><br>
+    An HTML link is displayed in a different color depending on whether it has been visited, is unvisited, or is active.<br><br>
+
+    HTML Link Colors<br><br>
+    By default, a link will appear like this (in all browsers):<br><br>
+
+    An unvisited link is underlined and blue<br><br>
+    A visited link is underlined and purple<br><br>
+    An active link is underlined and red<br><br>
+    You can change the link state colors, by using CSS:<br><br>
+
+    Example<br><br>
+    Here, an unvisited link will be green with no underline.<br><br> A visited link will be pink with no underline. An active
+    link will be yellow and underlined. In addition, when mousing over a link (a:hover) it will become red and
+    underlined:<br><br>
+
+    
+    </style><br><br>
+    ADVERTISEMENT<br><br>
+
+    Link Buttons<br><br>
+    A link can also be styled as a button, by using CSS:<br><br>
+
+    This is a link<br><br>
+    Example
+    <br><br>
+    
+    <br><br>
+    To learn more about CSS, go to our CSS Tutorial.<br><br>
+
+    HTML Link Tags<br><br>
+    Tag Description<br><br>
+    <a> Defines a hyperlink
+        For a complete list of all available HTML tags, visit our HTML Tag Reference.<br><br>
+    </p>
+
+
+</body>
+
+</html>

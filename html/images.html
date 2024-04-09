@@ -1,0 +1,508 @@
+<html>
+
+<body>
+    <a href="../index.html">back to home</a>
+    <br>
+    <p>HTML Images<br><br>
+        Images can improve the design and the appearance of a web page.<br><br>
+
+        Example<br><br>
+        <img src="pic_trulli.jpg" alt="Italian Trulli"><br><br>
+        Example<br><br>
+        <img src="img_girl.jpg" alt="Girl in a jacket"><br><br>
+        Example<br><br>
+        <img src="img_chania.jpg" alt="Flowers in Chania"><br><br>
+        HTML Images Syntax<br><br>
+        The HTML <img> tag is used to embed an image in a web page.<br><br>
+
+        Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a
+        holding space for the referenced image.<br><br>
+
+        The <img> tag is empty, it contains attributes only, and does not have a closing tag.<br><br>
+
+        The <img> tag has two required attributes:<br><br>
+
+        src - Specifies the path to the image<br><br>
+        alt - Specifies an alternate text for the image<br><br>
+        Syntax<br><br>
+        <img src="url" alt="alternatetext"><br><br>
+        The src Attribute<br><br>
+        The required src attribute specifies the path (URL) to the image.<br><br>
+
+        Note: When a web page loads, it is the browser, at that moment, that gets the image from a web server and
+        inserts it into the page. Therefore, make sure that the image actually stays in the same spot in relation to the
+        web page, otherwise your visitors will get a broken link icon. The broken link icon and the alt text are shown
+        if the browser cannot find the image.<br><br>
+
+        Example<br><br>
+        <img src="img_chania.jpg" alt="Flowers in Chania"><br><br>
+        ADVERTISEMENT<br><br>
+
+        The alt Attribute<br><br>
+        The required alt attribute provides an alternate text for an image, if the user for some reason cannot view it
+        (because of slow connection, an error in the src attribute, or if the user uses a screen reader).<br><br>
+
+        The value of the alt attribute should describe the image:<br><br>
+
+        Example<br><br>
+        <img src="img_chania.jpg" alt="Flowers in Chania"><br><br>
+        If a browser cannot find an image, it will display the value of the alt attribute:<br><br>
+
+        Example<br><br>
+        <img src="wrongname.gif" alt="Flowers in Chania"><br><br>
+        Tip: A screen reader is a software program that reads the HTML code, and allows the user to "listen" to the
+        content. Screen readers are useful for people who are visually impaired or learning disabled.<br><br>
+
+        Image Size - Width and Height<br><br>
+        You can use the style attribute to specify the width and height of an image.<br><br>
+
+        Example<br><br>
+        <img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;"><br><br>
+        Alternatively, you can use the width and height attributes:<br><br>
+
+        Example<br><br>
+        <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"><br><br>
+        The width and height attributes always define the width and height of the image in pixels.<br><br>
+
+        Note: Always specify the width and height of an image. If width and height are not specified, the web page might
+        flicker while the image loads.<br><br>
+
+        Width and Height, or Style?<br><br>
+        The width, height, and style attributes are all valid in HTML.<br><br>
+
+        However, we suggest using the style attribute. It prevents styles sheets from changing the size of
+        images:<br><br>
+
+        Example<br><br>
+        <!DOCTYPE html>
+        <html>
+
+        <head>
+            <style>
+                img {
+                    width: 100%;
+                }
+            </style>
+        </head>
+
+        <body>
+
+            <img src="html5.gif" alt="HTML5 Icon" width="128" height="128"><br><br>
+
+            <img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"><br><br>
+
+        </body>
+
+        </html>
+        Images in Another Folder<br><br>
+        If you have your images in a sub-folder, you must include the folder name in the src attribute:<br><br>
+
+        Example<br><br>
+        <!-- <img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"><br><br> -->
+        Images on Another Server/Website<br><br>
+        Some web sites point to an image on another server.<br><br>
+
+        To point to an image on another server, you must specify an absolute (full) URL in the src attribute:<br><br>
+
+        Example<br><br>
+        <!-- <img src="narutofamily.jpg" alt="W3Schools.com"><br><br> -->
+        Notes on external images: External images might be under copyright. If you do not get permission to use it, you
+        may be in violation of copyright laws. In addition, you cannot control external images; they can suddenly be
+        removed or changed.<br><br>
+
+        Animated Images<br><br>
+        HTML allows animated GIFs:<br><br>
+
+        Example<br><br>
+        <!-- <img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;"><br><br> -->
+        Image as a Link<br><br>
+        To use an image as a link, put the <img> tag inside the <a> tag:<br><br>
+
+            Example<br><br>
+            <!-- <a href="default.asp"><br><br>
+                <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"><br><br>
+            </a> -->
+            Image Floating<br><br>
+            Use the CSS float property to let the image float to the right or to the left of a text:<br><br>
+
+            Example<br><br>
+            <!-- <p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;"><br><br> -->
+                The image will float to the right of the text.</p><br><br>
+
+            <p><br><br>
+                The image will float to the left of the text.</p><br><br>
+            Tip: To learn more about CSS Float, read our CSS Float Tutorial.<br><br>
+
+            Common Image Formats<br><br>
+            Here are the most common image file types, which are supported in all browsers (Chrome, Edge, Firefox,
+            Safari, Opera):<br><br>
+
+            Abbreviation File Format File Extension<br><br>
+            APNG Animated Portable Network Graphics .apng<br><br>
+            GIF Graphics Interchange Format .gif<br><br>
+            ICO Microsoft Icon .ico, .cur<br><br>
+            JPEG Joint Photographic Expert Group image .jpg, .jpeg, .jfif, .pjpeg, .pjp<br><br>
+            PNG Portable Network Graphics .png<br><br>
+            SVG Scalable Vector Graphics .svg<br><br>
+            Chapter Summary<br><br>
+            Use the HTML <img> element to define an image<br><br>
+            Use the HTML src attribute to define the URL of the image<br><br>
+            Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed<br><br>
+            Use the HTML width and height attributes or the CSS width and height properties to define the size of the
+            image<br><br>
+            Use the CSS float property to let the image float to the left or to the right<br><br>
+            Note: Loading large images takes time, and can slow down your web page. Use images carefully.<br><br>
+
+            HTML Exercises<br><br>
+            Test Yourself With Exercises<br><br>
+            Exercise:<br><br>
+            Use the HTML image attributes to set the size of the image to 250 pixels wide and 400 pixels tall.<br><br>
+
+            <!-- <img src="scream.png"="250"="400"><br><br> -->
+
+            Start the Exercise<br><br>
+
+            HTML Image Tags<br><br>
+            Tag Description<br><br>
+            <img> Defines an image<br><br>
+            <map> Defines an image map<br><br>
+                <area> Defines a clickable area inside an image map<br><br>
+                <picture> Defines a container for multiple image resources<br><br>
+                    For a complete list of all available HTML tags, visit our HTML Tag Reference.<br><br>
+                    HTML Image Maps<br><br>
+                    With HTML image maps, you can create clickable areas on an image.<br><br>
+
+                    Image Maps<br><br>
+                    The HTML <map> tag defines an image map. An image map is an image with clickable areas. The
+                        areas<br><br>
+                        are defined with one or more <area> tags.<br><br>
+
+                        Try to click on the computer, phone, or the cup of coffee in the image below:<br><br>
+
+                        Workplace<br><br>
+                        Example<br><br>
+                        Here is the HTML source code for the image map above:<br><br>
+
+                        <!-- <img src="workplace.jpg" alt="Workplace" usemap="#workmap"><br><br>
+
+                        <map name="workmap"><br><br>
+                            <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"><br><br>
+                            <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm"><br><br>
+                            <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm"><br><br>
+                        </map> -->
+                        How Does it Work?<br><br>
+                        The idea behind an image map is that you should be able to perform different actions depending
+                        on where in the image you click.<br><br>
+
+                        To create an image map you need an image, and some HTML code that describes the clickable
+                        areas.<br><br>
+
+                        ADVERTISEMENT<br><br>
+
+                        The Image<br><br>
+                        The image is inserted using the <img> tag. The only difference from other images is that you
+                        must add a usemap attribute:<br><br>
+
+                        <!-- <img src="workplace.jpg" alt="Workplace" usemap="#workmap"><br><br> -->
+                        The usemap value starts with a hash tag # followed by the name of the image map, and is used to
+                        create a relationship between the image and the image map.<br><br>
+
+                        Tip: You can use any image as an image map!<br><br>
+
+                        Create Image Map<br><br>
+                        Then, add a <map> element.<br><br>
+
+                            The <map> element is used to create an image map, and is linked to the image by using the
+                                required name attribute:<br><br>
+
+                                <!-- <map name="workmap"><br><br> -->
+                                    The name attribute must have the same value as the <img>'s usemap attribute
+                                    .<br><br>
+
+                                    The Areas<br><br>
+                                    Then, add the clickable areas.<br><br>
+
+                                    A clickable area is defined using an <area> element.<br><br>
+
+                                    Shape<br><br>
+                                    You must define the shape of the clickable area, and you can choose one of
+                                    these<br><br>
+                                    values:<br><br>
+
+                                    rect - defines a rectangular region<br><br>
+                                    circle - defines a circular region<br><br>
+                                    poly - defines a polygonal region<br><br>
+                                    default - defines the entire region<br><br>
+                                    You must also define some coordinates to be able to place the clickable area onto
+                                    the image.<br><br>
+
+                                    Shape="rect"
+                                    The coordinates for shape="rect" come in pairs, one for the x-axis and one for the
+                                    y-axis.<br><br>
+
+                                    So, the coordinates 34,44 is located 34 pixels from the left margin and 44 pixels
+                                    from the top:<br><br>
+
+                                    Workplace<br><br>
+                                    The coordinates 270,350 is located 270 pixels from the left margin and 350 pixels
+                                    from the top:<br><br>
+
+                                    Workplace<br><br>
+                                    Now we have enough data to create a clickable rectangular area:<br><br>
+
+                                    Example<br><br>
+                                    <!-- <area shape="rect" coords="34, 44, 270, 350" href="computer.htm"><br><br> -->
+                                    This is the area that becomes clickable and will send the user to the page
+                                    "computer.htm":<br><br>
+
+                                    Workplace<br><br>
+                                    Shape="circle"<br><br>
+                                    To add a circle area, first locate the coordinates of the center of the
+                                    circle:<br><br>
+
+                                    337,300<br><br>
+
+                                    Workplace<br><br>
+                                    Then specify the radius of the circle:<br><br>
+                                    44 pixels<br><br>
+
+                                    Workplace<br><br>
+                                    Now you have enough data to create a clickable circular area:<br><br>
+
+                                    Example<br><br>
+                                    <area shape="circle" coords="337, 300, 44" href="coffee.htm"><br><br>
+                                    This is the area that becomes clickable and will send the user to the page
+                                    "coffee.htm":<br><br>
+
+                                    Workplace<br><br>
+                                    Shape="poly"<br><br>
+                                    The shape="poly" contains several coordinate points, which creates a shape formed
+                                    with straight lines (a polygon).<br><br>
+
+                                    This can be used to create any shape.<br><br>
+
+                                    Like maybe a croissant shape!<br><br>
+
+                                    How can we make the croissant in the image below become a clickable link?<br><br>
+
+                                    French Food<br><br>
+                                    We have to find the x and y coordinates for all edges of the croissant:<br><br>
+
+                                    French Food<br><br>
+                                    The coordinates come in pairs, one for the x-axis and one for the y-axis:<br><br>
+
+                                    Example<br><br>
+                                    <!-- <area shape="poly"
+                                        coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147"
+                                        href="croissant.htm"><br><br> -->
+                                    This is the area that becomes clickable and will send the user to the page
+                                    "croissant.htm":<br><br>
+
+                                    French Food<br><br>
+                                    Image Map and JavaScript
+                                    A clickable area can also trigger a JavaScript function.<br><br>
+
+                                    Add a click event to the <area> element to execute a JavaScript function:<br><br>
+
+                                    Example<br><br>
+                                    Here, we use the onclick attribute to execute a JavaScript function when the area is
+                                    clicked:<br><br>
+
+                                    <!-- <map name="workmap"><br><br>
+                                        <area shape="circle" coords="337,300,44" href="coffee.htm"
+                                            onclick="myFunction()"><br><br>
+                                    </map>
+
+                                    <script>
+                                        function myFunction() {
+                                            alert("You clicked the coffee cup!");
+                                        }
+                                    </script><br><br> -->
+                                    Chapter Summary<br><br>
+                                    Use the HTML <map> element to define an image map<br><br>
+                                        Use the HTML <area> element to define the clickable areas in the image
+                                        map<br><br>
+                                        Use the HTML usemap attribute of the <img> element to point to an image
+                                        map<br><br>
+                                        <!-- hbi -->
+                                        HTML Background Images<br><br>
+                                        A background image can be specified for almost any HTML element.<br><br>
+
+                                        Background Image on a HTML element<br><br>
+                                        To add a background image on an HTML element, use the HTML style attribute and
+                                        the CSS background-image property:<br><br>
+
+                                        Example<br><br>
+                                        Add a background image on a HTML element:<br><br>
+
+                                        <!-- <p style="background-image: url('img_girl.jpg');"><br><br> -->
+                                            You can also specify the background image in the style <br><br>
+                                            element,
+                                            in the head>section Example Specify the background image in the styleelement
+                                            style p background-image url img_girl.jpg<br><br>
+                                            /style<br><br>
+                                            Background Image on a Page<br><br>
+                                            If you want the entire page to have a background image, you must specify
+                                            the<br><br>
+                                            background image on the<br><br>
+
+                                            <body> element:<br><br>
+
+                                                Example<br><br>
+                                                Add a background image for the entire page:<br><br>
+
+                                                <!-- <style>
+                                                    body {
+                                                        background-image: url('img_girl.jpg');
+                                                    }
+                                                </style><br><br> -->
+                                                Background Repeat<br><br>
+                                                If the background image is smaller than the element, the image
+                                                will<br><br>
+                                                repeat itself, horizontally and vertically, until it reaches the end
+                                                of<br><br>
+                                                the element:<br><br>
+
+                                                Example<br><br>
+                                                <!-- <style>
+                                                    body {
+                                                        background-image: url('example_img_girl.jpg');
+                                                    }
+                                                </style><br><br> -->
+                                                To avoid the background image from repeating itself, set the
+                                                background-repeat property to no-repeat.<br><br>
+
+                                                Example<br><br>
+                                                <!-- <style>
+                                                    body {
+                                                        background-image: url('example_img_girl.jpg');
+                                                        background-repeat: no-repeat;
+                                                    }
+                                                </style><br><br> -->
+                                                ADVERTISEMENT<br><br>
+
+                                                Background Cover<br><br>
+                                                If you want the background image to cover the entire element, you can
+                                                set the background-size property to cover.<br><br>
+
+                                                Also, to make sure the entire element is always covered, set the
+                                                background-attachment property to fixed:<br><br>
+
+                                                This way, the background image will cover the entire element, with no
+                                                stretching (the image will keep its original proportions):<br><br>
+
+
+                                                Example<br><br>
+<!-- 
+                                                <style>
+                                                    body {
+                                                        background-image: url('img_girl.jpg');
+                                                        background-repeat: no-repeat;
+                                                        background-attachment: fixed;
+                                                        background-size: cover;
+                                                    }
+                                                </style> --><br><br> --
+
+                                                Background Stretch<br><br>
+
+                                                If you want the background image to stretch to fit the entire element,
+                                                you can set the background-size property to 100% 100%:<br><br>
+
+
+                                                Try resizing the browser window, and you will see that the image will
+                                                stretch, but always cover the entire element.<br><br>
+
+
+                                                Example<br><br>
+
+                                                <!-- <style>
+                                                    body {
+                                                        background-image: url('img_girl.jpg');
+                                                        background-repeat: no-repeat;
+                                                        background-attachment: fixed;
+                                                        background-size: 100% 100%;
+                                                    }
+                                                </style><br><br> -->
+                                                The HTML <picture> Element<br><br>
+                                                    The HTML <picture> element gives web developers more flexibility in
+                                                        specifying image resources.<br><br>
+
+                                                        The <picture> element contains one or more
+                                                            <source> elements, each referring to different images
+                                                            through the srcset attribute. This way the browser can
+                                                            choose the image that best fits the current view and/or
+                                                            device.<br><br>
+
+                                                            Each
+                                                            <source> element has a media attribute that defines when the
+                                                            image is the most suitable.<br><br>
+
+                                                            Example<br><br>
+                                                            Show different images for different screen sizes:<br><br>
+
+                                                            <!-- <picture>
+                                                                <source media="(min-width: 650px)"
+                                                                    srcset="img_food.jpg">
+                                                                <source media="(min-width: 465px)" srcset="img_car.jpg">
+                                                                <img src="img_girl.jpg">
+                                                            </picture> -->
+                                                            Note: Always specify an <img> element as the last child
+                                                            element of the <picture> element. The <img> element is used
+                                                                by browsers that do not support the <picture> element,
+                                                                    or if none of the
+                                                                    <source> tags match.<br><br>
+
+                                                                    ADVERTISEMENT<br><br>
+
+                                                                    When to use the Picture Element<br><br>
+                                                                    There are two main purposes for the <picture>
+                                                                        element:<br><br>
+
+                                                                        1. Bandwidth<br><br>
+                                                                        If you have a small screen or device, it is not
+                                                                        necessary to load a large image file. The
+                                                                        browser will use the first
+                                                                        <source> element with matching attribute values,
+                                                                        and ignore any of the following
+                                                                        elements.<br><br>
+
+                                                                        2. Format Support<br><br>
+                                                                        Some browsers or devices may not support all
+                                                                        image formats. By using the <picture> element,
+                                                                            you can add images of all formats, and the
+                                                                            browser will use the first format it
+                                                                            recognizes, and ignore any of the following
+                                                                            elements.<br><br>
+
+                                                                            Example<br><br>
+                                                                            The browser will use the first image format
+                                                                            it recognizes:<br><br>
+
+                                                                            <picture>
+                                                                                <source srcset="img_avatar.png">
+                                                                                <source srcset="img_girl.jpg">
+                                                                                <img src="img_beatles.gif" alt="Beatles"
+                                                                                    style="width:auto;">
+                                                                            </picture><br><br>
+                                                                            Note: The browser will use the first
+                                                                            <source> element with matching attribute
+                                                                            values, and ignore any following
+                                                                            <source> elements.<br><br>
+
+                                                                            HTML Image Tags<br><br>
+                                                                            Tag Description<br><br>
+                                                                            <img> Defines an image<br><br>
+                                                                            <map> Defines an image map<br><br>
+                                                                                <area> Defines a clickable area inside
+                                                                                an image map<br><br>
+                                                                                <picture> Defines a container for
+                                                                                    multiple image resources<br><br>
+                                                                                    For a complete list of all available
+                                                                                    HTML tags, visit our HTML Tag
+                                                                                    Reference.<br><br>
+
+
+                                        </p>
+</body>
+
+</html>

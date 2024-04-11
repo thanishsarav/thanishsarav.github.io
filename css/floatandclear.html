@@ -1,0 +1,118 @@
+<html>
+
+<head>
+    <style>
+        img {
+            float: right;
+        }
+
+        div {
+            float: left;
+            padding: 15px;
+        }
+
+        .div1 {
+            background: red;
+        }
+
+        .div2 {
+            background: yellow;
+        }
+
+        .div3 {
+            background: green;
+        }
+
+        div {
+            border: 3px solid #4CAF50;
+            padding: 5px;
+        }
+
+        .img1 {
+            float: right;
+        }
+
+        .img2 {
+            float: right;
+        }
+
+        .clearfix {
+            overflow: auto;
+        }
+
+        .div1f {
+            float: left;
+            padding: 10px;
+            border: 3px solid #73AD21;
+        }
+
+        .div2f {
+            padding: 10px;
+            border: 3px solid red;
+        }
+
+        .div3f {
+            float: left;
+            padding: 10px;
+            border: 3px solid #73AD21;
+        }
+
+        .div4f {
+            padding: 10px;
+            border: 3px solid red;
+            clear: left;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="../index.html">back to home</a>
+    <br>
+    <h2>Float Right</h2>
+    <p>In this example, the image will float to the right in the paragraph, and the text in the paragraph will wrap
+        around the image.</p>
+    <p><img src="../images/pineapple.jpg" alt="Pineapple" style="width:170px;height:170px;margin-left:15px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi
+        lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget,
+        auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu,
+        lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi,
+        sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui
+        eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor
+        porta. Cras ac leo purus. Mauris quis diam velit.</p>
+    <br>
+    <h2>Float Next To Each Other</h2>
+    <p>In this example, the three divs will float next to each other.</p>
+    <div class="div1">Div 1</div>
+    <div class="div2">Div 2</div>
+    <div class="div3">Div 3</div>
+    <br>
+    <h2>Without Clearfix</h2>
+    <p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of
+        its container:</p>
+    <div>
+        <img class="img1" src="../images/pineapple.jpg" alt="Pineapple" width="170" height="170">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+    </div>
+    <h2 style="clear:right">With Clearfix</h2>
+    <p>We can fix this by adding a clearfix class with overflow: auto; to the containing element:</p>
+    <div class="clearfix">
+        <img class="img2" src="../images/pineapple.jpg" alt="Pineapple" width="170" height="170">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+    </div>
+    <br>
+    <h2>Without clear</h2>
+    <div class="div1f">div1</div>
+    <div class="div2">div2 - Notice that div2 is after div1 in the HTML code. However, since div1 floats to the left,
+        the text in div2 flows around div1.</div>
+    <br><br>
+    <h2>With clear</h2>
+    <div class="div3f">div3</div>
+    <div class="div4f">div4 - Here, clear: left; moves div4 down below the floating div3. The value "left" clears
+        elements floated to the left. You can also clear "right" and "both".</div>
+
+
+
+
+</body>
+
+</html>

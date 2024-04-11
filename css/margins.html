@@ -1,0 +1,51 @@
+<html>
+<head>
+<style>
+div.gg {
+  margin: 70px;
+  border: 1px solid #4CAF50;
+}
+div.bb {
+  border: 3px solid rgb(253, 116, 116);
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: lightblue;
+  border-style: inset;
+}
+div.ff {
+  border: 1px solid black;
+  margin: 25px 50px 75px 100px;
+  background-color: lightblue;
+}
+h1 {
+  margin: 0 0 50px 0;
+}
+
+h2 {
+  margin: 20px 0 0 0;
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>CSS Margins</h2>
+
+<div class="gg">This element has a margin of 70px.</div>
+<br>
+<h2>Using individual margin properties</h2>
+<div class="bb">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px.</div>
+<br>
+<h2>The margin shorthand property - 4 values</h2>
+<div class="ff">This div element has a top margin of 25px, a right margin of 50px, a bottom margin of 75px, and a left margin of 100px.</div>
+<hr>
+<p>In this example the h1 element has a bottom margin of 50px and the h2 element has a top margin of 20px. So, the vertical margin between h1 and h2 should have been 70px (50px + 20px). However, due to margin collapse, the actual margin ends up being 50px.</p>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+
+
+</body>
+</html>

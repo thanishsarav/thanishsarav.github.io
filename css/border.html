@@ -1,0 +1,323 @@
+<html>
+
+<head>
+    <style>
+        p.dotted {
+            border-style: dotted;
+        }
+
+        p.dashed {
+            border-style: dashed;
+        }
+
+        p.solid {
+            border-style: solid;
+        }
+
+        p.double {
+            border-style: double;
+        }
+
+        p.groove {
+            border-style: groove;
+        }
+
+        p.ridge {
+            border-style: ridge;
+        }
+
+        p.inset {
+            border-style: inset;
+        }
+
+        p.outset {
+            border-style: outset;
+        }
+
+        p.none {
+            border-style: none;
+        }
+
+        p.hidden {
+            border-style: hidden;
+        }
+
+        p.mix {
+            border-style: dotted dashed solid double;
+        }
+
+        p.one {
+            border-style: solid;
+            border-width: 5px;
+        }
+
+        p.two {
+            border-style: solid;
+            border-width: medium;
+        }
+
+        p.three {
+            border-style: dotted;
+            border-width: 10px;
+        }
+
+        p.four {
+            border-style: dotted;
+            border-width: thick;
+        }
+
+        p.five {
+            border-style: double;
+            border-width: 15px;
+        }
+
+        p.six {
+            border-style: double;
+            border-width: thick;
+        }
+
+        p.ones {
+            border-style: solid;
+            border-width: 5px 20px;
+            /* 5px top and bottom, 20px on the sides */
+        }
+
+        p.twos {
+            border-style: solid;
+            border-width: 20px 5px;
+            /* 20px top and bottom, 5px on the sides */
+        }
+
+        p.threes {
+            border-style: solid;
+            border-width: 25px 10px 4px 35px;
+            /* 25px top, 10px right, 4px bottom and 35px left */
+        }
+
+        p.oned {
+            border-style: inset;
+            border-color: red;
+        }
+
+        p.twod {
+            border-style: outset;
+            border-color: green;
+        }
+
+        p.threed {
+            border-style: dotted;
+            border-color: blue;
+        }
+
+        p.onef {
+            border-style: solid;
+            border-color: red green blue yellow;
+            /* red top, green right, blue bottom and yellow left */
+        }
+
+        p.onex {
+            border-style: solid;
+            border-color: #ff0000;
+            /* red */
+        }
+
+        p.twox {
+            border-style: solid;
+            border-color: #0000ff;
+            /* blue */
+        }
+
+        p.threex {
+            border-style: solid;
+            border-color: #bbbbbb;
+            /* grey */
+        }
+
+        p.onel {
+            border-style: inset;
+            border-color: rgb(255, 0, 0);
+            /* red */
+        }
+
+        p.twol {
+            border-style: inset;
+            border-color: rgb(0, 0, 255);
+            /* blue */
+        }
+
+        p.threel {
+            border-style: inset;
+            border-color: rgb(187, 187, 187);
+            /* grey */
+        }
+
+        p.style {
+            border-top-style: dotted;
+            border-right-style: solid;
+            border-bottom-style: dotted;
+            border-left-style: solid;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        /* Four values */
+        p.fourc {
+            border-style: dotted solid double dashed;
+        }
+
+        /* Three values */
+        p.threec {
+            border-style: dotted solid double;
+        }
+
+        /* Two values */
+        p.twoc {
+            border-style: dotted solid;
+        }
+
+        /* One value */
+        p.onec {
+            border-style: dotted;
+        }
+
+        p.nj {
+            border: 5px solid rgb(251, 101, 101);
+            border-style: groove;
+        }
+
+        p.gold {
+            border-left: 6px solid red;
+            background-color: lightgrey;
+            border-style: groove;
+        }
+
+        p.normal {
+            border: 2px solid red;
+            padding: 5px;
+        }
+
+        p.round1 {
+            border: 2px solid red;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        p.round2 {
+            border: 2px solid red;
+            border-radius: 8px;
+            padding: 5px;
+        }
+
+        p.round3 {
+            border: 2px solid red;
+            border-radius: 12px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="../index.html">back to home</a>
+
+    <h2>The border-style Property</h2>
+    <p>This property specifies what kind of border to display:</p>
+
+    <p class="dotted">A dotted border.</p>
+    <p class="dashed">A dashed border.</p>
+    <p class="solid">A solid border.</p>
+    <p class="double">A double border.</p>
+    <p class="groove">A groove border.</p>
+    <p class="ridge">A ridge border.</p>
+    <p class="inset">An inset border.</p>
+    <p class="outset">An outset border.</p>
+    <p class="none">No border.</p>
+    <p class="hidden">A hidden border.</p>
+    <p class="mix">A mixed border.</p>
+    <br>
+    <h2>The border-width Property</h2>
+    <p>This property specifies the width of the four borders:</p>
+
+    <p class="one">Some text.</p>
+    <p class="two">Some text.</p>
+    <p class="three">Some text.</p>
+    <p class="four">Some text.</p>
+    <p class="five">Some text.</p>
+    <p class="six">Some text.</p>
+
+    <p><b>Note:</b> The "border-width" property does not work if it is used alone.
+        Always specify the "border-style" property to set the borders first.</p>
+    <h2>The border-width Property</h2>
+    <p>The border-width property can have from one to four values (for the top border, right border, bottom border, and
+        the left border):</p>
+
+    <p class="ones">Some text.</p>
+    <p class="twos">Some text.</p>
+    <p class="threes">Some text.</p>
+    <br>
+    <h2>The border-color Property</h2>
+    <p>This property specifies the color of the four borders:</p>
+
+    <p class="oned">A solid red border</p>
+    <p class="twod">A solid green border</p>
+    <p class="threed">A dotted blue border</p>
+
+    <p><b>Note:</b> The "border-color" property does not work if it is used alone. Use the "border-style" property to
+        set the borders first.</p>
+    <br>
+    <h2>The border-color Property</h2>
+    <p>The border-color property can have from one to four values (for the top border, right border, bottom border, and
+        the left border):</p>
+
+    <p class="onef">A solid multicolor border</p>
+    <h2>The border-color Property</h2>
+    <p>The color of the border can also be specified using a hexadecimal value (HEX):</p>
+
+    <p class="onex">A solid red border</p>
+    <p class="twox">A solid blue border</p>
+    <p class="threex">A solid grey border</p>
+    <br>
+    <h2>The border-color Property</h2>
+    <p>The color of the border can also be specified using rgb value (RGB):</p>
+
+    <p class="onel">A solid red border</p>
+    <p class="twol">A solid blue border</p>
+    <p class="threel">A solid grey border</p>
+    <br>
+    <h2>Individual Border Sides</h2>
+    <p class="style">2 different border styles.</p>
+    <br>
+    <h2>Individual Border Sides</h2>
+    <p class="four">4 different border styles.</p>
+    <p class="three">3 different border styles.</p>
+    <p class="two">2 different border styles.</p>
+    <p class="one">1 border style.</p>
+    <br>
+    <h2>The border Property</h2>
+    <p class="nj">This property is a shorthand property for border-width, border-style, and border-color.</p>
+    <br>
+    <h2>The border-left Property</h2>
+    <p class="gold">This property is a shorthand property for border-left-width, border-left-style, and
+        border-left-color.</p>
+    <br>
+    <h2>The border-radius Property</h2>
+    <p>This property is used to add rounded borders to an element:</p>
+
+    <p class="normal">Normal border</p>
+    <p class="round1">Round border</p>
+    <p class="round2">Rounder border</p>
+    <p class="round3">Roundest border</p>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <h1>The SQL LIKE Operator</h1>
+        <p>SELECT * FROM Customers
+            WHERE CustomerName LIKE 'a%';</p>
+        <h1>The _ Wildcard</h1>
+        <p>SELECT * FROM Customers
+            WHERE city LIKE 'L_nd__';</p>
+        <h1>The % Wildcard</h1>
+        <p>SELECT * FROM Customers
+            WHERE city LIKE '%L%';</p>
+        <h1>Starts With</h1>
+        <p>SELECT * FROM Customers
+            WHERE CustomerName LIKE 'La%';</p>
+        <p>SELECT * FROM Customers
+            WHERE CustomerName LIKE 'a%' OR CustomerName LIKE 'b%';</p>
+        <h1>Ends With</h1>
+        <p>SELECT * FROM Customers
+            WHERE CustomerName LIKE '%a';</p>
+        <p>SELECT * FROM Customers
+            WHERE CustomerName LIKE 'b%s';</p>
+        <h1>Contains</h1>
+        <p>SELECT * FROM Customers
+            WHERE CustomerName LIKE '%or%';</p>
+        <h1>Combine Wildcards</h1>
+        <p>SELECT * FROM Customers
+            WHERE CustomerName LIKE 'a__%';</p>
+        <p>SELECT * FROM Customers
+            WHERE CustomerName LIKE '_r%';</p>
+        <h1>Without Wildcard</h1>
+        <p>SELECT * FROM Customers
+            WHERE Country LIKE 'Spain';</p>
+    </body>
+</html>

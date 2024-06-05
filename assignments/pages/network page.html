@@ -1,0 +1,683 @@
+<html>
+
+<head>
+    <style>
+        .container {
+            background-color: #EFF3F8;
+
+            height: 800px;
+            width: 1000px;
+            margin-left: 320px;
+            border-radius: 5px;
+        }
+
+        .header {
+            background-color: #fdfeff;
+            border: 1px solid #EFF3F8;
+            height: 60px;
+            width: 1000px;
+            margin-left: 1px;
+            vertical-align: top;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .left {
+            background-color: #EFF3F8;
+
+            height: 725px;
+            width: 250px;
+            margin-left: 0px;
+            text-align: center;
+            margin-top: 35px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .left3 {
+            background-color: rgb(252, 250, 250);
+            border: 0.5px solid rgb(252, 252, 253);
+            height: 300px;
+            width: 250px;
+            margin-left: 0px;
+            text-align: center;
+            margin-top: -1px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .left1 {
+            background-color: #fdfeff;
+            /* border: 1px inset rgb(255, 254, 254); */
+            height: 600px;
+            width: 250px;
+            margin-left: 0px;
+            text-align: center;
+            margin-top: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .left2 {
+            background-color: #fcfdff;
+            border-top: 1px inset rgb(252, 250, 250);
+            height: 40px;
+            width: 250px;
+            margin-left: 0px;
+            text-align: center;
+            margin-top: 105%;
+            color: royalblue;
+            padding-top: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .left5 {
+            background-image:url("../../images/143879.jpg");
+            height: 40px;
+            width: 250px;
+            margin-left: 0px;
+            text-align: center;
+            margin-top: -220px;
+            color: royalblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .left4 {
+            background-color: #fdfefe;
+            height: 200px;
+            width: 250px;
+            margin-left: 0px;
+            text-align: center;
+            margin-top: 30%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .center {
+            background-color: #EFF3F8;
+
+            height: 725px;
+            width: 455px;
+            margin-left: 250px;
+            text-align: center;
+            margin-top: -725px;
+        }
+
+        .right {
+            background-color: #EFF3F8;
+            height: 725px;
+            width: 295px;
+            margin-left: 705px;
+
+            margin-top: -725px;
+        }
+
+        .icon1 {
+            text-align: left;
+            height: 25px;
+            width: 25px;
+            margin: 19px;
+            padding: 3px;
+            background-color: #037cf4;
+            border-radius: 4px;
+
+
+        }
+
+        .icon2 {
+            border: 1px solid rgb(252, 252, 250);
+            height: 25px;
+            width: 25px;
+            vertical-align: top;
+            margin-top: -5%;
+            float: right;
+            margin-right: 110px;
+            background-color: #c9cacb;
+            border-radius: 5px;
+
+        }
+
+        .icon3 {
+            border: 1px solid rgb(251, 251, 250);
+            height: 25px;
+            width: 25px;
+            vertical-align: top;
+            margin-top: -5%;
+            float: right;
+            margin-right: 80px;
+            background-color: #c1c2c2;
+            border-radius: 5px;
+
+        }
+
+        .icon4 {
+            border: 1px solid rgb(249, 249, 249);
+            height: 25px;
+            width: 25px;
+            vertical-align: top;
+            margin-top: -5%;
+            float: right;
+            margin-right: 50px;
+            background-color: #c0c0c1;
+            border-radius: 5px;
+
+        }
+
+        .icon5 {
+            border: 1px solid rgb(254, 254, 254);
+            height: 25px;
+            width: 25px;
+            vertical-align: top;
+            margin-top: -5%;
+            float: right;
+            margin-right: 20px;
+            background-color: #cccccc;
+            border-radius: 5px;
+
+        }
+
+        option {
+            border: 4px solid #037cf4;
+            vertical-align: top;
+            float: right;
+            margin: 3px;
+        }
+
+        .se {
+            vertical-align: middle;
+            text-align: center;
+            float: left;
+            margin-left: 60px;
+            margin-top: -50px;
+            width: 190px;
+            border-radius: 5px;
+            height: 35px;
+            background-color: #d8d8d8;
+            border: 1px solid whitesmoke;
+        }
+
+        .s1 {
+            border: 1px solid rgb(254, 254, 253);
+            width: 75px;
+            vertical-align: top;
+            margin-top: -4%;
+            float: right;
+            margin-right: 400px;
+        }
+
+        .s2 {
+            border: 1px solid rgb(255, 255, 253);
+            width: 75px;
+            vertical-align: top;
+            margin-right: 320px;
+            float: right;
+            margin-top: -4%;
+        }
+
+        .s3 {
+            border: 1px solid rgb(253, 253, 251);
+            width: 75px;
+            vertical-align: top;
+            margin-top: -4%;
+            float: right;
+            margin-right: 240px;
+        }
+
+        .name {
+            border: 1px solid rgb(253, 253, 251);
+            width: 85px;
+            vertical-align: top;
+            margin-top: -4%;
+            float: right;
+            margin-right: 150px;
+        }
+
+        .t1 {
+            border-right: 2px solid rgb(254, 245, 245);
+            height: 35px;
+            width: 240px;
+            vertical-align: top;
+            margin-top: -1%;
+            margin-right: 30px;
+            background-color: #fbfbfc;
+
+            display: inline-flex;
+            text-align: left;
+            word-spacing: -560px;
+
+
+        }
+
+        .t2 {
+            height: 35px;
+            width: 240px;
+            vertical-align: top;
+            margin-top: -1%;
+            margin-right: 50px;
+            background-color: #f6f6fd;
+            display: inline-flex;
+            text-align: left;
+            word-spacing: -560px;
+            border-bottom: 2px ridge gold;
+            padding-bottom: 7px;
+
+
+        }
+
+        .menu {
+            margin-top: -280;
+            float: left;
+
+        }
+
+        .center1 {
+            margin-left: 20px;
+           
+            margin-top: 30px;
+
+            height: 125px;
+            width: 420px;
+            background-color: #fcfdfe;
+            border-radius: 5px;
+
+        }
+
+        .center2 {
+            margin-left: 20px;
+            text-align: center;
+            margin-top: 1px;
+            overflow: scroll;
+            height: 125px;
+            width: 420px;
+            background-color: #EFF3F8;
+            border-radius: 5px;
+
+        }
+
+        .center3 {
+            margin-left: 20px;
+            text-align: center;
+            margin-top: 35px;
+            height: 400px;
+            width: 420px;
+            background-color: #fcfdfe;
+            border-radius: 5px;
+
+        }
+
+        .r1 {
+            background-color: #fcfcfd;
+            border-radius: 5px;
+            height: 380px;
+            width: 275px;
+            margin-left: 0px;
+
+            margin-top: -2px;
+        }
+
+        .r2 {
+            background-color: #fcfcfd;
+            border-radius: 5px;
+            height: 325px;
+            width: 275px;
+            margin-left: 0px;
+            margin-top: 20px;
+        }
+
+        .r1-1 {
+            background-color: #fcfcfd;
+            height: 50px;
+            width: 255px;
+            display: flex;
+            font-size: large;
+            word-spacing: 5px;
+            padding-left: 19px;
+            padding-top: 19px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 0px;
+        }
+
+        .r1-2 {
+            background-color: #fcfcfd;
+            height: -255px;
+            width: 255px;
+            display: flex;
+            font-size: large;
+
+
+            padding-top: -150px;
+            margin-top: -5px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .text {
+            background-color: #fcfcfd;
+            height: 0px;
+            width: 255px;
+            display: flex;
+            padding-top: -190px;
+            margin-top: -20px;
+            border-radius: 5px;
+            display: inline-table;
+            word-spacing: -100%;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .vm {
+
+            margin-top: 10px;
+            color: #037cf4;
+            margin-left: 20px;
+            padding-left: 65px;
+            background-color: #badafa;
+        }
+
+        .tn {
+            margin-top: 20px;
+            padding-left: 0%;
+            padding-right: 120px;
+            font-size: large;
+            margin-left: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        .q1 {
+            margin-left: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .q2 {
+            margin-left: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .q3 {
+            margin-left: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .q4 {
+            margin-left: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .c1-1 {
+            width: 420px;
+            color: #919192;
+            height: 40px;
+            text-align: left;
+            padding-left: 45px;
+            padding-top: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .tp,
+        .tf,
+        .tf2,
+        .tf3 {
+            display: inline-flex;
+            padding: 5px;
+            text-align: left;
+            background-color: #dadbdb;
+            border-radius: 5px;
+            word-spacing: 25px;
+            color: #919192;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .gr {
+            margin-top: 20px;
+            margin-left: 25px;
+
+            text-align: left;
+            width: 350px;
+        }
+
+        .c3-1 {
+
+            height: 60px;
+            text-align: left;
+            padding-left: 45px;
+            padding-top: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .c3-2 {
+
+            height: 60px;
+            text-align: left;
+            padding-left: 15px;
+            color: #919192;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .c3-3 {
+            width: 380px;
+            border: 1px dotted darkturquoise;
+            height: 230px;
+            margin-left: 15px;
+            background-color: #037cf4;
+            border-radius: 5px;
+        }
+        .c3-4{
+            text-align: left;
+            margin-left: 15px;
+        }
+        .c2-1{
+            border: 2px dashed dodgerblue ;
+            width: 25%;
+            height: 110%;
+            background-color: #f8faf9;
+            border-radius: 5px;
+           
+        }
+        .c2-2{
+            border: 2px dashed dodgerblue ;
+            width: 25%;
+            height: 110%;
+            display: inline-flex;
+            margin-top: -123px;
+            margin-left: -70px;
+            border-radius: 5px;
+           
+        }
+         .c2-3{
+            border: 2px dashed dodgerblue ;
+            width: 25%;
+            height: 110%;
+            margin-left: 230;
+            margin-top: -123px;
+            border-radius: 5px;
+           
+        } 
+        .c2-4{
+            border: 2px dashed dodgerblue ;
+            width: 25%;
+            height: 110%;
+            margin-left: 340;
+            margin-top: -123px;
+            border-radius: 5px;
+           
+        } 
+        .icon-1 {
+            text-align: left;
+            height: 35px;
+            width: 35px;
+            margin-left:  19px;
+            background-color: #037cf4;
+            border-radius: 4px;
+
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon1"></div>
+            <div class="se"><input
+                    style="width: 190px; border: 1px solid whitesmoke; height: 35px; background-color: #ebe8e8; border-radius: 5px;"
+                    type="search" placeholder="search..."></div>
+            <div class="s1">
+                <select name="cars">
+                    <option value="sajhu" class="option" style="border: 3px solid rgb(252, 251, 251);">demo</option>
+                    <option value="kavin" class="option">kavin</option>
+                    <option value="Darshan" class="option">Darshan</option>
+                    <option value="sivaanth" class="option">sivaanth</option>
+                    <option value="thanish" class="option">thanish</option>
+                </select>
+            </div>
+            <div class="s2">
+                <select name="cars">
+                    <option value="sajhu" class="option">pages</option>
+                    <option value="kavin" class="option">kavin</option>
+                    <option value="Darshan" class="option">Darshan</option>
+                    <option value="sivaanth" class="option">sivaanth</option>
+                    <option value="thanish" class="option">thanish</option>
+                </select>
+            </div>
+            <div class="s3"><select name="cars">
+                    <option value="sajhu" class="option">Account</option>
+                    <option value="kavin" class="option">kavin</option>
+                    <option value="Darshan" class="option">Darshan</option>
+                    <option value="sivaanth" class="option">sivaanth</option>
+                    <option value="thanish" class="option">thanish</option>
+                </select></div>
+            <div class="name">My Network</div>
+            <div class="icon2"></div>
+            <div class="icon3"></div>
+            <div class="icon4"></div>
+            <div class="icon5"></div>
+        </div>
+        <div class="left">
+            <div class="left1">
+                <div class="left3">
+                    <div class="left4">
+                        <h3>Sam Lanson</h3>
+                        <p>web developer st webestica</p>
+                        <p>I'd love to change the word,but they won't give me the
+                            source code</p>
+                        <div class="left5"></div>
+                    </div>
+                    <div class="t2">
+                        <span class="t1">256 <br>post</span>
+                        <span class="t1">2.5k <br>followers</span>
+                        <span class="t1">356 <br>following</span>
+
+                    </div>
+                </div>
+                <div class="left2">view profile</div>
+                <div class="menu">
+                    Feed
+                    <br>
+                    <br>
+                    Conections
+                    <br>
+                    <br>
+                    Latest News
+                    <br>
+                    <br>
+                    Events
+                    <br>
+                    <br>
+                    Groups
+                    <br>
+                    <br>
+                    Notiffications
+                    
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="center2">
+                <div class="c2-1"></div>
+                <div class="c2-2"><img src="../../svgfiles/kakashi.jpg" style=" width: 100%;"></div>
+                <div class="c2-3"><img src="../../images/143879.jpg" style=" width: 100%; height: 100%;"></div>
+                <div class="c2-4"><img src="../../svgfiles/naruto family.jpg"style=" width: 100%; height: 100%;"></div>
+            </div>
+            <div class="center1">
+                <div class="c1-1">Share your thoughts...</div>
+                <div class="gr">
+                    <span class="tp">Photo</span>
+                    <span class="tf">Video</span>
+                    <span class="tf2">Event</span>
+                    <span class="tf3">Feeling/Activity</span>
+                </div>
+            </div>
+            <div class="center3">
+                <div class="c3-1">Lori Ferguson . <small>2hr</small> ...<br>
+                    web developer at webestica</div>
+                <div class="c3-2">I'm thrilled to share that'l've completed a graduate certificate course in
+                    project management with the president's honor roll</div>
+                <div class="c3-3"><img src="../../images/pasted image 0.png"
+                        style=" height: 230px; width: 380px;"></div>
+                <div class="c3-4">Linked(56) Comments(12)   share(3)</div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="r1">
+                <div class="r1-1">Who to follow
+
+                </div>
+                <div class="r1-2">
+                    <div class="text">
+                        <!-- <span class="icon-1"></span> -->  Judy ngayen 
+                        <br>
+                       <small style="color: #919192;"> news anchor</small>
+                        <br>
+                        <br>
+                        Amanda reed
+                        <br>
+                       <small style="color: #919192;"> Web developer</small>
+                        <br>
+                        <br>
+                        Billy vasquez
+                        <br>
+                        <small style="color: #919192;">News anchor</small>
+                        <br>
+                        <br>
+                        Lori ferguson
+                        <br>
+                        <small style="color: #919192;"> Web developer</small>
+                        <br>
+                        <br>
+                        Cordyn Ortiz
+                        <br>
+                        <small style="color: #919192;"> News anchor</small>
+                    </div>
+                    <div class="vm">view more</div>
+                </div>
+            </div>
+            <div class="r2">
+                <div class="tn">Today's News</div>
+                <br>
+                <div class="q1">Ten question you should answer<br> truthfully
+                    <br>
+                    2hr
+                </div>
+                <br>
+                <div class="q2">five unbiliable facts about <br>money
+                    <br>
+                    3hr
+                </div>
+                <br>
+                <div class="q3">best pinterest boards for <br>learning about business
+                    <br>
+                    4hr
+                </div>
+                <br>
+                <div class="q4">Skills that you can learn from <br>business
+                    <br>
+                    2hr
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

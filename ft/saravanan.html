@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <style>
+            ul,
+            #myUL {
+                list-style-type: none;
+            }
+    
+            #myUL {
+                margin: 0;
+                padding: 0;
+            }
+    
+            .caret {
+                cursor: pointer;
+                -webkit-user-select: none;
+                /* Safari 3.1+ */
+                -moz-user-select: none;
+                /* Firefox 2+ */
+                -ms-user-select: none;
+                /* IE 10+ */
+                user-select: none;
+                font-weight: bolder;
+                font-size: xx-large;
+                border-bottom: 7px groove gold;
+                border-right: 7px groove rgb(255, 34, 0);
+                border-left: 7px groove rgb(43, 0, 255);
+                border-top: 7px groove rgb(60, 255, 0);
+                color: rgb(254, 253, 253);
+                text-shadow: 3px 3px 3px rgb(20, 20, 20), 0 0 25px blue, 0 0 5px darkblue;
+                border-radius:5%;
+            }
+    
+            .caret::before {
+                content: "\25B6";
+                color: rgba(13, 246, 5, 0.991);
+                display: inline-block;
+                margin-right: 6px;
+                color: rgb(251, 250, 250);
+                text-shadow: 3px 3px 3px rgb(195, 3, 248), 0 0 45px blue, 0 0 25px darkblue;
+            }
+            
+    
+            .caret-down::before {
+                -ms-transform: rotate(90deg);
+                /* IE 9 */
+                -webkit-transform: rotate(90deg);
+                /* Safari */
+                transform: rotate(90deg);
+            }
+    
+            .nested {
+                display: none;
+            }
+    
+            .active {
+                display: block;
+            }
+        </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    <body>
+        <div>
+            <ul id="myUL">
+                <li><span class="caret"> unknown-unknown</span>
+
+                    <ul class="nested">
+                        <li><span class="caret"> Kuppanna Gounder-angamal </span>
+
+                            <ul class="nested">
+                                <li><span class="caret"> Palaniyandi gounder-chinnamal</span>
+
+                                    <ul class="nested">
+                                        <li><span class="caret"> Sampath-</span><a href="pushpalatha.html" class="caret">pushpalatha</a>
+
+                                            <ul class="nested">
+                                                <li><span class="caret"> saravanan-selvarani</span>
+
+                                                    <ul class="nested">
+                                                        <li><span class="caret">thanish</span></li>
+                                                        <li><span class="caret"> mohitha</span></li>
+                                                    </ul>
+                                                </li>
+                                                <li><span class="caret"> Saranya-madhavan</span>
+
+                                                    <ul class="nested">
+                                                        <li><span class="caret"> sanjhu</span></li>
+                                                        <li><span class="caret"> shriya</span></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><span class="caret"> Nallammal-karupaiaa</span>
+
+                                            <ul class="nested">
+                                                <li><span class="caret"> poogkothai</span></li>
+                                                <li><span class="caret"> dhevi-none</span>
+
+                                                    <ul class="nested">
+                                                        <li><span class="caret"> nekil</span></li>
+                                                        <li><span class="caret"> shriya</span></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li><span class="caret"> Kanthasami-rathanam</span>
+
+                                    <ul class="nested">
+                                        <li><span class="caret"> indumathi</span>
+
+                                            <ul class="nested">
+                                                <li><span class="caret">kaviya</span></li>
+                                                <li><span class="caret"> shriya</span></li>
+                                            </ul>
+                                        </li>
+                                        <li><span class="caret"> parthiban</span>
+
+                                            <ul class="nested">
+                                                <li><span class="caret"> nithin</span></li>
+                                                <li><span class="caret">anisha</span></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><span class="caret"> Marappa Gounder-Gandhi</span>
+
+                            <ul class="nested">
+                                <li><span class="caret"> prekas</span></li>
+                                <li><span class="caret"> unknown</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+
+    for (i = 0; i < toggler.length; i++) {
+        toggler[i].addEventListener("click", function () {
+            this.parentElement.querySelector(".nested").classList.toggle("active");
+            this.classList.toggle("caret-down");
+        });
+    }
+</script>
+    </body>
+</html>

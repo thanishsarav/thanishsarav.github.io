@@ -1,0 +1,753 @@
+<html>
+
+<head>
+    <style>
+        ul,
+        #myUL {
+            list-style-type: none;
+        }
+
+        #myUL {
+            margin: 0;
+            padding: 0;
+        }
+
+        .caret {
+            cursor: pointer;
+            -webkit-user-select: none;
+            /* Safari 3.1+ */
+            -moz-user-select: none;
+            /* Firefox 2+ */
+            -ms-user-select: none;
+            /* IE 10+ */
+            user-select: none;
+            font-weight: bolder;
+            font-size: xx-large;
+            border-bottom: 7px groove gold;
+            border-right: 7px groove rgb(255, 34, 0);
+            border-left: 7px groove rgb(43, 0, 255);
+            border-top: 7px groove rgb(60, 255, 0);
+            color: rgb(254, 253, 253);
+            text-shadow: 3px 3px 3px rgb(195, 3, 248), 0 0 45px blue, 0 0 25px darkblue;
+            border-radius:5%;
+        }
+
+        .caret::before {
+            content: "\25B6";
+            color: rgba(13, 246, 5, 0.991);
+            display: inline-block;
+            margin-right: 6px;
+            color: rgb(251, 250, 250);
+            text-shadow: 3px 3px 3px rgb(195, 3, 248), 0 0 45px blue, 0 0 25px darkblue;
+        }
+        
+
+        .caret-down::before {
+            -ms-transform: rotate(90deg);
+            /* IE 9 */
+            -webkit-transform: rotate(90deg);
+            /* Safari */
+            transform: rotate(90deg);
+        }
+
+        .nested {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .container {
+            background-color: #EFF3F8;
+
+            height: 850px;
+            width: 1000px;
+            margin-left: 320px;
+            border-radius: 5px;
+        }
+
+        .header {
+            background-color: #fdfeff;
+            border: 1px solid #EFF3F8;
+            height: 60px;
+            width: 1000px;
+            margin-left: 1px;
+            vertical-align: top;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .left {
+            background-color: #EFF3F8;
+
+            height: 725px;
+            width: 250px;
+            margin-left: 0px;
+            text-align: center;
+            margin-top: 35px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .left3 {
+            background-color: rgb(252, 250, 250);
+            border: 0.5px solid rgb(252, 252, 253);
+            height: 300px;
+            width: 250px;
+            margin-left: 0px;
+            text-align: center;
+            margin-top: -1px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .left1 {
+            background-color: #fdfeff;
+            /* border: 1px inset rgb(255, 254, 254); */
+            height: 600px;
+            width: 250px;
+            margin-left: 0px;
+            text-align: center;
+            margin-top: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .left2 {
+            background-color: #fcfdff;
+            border-top: 1px inset rgb(252, 250, 250);
+            height: 40px;
+            width: 250px;
+            margin-left: 0px;
+            text-align: center;
+            margin-top: 105%;
+            color: royalblue;
+            padding-top: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .left5 {
+            background-image: url("../../images/143879.jpg");
+            height: 40px;
+            width: 250px;
+            margin-left: 0px;
+            text-align: center;
+            margin-top: -220px;
+            color: royalblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .left4 {
+            background-color: #fdfefe;
+            height: 200px;
+            width: 250px;
+            margin-left: 0px;
+            text-align: center;
+            margin-top: 30%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .center {
+            background-color: #fdfefe;
+
+            height: 790px;
+            width: 730px;
+            margin-left: 270px;
+            margin-top: -720px;
+        }
+
+
+
+        .icon1 {
+            text-align: left;
+            height: 25px;
+            width: 25px;
+            margin: 19px;
+            padding: 3px;
+            background-color: #037cf4;
+            border-radius: 4px;
+
+
+        }
+
+        .icon2 {
+            border: 1px solid rgb(252, 252, 250);
+            height: 25px;
+            width: 25px;
+            vertical-align: top;
+            margin-top: -5%;
+            float: right;
+            margin-right: 110px;
+            background-color: #c9cacb;
+            border-radius: 5px;
+
+        }
+
+        .icon3 {
+            border: 1px solid rgb(251, 251, 250);
+            height: 25px;
+            width: 25px;
+            vertical-align: top;
+            margin-top: -5%;
+            float: right;
+            margin-right: 80px;
+            background-color: #c1c2c2;
+            border-radius: 5px;
+
+        }
+
+        .icon4 {
+            border: 1px solid rgb(249, 249, 249);
+            height: 25px;
+            width: 25px;
+            vertical-align: top;
+            margin-top: -5%;
+            float: right;
+            margin-right: 50px;
+            background-color: #c0c0c1;
+            border-radius: 5px;
+
+        }
+
+        .icon5 {
+            border: 1px solid rgb(254, 254, 254);
+            height: 25px;
+            width: 25px;
+            vertical-align: top;
+            margin-top: -5%;
+            float: right;
+            margin-right: 20px;
+            background-color: #cccccc;
+            border-radius: 5px;
+
+        }
+
+        option {
+            border: 4px solid #037cf4;
+            vertical-align: top;
+            float: right;
+            margin: 3px;
+        }
+
+        .se {
+            vertical-align: middle;
+            text-align: center;
+            float: left;
+            margin-left: 60px;
+            margin-top: -50px;
+            width: 190px;
+            border-radius: 5px;
+            height: 35px;
+            background-color: #d8d8d8;
+            border: 1px solid whitesmoke;
+        }
+
+        .s1 {
+            border: 1px solid rgb(254, 254, 253);
+            width: 75px;
+            vertical-align: top;
+            margin-top: -4%;
+            float: right;
+            margin-right: 400px;
+        }
+
+        .s2 {
+            border: 1px solid rgb(255, 255, 253);
+            width: 75px;
+            vertical-align: top;
+            margin-right: 320px;
+            float: right;
+            margin-top: -4%;
+        }
+
+        .s3 {
+            border: 1px solid rgb(253, 253, 251);
+            width: 75px;
+            vertical-align: top;
+            margin-top: -4%;
+            float: right;
+            margin-right: 240px;
+        }
+
+        .name {
+            border: 1px solid rgb(253, 253, 251);
+            width: 85px;
+            vertical-align: top;
+            margin-top: -4%;
+            float: right;
+            margin-right: 150px;
+        }
+
+        .t1 {
+            border-right: 2px solid rgb(254, 245, 245);
+            height: 35px;
+            width: 240px;
+            vertical-align: top;
+            margin-top: -1%;
+            margin-right: 30px;
+            background-color: #fbfbfc;
+
+            display: inline-flex;
+            text-align: left;
+            word-spacing: -560px;
+
+
+        }
+
+        .t2 {
+            height: 35px;
+            width: 240px;
+            vertical-align: top;
+            margin-top: -1%;
+            margin-right: 50px;
+            background-color: #f6f6fd;
+            display: inline-flex;
+            text-align: left;
+            word-spacing: -560px;
+            border-bottom: 2px ridge rgb(255, 0, 25);
+            padding-bottom: 7px;
+
+
+        }
+
+        .menu {
+            margin-top: -280;
+            float: left;
+
+        }
+
+        caption {
+            text-align: center;
+            text-decoration: underline;
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            text-decoration-color: #c0c0c1;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+
+        table {
+
+            width: 80%;
+            background-image: conic-gradient(red, yellow, green, blue, black, purple, hotpink, orange, indigo, royalblue, rgb(255, 0, 25));
+            border-collapse: collapse;
+            margin-left: 70px;
+            font-weight: bold;
+
+        }
+
+        td {
+            /* background-color: lightblue; */
+            border: 3px inset rgb(241, 191, 12);
+            padding: 3px;
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: larger;
+            text-decoration: underline;
+            font-weight: bolder;
+        }
+
+        a {
+            /* background-color: lightblue; */
+
+            padding: 3px;
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: larger;
+            text-decoration: underline;
+            font-weight: bolder;
+        }
+
+
+        .dummy {
+            width: 20px;
+            border: 3px groove rgb(246, 204, 18);
+
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon1"></div>
+            <div class="se"><input
+                    style="width: 190px; border: 1px solid whitesmoke; height: 35px; background-color: #ebe8e8; border-radius: 5px;"
+                    type="search" placeholder="search..."></div>
+            <div class="s1">
+                <select name="cars">
+                    <option value="sajhu" class="option" style="border: 3px solid rgb(252, 251, 251);">demo</option>
+                    <option value="kavin" class="option">kavin</option>
+                    <option value="Darshan" class="option">Darshan</option>
+                    <option value="sivaanth" class="option">sivaanth</option>
+                    <option value="thanish" class="option">thanish</option>
+                </select>
+            </div>
+            <div class="s2">
+                <select name="cars">
+                    <option value="sajhu" class="option">pages</option>
+                    <option value="kavin" class="option">kavin</option>
+                    <option value="Darshan" class="option">Darshan</option>
+                    <option value="sivaanth" class="option">sivaanth</option>
+                    <option value="thanish" class="option">thanish</option>
+                </select>
+            </div>
+            <div class="s3"><select name="cars">
+                    <option value="sajhu" class="option">Account</option>
+                    <option value="kavin" class="option">kavin</option>
+                    <option value="Darshan" class="option">Darshan</option>
+                    <option value="sivaanth" class="option">sivaanth</option>
+                    <option value="thanish" class="option">thanish</option>
+                </select></div>
+            <div class="name">My Network</div>
+            <div class="icon2"></div>
+            <div class="icon3"></div>
+            <div class="icon4"></div>
+            <div class="icon5"></div>
+        </div>
+        <div class="left">
+            <div class="left1">
+                <div class="left3">
+                    <div class="left4">
+                        <h3>Sam Lanson</h3>
+                        <p>web developer st webestica</p>
+                        <p>I'd love to change the word,but they won't give me the
+                            source code</p>
+                        <div class="left5"></div>
+                    </div>
+                    <div class="t2">
+                        <span class="t1">256 <br>post</span>
+                        <span class="t1">2.5k <br>followers</span>
+                        <span class="t1">356 <br>following</span>
+
+                    </div>
+                </div>
+                <div class="left2">view profile</div>
+                <div class="menu">
+                    Feed
+                    <br>
+                    <br>
+                    Conections
+                    <br>
+                    <br>
+                    Latest News
+                    <br>
+                    <br>
+                    Events
+                    <br>
+                    <br>
+                    Groups
+                    <br>
+                    <br>
+                    Notiffications
+
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div>
+                <table>
+                    <caption>FAMILY TREE</caption>
+                    <tr>
+                        <td colspan="6">unknown</td>
+                        <td>unknown</td>
+                    </tr>
+                    <tr>
+                        <td class="dummy"></td>
+                        <td colspan="5">kupanan gounder</td>
+                        <td>angammal</td>
+                    </tr>
+                    <tr>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td colspan="4"> Palaniyandi gounder</td>
+                        <td>Chinnamal </td>
+                    </tr>
+                    <tr>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+
+                        <td colspan="3">Sampath</td>
+                        <td><a href="familytree-2.html">pushpalatha</a></td>
+                    </tr>
+                    <tr>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+
+                        <td colspan="2">saravanan</td>
+                        <td>selvarani</td>
+                    </tr>
+                    <tr>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td>thanish</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td>mohitha</td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td colspan="2">Saranya</td>
+                        <td>Madhavan</td>
+                    </tr>
+                    <tr>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td>sanjhu</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+
+                        <td>shriya</td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td colspan="3"> nallamaale</td>
+                        <td>karupaiaa</td>
+                    </tr>
+                    <tr>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td colspan="2">poogkothai</td>
+                        <td>none</td>
+                    </tr>
+                    <tr>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td colspan="2">dhevi</td>
+                        <td>none</td>
+                    </tr>
+                    <tr>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td>nekil</td>
+                        <td></td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td>shriya</td>
+                        <td></td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td colspan="4"> kanthasami </td>
+                        <td>rathanam</td>
+                    </tr>
+                    <tr>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td colspan="2">indumathi</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td>kaviya</td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td>shriya</td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td colspan="2">parthiban</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td>nithin</td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td>anisha</td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <td class="dummy"></td>
+                        <td colspan="5">marappa gounder</td>
+                        <td>Gandhi</td>
+                    </tr>
+                    <tr>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td colspan="4">prekas</td>
+                        <td>unknown</td>
+                    </tr>
+                    <tr>
+                        <td class="dummy"></td>
+                        <td class="dummy"></td>
+                        <td colspan="4">unknown</td>
+                        <td>unknown</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <ul id="myUL">
+                    <li><span class="caret"> unknown</span>
+
+                        <ul class="nested">
+                            <li><span class="caret"> Kuppanna Gounder </span>
+
+                                <ul class="nested">
+                                    <li><span class="caret"> Palaniyandi gounder</span>
+
+                                        <ul class="nested">
+                                            <li><span class="caret"> Sampath</span>
+
+                                                <ul class="nested">
+                                                    <li><span class="caret"> saravanan</span>
+
+                                                        <ul class="nested">
+                                                            <li><span class="caret">thanish</span></li>
+                                                            <li><span class="caret"> mohitha</span></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><span class="caret"> Saranya</span>
+
+                                                        <ul class="nested">
+                                                            <li><span class="caret"> sanjhu</span></li>
+                                                            <li><span class="caret"> shriya</span></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><span class="caret"> Nallammal</span>
+
+                                                <ul class="nested">
+                                                    <li><span class="caret"> poogkothai</span></li>
+                                                    <li><span class="caret"> dhevi</span>
+
+                                                        <ul class="nested">
+                                                            <li><span class="caret"> nekil</span></li>
+                                                            <li><span class="caret"> shriya</span></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li><span class="caret"> Kanthasami</span>
+
+                                        <ul class="nested">
+                                            <li><span class="caret"> indumathi</span>
+
+                                                <ul class="nested">
+                                                    <li><span class="caret">kaviya</span></li>
+                                                    <li><span class="caret"> shriya</span></li>
+                                                </ul>
+                                            </li>
+                                            <li><span class="caret"> parthiban</span>
+
+                                                <ul class="nested">
+                                                    <li><span class="caret"> nithin</span></li>
+                                                    <li><span class="caret">anisha</span></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><span class="caret"> Marappa Gounder</span>
+
+                                <ul class="nested">
+                                    <li><span class="caret"> prekas</span></li>
+                                    <li><span class="caret"> unknown</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        var toggler = document.getElementsByClassName("caret");
+        var i;
+
+        for (i = 0; i < toggler.length; i++) {
+            toggler[i].addEventListener("click", function () {
+                this.parentElement.querySelector(".nested").classList.toggle("active");
+                this.classList.toggle("caret-down");
+            });
+        }
+    </script>
+</body>
+
+</html>

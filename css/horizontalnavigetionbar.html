@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            display: inline;
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+
+        li a {
+            display: block;
+            padding: 8px;
+
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        li:last-child {
+            border-right: none;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="../index.html">back to home</a>
+    <br>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li style="float:right"><a class="active" href="#about">About</a></li>
+    </ul>
+
+</body>
+
+</html>

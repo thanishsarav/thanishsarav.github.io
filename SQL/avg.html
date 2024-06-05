@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h1>The SQL AVG() Function</h1>
+        <p>SELECT AVG(Price)
+            FROM Products;</p>
+        <h1>Add a WHERE Clause</h1>
+        <p>SELECT AVG(Price)
+            FROM Products
+            WHERE CategoryID = 1;</p>
+        <h1>Use an Alias</h1>
+        <p>SELECT AVG(Price) AS [average price]
+            FROM Products;</p>
+        <h1>Higher Than Average</h1>
+        <p>SELECT * FROM Products
+            WHERE price > (SELECT AVG(price) FROM Products);</p>
+        <h1>Use AVG() with GROUP BY</h1>
+        <p>SELECT AVG(Price) AS AveragePrice, CategoryID
+            FROM Products
+            GROUP BY CategoryID;</p>
+    </body>
+</html>

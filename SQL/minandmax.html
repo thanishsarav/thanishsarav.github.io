@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <h1>MAX Example</h1>
+        <p>SELECT MAX(Price)
+            FROM Products;</p>
+        <h1>Set Column Name (Alias)</h1>
+        <p>SELECT MIN(Price) AS SmallestPrice
+            FROM Products;</p>
+        <h1>Use MIN() with GROUP BY</h1>
+        <p>SELECT MIN(Price) AS SmallestPrice, CategoryID
+            FROM Products
+            GROUP BY CategoryID;</p>
+    </body>
+</html>

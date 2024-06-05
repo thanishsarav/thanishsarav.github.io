@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <h1>The SQL SELECT DISTINCT Statement</h1>
+        <p>SELECT DISTINCT Country FROM Customers;</p>
+        <h1>SELECT Example Without DISTINCT</h1>
+        <p>SELECT Country FROM Customers;</p>
+        <h1>Count Distinct</h1>
+        <p>SELECT COUNT(DISTINCT Country) FROM Customers;</p>
+        <p>SELECT Count(*) AS DistinctCountries
+            FROM (SELECT DISTINCT Country FROM Customers);</p>
+    </body>
+</html>

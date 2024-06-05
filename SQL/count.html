@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <h1>The SQL COUNT() Function</h1>
+        <p>SELECT COUNT(*)
+            FROM Products;</p>
+        <h1>Specify Column</h1>
+        <p>SELECT COUNT(ProductName)
+            FROM Products;</p>
+        <h1>Add a WHERE Clause</h1>
+        <p>SELECT COUNT(ProductID)
+            FROM Products
+            WHERE Price > 20;</p>
+        <h1>Ignore Duplicates</h1>
+        <p>SELECT COUNT(DISTINCT Price)
+            FROM Products;</p>
+        <h1>Use an Alias</h1>
+        <p>SELECT COUNT(*) AS [Number of records]
+            FROM Products;</p>
+        <h1>Use COUNT() with GROUP BY</h1>
+        <p>SELECT COUNT(*) AS [Number of records], CategoryID
+            FROM Products
+            GROUP BY CategoryID;</p>
+    </body>
+</html>

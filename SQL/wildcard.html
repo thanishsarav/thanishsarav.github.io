@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <h1>SQL Wildcard Characters</h1>
+        <p>SELECT * FROM Customers
+            WHERE CustomerName LIKE 'a%';
+            </p>
+        <h1>Using the % Wildcard</h1>
+        <p>SELECT * FROM Customers
+            WHERE CustomerName LIKE '%es';</p>
+        <p>SELECT * FROM Customers
+            WHERE CustomerName LIKE '%mer%';</p>
+        <h1>Using the _ Wildcard</h1>
+        <p>SELECT * FROM Customers
+            WHERE City LIKE '_ondon';</p>
+        <p>SELECT * FROM Customers
+            WHERE City LIKE 'L___on';</p>
+        <h1>Using the [] Wildcard</h1>
+        <p>SELECT * FROM Customers
+            WHERE CustomerName LIKE '[bsp]%';</p>
+        <h1>Using the - Wildcard</h1>
+        <p>SELECT * FROM Customers
+            WHERE CustomerName LIKE '[a-f]%';</p>
+        <h1>Combine Wildcards</h1>
+        <p>SELECT * FROM Customers
+            WHERE CustomerName LIKE 'a__%';</p>
+        <p>SELECT * FROM Customers
+            WHERE CustomerName LIKE '_r%';</p>
+        <h1>Without Wildcard</h1>
+        <p>SELECT * FROM Customers
+            WHERE Country LIKE 'Spain';</p>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+    <body>
+        <h1>SQL Aliases</h1>
+        <p>SELECT CustomerID AS ID
+            FROM Customers;</p>
+        <h1>AS is Optional</h1>
+        <p>SELECT CustomerID ID
+            FROM Customers;</p>
+        <h1>Alias for Columns</h1>
+        <p>SELECT CustomerID AS ID, CustomerName AS Customer
+            FROM Customers;</p>
+        <h1>Using Aliases With a Space Character</h1>
+        <p>SELECT ProductName AS [My Great Products]
+            FROM Products;</p>
+        <p>SELECT ProductName AS "My Great Products"
+            FROM Products;</p>
+        <h1>Concatenate Columns</h1>
+        <p>SELECT CustomerName, Address + ', ' + PostalCode + ' ' + City + ', ' + Country AS Address
+            FROM Customers;</p>
+        <h1>MySQL Example</h1>
+        <p>SELECT CustomerName, CONCAT(Address,', ',PostalCode,', ',City,', ',Country) AS Address
+            FROM Customers;</p>
+        <h1>Oracle Example</h1>
+        <p>SELECT CustomerName, (Address || ', ' || PostalCode || ' ' || City || ', ' || Country) AS Address
+            FROM Customers;</p>
+        <h1>Alias for Tables</h1>
+        <p>SELECT * FROM Customers AS Persons;</p>
+        <p>SELECT o.OrderID, o.OrderDate, c.CustomerName
+            FROM Customers AS c, Orders AS o
+            WHERE c.CustomerName='Around the Horn' AND c.CustomerID=o.CustomerID;</p>
+        <p>SELECT Orders.OrderID, Orders.OrderDate, Customers.CustomerName
+            FROM Customers, Orders
+            WHERE Customers.CustomerName='Around the Horn' AND Customers.CustomerID=Orders.CustomerID;</p>
+    </body>
+</html>

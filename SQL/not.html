@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h1>The NOT Operator</h1>
+        <p>SELECT * FROM Customers
+            WHERE NOT Country = 'Spain';</p>
+        <h1>NOT LIKE</h1>
+        <p>SELECT * FROM Customers
+            WHERE CustomerName NOT LIKE 'A%';</p>
+        <h1>NOT BETWEEN</h1>
+        <p>SELECT * FROM Customers
+            WHERE CustomerID NOT BETWEEN 10 AND 60;</p>
+        <h1>NOT IN</h1>
+        <p>SELECT * FROM Customers
+            WHERE City NOT IN ('Paris', 'London');</p>
+        <h1>NOT Greater Than</h1>
+        <p>SELECT * FROM Customers
+            WHERE NOT CustomerID > 50;</p>
+        <h1>NOT Less Than</h1>
+        <p>SELECT * FROM Customers
+            WHERE NOT CustomerId < 50;</p>
+    </body>
+</html>

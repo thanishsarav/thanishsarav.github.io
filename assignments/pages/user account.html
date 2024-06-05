@@ -1,0 +1,638 @@
+<html>
+
+<head>
+    <style>
+        .container {
+            background-color: #EFF3F8;
+
+            height: 1200px;
+            width: 1000px;
+            margin-left: 320px;
+            border-radius: 5px;
+        }
+
+        .header {
+            background-color: #fdfeff;
+            border: 1px solid #EFF3F8;
+            height: 60px;
+            width: 1000px;
+            margin-left: 1px;
+            vertical-align: top;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .left {
+            background-color: #EFF3F8;
+
+            height: 725px;
+            width: 250px;
+            margin-left: 0px;
+            text-align: center;
+            margin-top: 35px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .left3 {
+            background-color: rgb(252, 250, 250);
+            border: 0.5px solid rgb(252, 252, 253);
+            height: 300px;
+            width: 250px;
+            margin-left: 0px;
+            text-align: center;
+            margin-top: -1px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .left1 {
+            background-color: #fdfeff;
+            /* border: 1px inset rgb(255, 254, 254); */
+            height: 600px;
+            width: 250px;
+            margin-left: 0px;
+            text-align: center;
+            margin-top: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .left2 {
+            background-color: #fcfdff;
+            border-top: 1px inset rgb(252, 250, 250);
+            height: 40px;
+            width: 250px;
+            margin-left: 0px;
+            text-align: center;
+            margin-top: 105%;
+            color: royalblue;
+            padding-top: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .left5 {
+            background-image: url("../../images/143879.jpg");
+            height: 40px;
+            width: 250px;
+            margin-left: 0px;
+            text-align: center;
+            margin-top: -220px;
+            color: royalblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .left4 {
+            background-color: #fdfefe;
+            height: 200px;
+            width: 250px;
+            margin-left: 0px;
+            text-align: center;
+            margin-top: 30%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        
+
+
+
+        .icon1 {
+            text-align: left;
+            height: 25px;
+            width: 25px;
+            margin: 19px;
+            padding: 3px;
+            background-color: #037cf4;
+            border-radius: 4px;
+
+
+        }
+
+        .icon2 {
+            border: 1px solid rgb(252, 252, 250);
+            height: 25px;
+            width: 25px;
+            vertical-align: top;
+            margin-top: -5%;
+            float: right;
+            margin-right: 110px;
+            background-color: #c9cacb;
+            border-radius: 5px;
+
+        }
+
+        .icon3 {
+            border: 1px solid rgb(251, 251, 250);
+            height: 25px;
+            width: 25px;
+            vertical-align: top;
+            margin-top: -5%;
+            float: right;
+            margin-right: 80px;
+            background-color: #c1c2c2;
+            border-radius: 5px;
+
+        }
+
+        .icon4 {
+            border: 1px solid rgb(249, 249, 249);
+            height: 25px;
+            width: 25px;
+            vertical-align: top;
+            margin-top: -5%;
+            float: right;
+            margin-right: 50px;
+            background-color: #c0c0c1;
+            border-radius: 5px;
+
+        }
+
+        .icon5 {
+            border: 1px solid rgb(254, 254, 254);
+            height: 25px;
+            width: 25px;
+            vertical-align: top;
+            margin-top: -5%;
+            float: right;
+            margin-right: 20px;
+            background-color: #cccccc;
+            border-radius: 5px;
+
+        }
+
+        option {
+            border: 4px solid #037cf4;
+            vertical-align: top;
+            float: right;
+            margin: 3px;
+        }
+
+        .se {
+            vertical-align: middle;
+            text-align: center;
+            float: left;
+            margin-left: 60px;
+            margin-top: -50px;
+            width: 190px;
+            border-radius: 5px;
+            height: 35px;
+            background-color: #d8d8d8;
+            border: 1px solid whitesmoke;
+        }
+
+        .s1 {
+            border: 1px solid rgb(254, 254, 253);
+            width: 75px;
+            vertical-align: top;
+            margin-top: -4%;
+            float: right;
+            margin-right: 400px;
+        }
+
+        .s2 {
+            border: 1px solid rgb(255, 255, 253);
+            width: 75px;
+            vertical-align: top;
+            margin-right: 320px;
+            float: right;
+            margin-top: -4%;
+        }
+
+        .s3 {
+            border: 1px solid rgb(253, 253, 251);
+            width: 75px;
+            vertical-align: top;
+            margin-top: -4%;
+            float: right;
+            margin-right: 240px;
+        }
+
+        .name {
+            border: 1px solid rgb(253, 253, 251);
+            width: 85px;
+            vertical-align: top;
+            margin-top: -4%;
+            float: right;
+            margin-right: 150px;
+        }
+
+        .t1 {
+            border-right: 2px solid rgb(254, 245, 245);
+            height: 35px;
+            width: 240px;
+            vertical-align: top;
+            margin-top: -1%;
+            margin-right: 30px;
+            background-color: #fbfbfc;
+
+            display: inline-flex;
+            text-align: left;
+            word-spacing: -560px;
+
+
+        }
+
+        .t2 {
+            height: 35px;
+            width: 240px;
+            vertical-align: top;
+            margin-top: -1%;
+            margin-right: 50px;
+            background-color: #f6f6fd;
+            display: inline-flex;
+            text-align: left;
+            word-spacing: -560px;
+            border-bottom: 2px ridge rgb(255, 0, 25);
+            padding-bottom: 7px;
+
+
+        }
+
+        .menu {
+            margin-top: -280;
+            float: left;
+
+        }
+        .c1{
+            
+            border-left:  1px groove rgb(178, 175, 175);
+            width: 700px;
+            border-radius: 5px;
+            height: 945px;
+            background-color: white;
+            margin-top: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 100;
+        }
+        .c2{
+            border-bottom:  1px groove rgb(182, 183, 181);
+            height: 250px;
+           
+            margin-left: 20px;
+            background-color: white;
+        }
+        .c3{
+            border: 1px inset rgb(150, 5, 254);
+            height: 300px;
+            border-radius: 5px;
+            margin-left: 20px;
+            background-color: white;
+         
+        }.c4{
+            border: 1px inset rgb(150, 5, 254);
+            height: 300px;
+            border-radius: 5px;
+            margin-left: 20px;
+            background-color: white;
+        }
+        .sc{
+            margin-top: 105px;
+           
+            margin-left: 20px;
+        }
+        body{
+            background-image: conic-gradient(red, yellow, green, blue, black, purple, hotpink, orange, indigo, royalblue, rgb(255, 0, 25));
+        }
+        .center {
+            background-color: white;
+            border-right:  1px groove rgb(184, 183, 183);
+            border-bottom:  1px groove rgb(184, 183, 183);
+            border-top:  1px groove rgb(181, 180, 180);
+            height: 950px;
+            width: 730px;
+            margin-left: 270px;
+            margin-top: -735px;
+            border-radius: 5px;
+        }
+        .c5{
+            border-bottom:  1px groove rgb(183, 180, 181);
+            height: 100px;
+            padding-top: 10px;
+        }
+        .s5{
+           
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+            margin-top:  20px;
+           
+        }
+        .s6{
+           /* border: 1px solid hotpink; */
+            width: 500px;
+            margin-top: -45px;
+            height: 50px;
+            margin-left: 70px;
+        }
+        .sd1{
+            border: 1px groove rgb(146, 146, 145);
+            padding: 15px;
+            margin-top: 10px;
+            width: 300px;
+            background-color: rgb(237, 237, 237);
+            border-radius: 5px;
+        }
+        .sd2{
+            border: 1px groove rgb(146, 146, 145);
+            padding: 15px;
+            margin-top: -68px;
+            width: 300px;
+            background-color: rgb(237, 237, 237);
+            border-radius: 5px;
+            margin-left: 350px;
+        }
+        .sd3{
+            border: 1px groove rgb(146, 146, 145);
+            padding: 5px;
+            margin-top: 10px;
+            width: 190px;
+            background-color: rgb(237, 237, 237);
+            border-radius: 5px;
+        }
+        .c31{
+            border-bottom:   1px groove rgb(183, 180, 181);
+            height: 70px;
+            padding-top: 10px;
+            margin-left: 20px;
+            width: 630px;
+        }
+        .s61{
+            /* border: 1px solid hotpink;  */
+            width: 500px;
+            margin-top: 10px;
+            height: 50px;
+            margin-left: -1px;
+        }
+        .scs{
+            border: 3px groove firebrick;
+            margin-top: -50px;
+            width: 100px;
+            margin-left: 400px;
+            padding: 2px;
+            color: firebrick;
+            font-weight: 10;
+        }
+        .scs1{
+           
+            margin-top: -25px;
+            width: 100px;
+            margin-left: 520px;
+            padding: 2px;
+            color: rgb(252, 251, 251);
+            font-weight: 10;
+            background-color: #037cf4;
+            border: 3px groove #037cf4;
+        }
+        .c32{
+            border-bottom:   1px groove rgb(183, 180, 181);
+            height: 120px;
+            padding-top: 10px;
+            margin-left: 20px;
+            width: 630px;
+        }
+        .c321{
+            border-right:  1px inset rgb(168, 168, 168);
+            width: 200px;
+            height: 100px;
+        }
+        .c322{
+            border-right:  1px inset rgb(155, 154, 152);
+            width: 200px;
+            height: 100px;
+            margin-left: 215px;
+            margin-top: -100px;
+        }
+        .c323{
+           
+            width: 200px;
+            height: 100px;
+            margin-left: 430px;
+            margin-top: -100px;
+        }
+        .c331{
+        
+            width: 100px;
+            margin-top: -70px;
+            margin-left: 110px;
+        }
+        .c331-1{
+            border: 1px outset #fdfefe;
+            width: 70px;
+            margin-left: 20px;
+            margin-top: 5px;
+            height: 70px;
+       }
+       .c332{
+          width: 100px;
+          margin-top: -75px;
+          margin-left: 320px;
+      }
+      .c332-2{
+          border: 1px outset #fbfcfd;
+          width: 70px;
+          margin-left: 220px;
+          margin-top: -75px;
+          height: 70px;
+     }
+     .c333{
+          
+          width: 100px;
+          margin-top: -70px;
+          margin-left: 525px;
+      }
+      .c333-3{
+          border: 1px outset #fafbfc;
+          width: 70px;
+          margin-left: 435px;
+          margin-top: -75px;
+          height: 70px;
+     }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon1"></div>
+            <div class="se"><input
+                    style="width: 190px; border: 1px solid whitesmoke; height: 35px; background-color: #ebe8e8; border-radius: 5px;"
+                    type="search" placeholder="search..."></div>
+            <div class="s1">
+                <select name="cars">
+                    <option value="sajhu" class="option" style="border: 3px solid rgb(252, 251, 251);">demo</option>
+                    <option value="kavin" class="option">kavin</option>
+                    <option value="Darshan" class="option">Darshan</option>
+                    <option value="sivaanth" class="option">sivaanth</option>
+                    <option value="thanish" class="option">thanish</option>
+                </select>
+            </div>
+            <div class="s2">
+                <select name="cars">
+                    <option value="sajhu" class="option">pages</option>
+                    <option value="kavin" class="option">kavin</option>
+                    <option value="Darshan" class="option">Darshan</option>
+                    <option value="sivaanth" class="option">sivaanth</option>
+                    <option value="thanish" class="option">thanish</option>
+                </select>
+            </div>
+            <div class="s3"><select name="cars">
+                    <option value="sajhu" class="option">Account</option>
+                    <option value="kavin" class="option">kavin</option>
+                    <option value="Darshan" class="option">Darshan</option>
+                    <option value="sivaanth" class="option">sivaanth</option>
+                    <option value="thanish" class="option">thanish</option>
+                </select></div>
+            <div class="name">My Network</div>
+            <div class="icon2"></div>
+            <div class="icon3"></div>
+            <div class="icon4"></div>
+            <div class="icon5"></div>
+        </div>
+        <div class="left">
+            <div class="left1">
+                <div class="left3">
+                    <div class="left4">
+                        <h3>Sam Lanson</h3>
+                        <p>web developer st webestica</p>
+                        <p>I'd love to change the word,but they won't give me the
+                            source code</p>
+                        <div class="left5"></div>
+                    </div>
+                    <div class="t2">
+                        <span class="t1">256 <br>post</span>
+                        <span class="t1">2.5k <br>followers</span>
+                        <span class="t1">356 <br>following</span>
+
+                    </div>
+                </div>
+                <div class="left2">view profile</div>
+                <div class="menu">
+                    Feed
+                    <br>
+                    <br>
+                    Conections
+                    <br>
+                    <br>
+                    Latest News
+                    <br>
+                    <br>
+                    Events
+                    <br>
+                    <br>
+                    Groups
+                    <br>
+                    <br>
+                    Notiffications
+
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="c1">
+                <div class="c2">
+                    <div class="c5">
+                        <div class="s5"><img src="../../images/profile.jpg" width="60px" height="60px"></div>
+                        <div class="s6">S.Thanish<br>
+                        Email:thanishsarav@gmail.com,Phone+919003769616</div>
+                    </div>
+                    <div class="sd1">United State,3601 Old capital Trail,Unit A-<br>
+                    7,Suite </div>
+                    
+                    <div class="sd2">Mascow city,Street name,Building lenin,<br>
+                        House77 </div>
+                        <div class="sd3">+ADD NEW ADDRESS</div>
+                </div>
+                <br>
+                <span class="sc">Your order</span>
+                <br>
+                <br>
+                <div class="c3">
+                    <div class="c31">
+                       
+                        <div class="s61">OrderID:8924<b style="color: rgb(119, 192, 10);">Shipped</b><br>
+                        Date:16 December2022</div>
+                        <div class="scs">Cancled Order</div>
+                        <div class="scs1">Track Order</div>
+                    </div>
+                    <div class="c32">
+                        <div class="c321">Contact
+                            <br>Mike Johnatan<br>
+                            Phone:919003769616<br>
+                            Email:thanishsarav@gmail.com
+                        </div>
+                        <div class="c322">Shipping address
+                            <br>United States<br>
+                            3601Old capital Trail,A-7<br>
+                            Suite 170777.willmington,DF<br>
+                            19808
+                        </div>
+                        <div class="c323">Payment<br>
+                        <small style="color: rgb(70, 114, 4);">Visa***4216</small><br>
+                    Shipping fee:$56<br>
+                Total paid:$456</div>
+                    </div>
+                    <div class="c331-1"></div>
+                    <div class="c331">
+                        T-shrit with<br>
+                        multiple colours<br>
+                        2x=$25.98
+                    </div>
+                    <div class="c332-2"></div>
+                    <div class="c332">
+                        Gaming headset<br>
+                        32db black<br>
+                        2x=$339.90
+                    </div>
+                    <div class="c333-3"></div>
+                    <div class="c333">
+                        Apple watch Series<br>
+                        4 Space Gray<br>
+                        2x=$339.90
+                    </div>
+                </div>
+                <br>
+                <div class="c4"><div class="c31">
+                       
+                    <div class="s61">OrderID:8924<b style="color: rgb(253, 7, 7);">Pending</b><br>
+                    Date:16 December2022</div>
+                    <div class="scs">Cancled Order</div>
+                    <div class="scs1">Track Order</div>
+                </div>
+                <div class="c32">
+                    <div class="c321">Contact
+                        <br>Mike Johnatan<br>
+                        Phone:919003769616<br>
+                        Email:thanishsarav@gmail.com
+                    </div>
+                    <div class="c322">Shipping address
+                        <br>United States<br>
+                        3601Old capital Trail,A-7<br>
+                        Suite 170777.willmington,DF<br>
+                        19808
+                    </div>
+                    <div class="c323">Payment<br>
+                    <small style="color: rgb(81, 132, 6);">Visa***4216</small><br>
+                Shipping fee:$56<br>
+            Total paid:$456</div>
+                </div>
+                <div class="c331-1"></div>
+                <div class="c331">
+                    T-shrit with<br>
+                    multiple colours<br>
+                    2x=$25.98
+                </div>
+                <div class="c332-2"></div>
+                <div class="c332">
+                    Gaming headset<br>
+                    32db black<br>
+                    2x=$339.90
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <h1>The SQL IN Operator</h1>
+        <p>SELECT * FROM Customers
+            WHERE Country IN ('Germany', 'France', 'UK');</p>
+        <h1>NOT IN</h1>
+        <p>SELECT * FROM Customers
+            WHERE Country NOT IN ('Germany', 'France', 'UK');</p>
+        <h1>IN (SELECT)</h1>
+        <p>SELECT * FROM Customers
+            WHERE CustomerID IN (SELECT CustomerID FROM Orders);</p>
+        <h1>NOT IN (SELECT)</h1>
+        <p>SELECT * FROM Customers
+            WHERE CustomerID NOT IN (SELECT CustomerID FROM Orders);</p>
+    </body>
+</html>

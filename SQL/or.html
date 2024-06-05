@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h1>The SQL OR Operator</h1>
+        <p>SELECT *
+            FROM Customers
+            WHERE Country = 'Germany' OR Country = 'Spain';
+            </p>
+        <h1>At Least One Condition Must Be True</h1>
+        <p>SELECT * FROM Customers
+            WHERE City = 'Berlin' OR CustomerName LIKE 'G%' OR Country = 'Norway';</p>
+        <h1>
+            Combining AND and OR</h1>
+        <p>SELECT * FROM Customers
+            WHERE Country = 'Spain' AND (CustomerName LIKE 'G%' OR CustomerName LIKE 'R%');</p>
+        <p>SELECT * FROM Customers
+            WHERE Country = 'Spain' AND CustomerName LIKE 'G%' OR CustomerName LIKE 'R%';</p>
+    </body>
+</html>

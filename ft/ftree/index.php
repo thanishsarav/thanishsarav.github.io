@@ -157,7 +157,7 @@ $ft = array(
 
     )
 );
-var_dump($ft);
+
 ?>
 <div>
     <ul id="myUL">

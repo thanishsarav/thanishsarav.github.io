@@ -78,7 +78,7 @@
         background-color: #111111;
     }
 
-   
+
 
     #grad4 {
         height: 55px;
@@ -88,22 +88,46 @@
     }
 
     div {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  position: relative;
-  animation-name: example;
-  animation-duration: 4s;
-  animation-delay: 2s;
-}
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-delay: 2s;
+    }
 
-@keyframes example {
-  0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:green; left:0px; top:200px;}
-  100% {background-color:red; left:0px; top:0px;}
-}
+    @keyframes example {
+        0% {
+            background-color: red;
+            left: 0px;
+            top: 0px;
+        }
+
+        25% {
+            background-color: yellow;
+            left: 200px;
+            top: 0px;
+        }
+
+        50% {
+            background-color: blue;
+            left: 200px;
+            top: 200px;
+        }
+
+        75% {
+            background-color: green;
+            left: 0px;
+            top: 200px;
+        }
+
+        100% {
+            background-color: red;
+            left: 0px;
+            top: 0px;
+        }
+    }
 
 
     #grad3 {
@@ -133,12 +157,12 @@
         width: 200px;
         background-color: red;
         /* For browsers that do not support gradients */
-        background-image: conic-gradient(red, yellow, green, blue, black);
+        background-image: conic-gradient(rgb(43, 255, 6), yellow, green, rgb(246, 246, 3), black);
         border-radius: 50%;
     }
 </style>
 
-<body onmouseover="style.background=' rgb(243, 65, 11)'">
+<body onmouseover="style.background='rgb(246, 246, 3)'">
     <ul>
         <li id="t"><a href="images/Lw0Znk5J.png">Thanish</a></li>
         <li id="t"><a href="#news">Thanish`s school</a></li>
@@ -150,26 +174,28 @@
     <hr>
     <hr>
     <svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="100" cy="100" r="400" style="fill: rgb(11, 243, 34) ;">
+        <circle cx="100" cy="100" r="400" style="fill: rgb(242, 123, 255) ;">
             <animate attributeName="cx" begin="0s" dur="5s" from=" rgb(215, 9, 242);50" to="100%"
                 repeatCount="indefinite" fill="url(#grad4)" />
 
         </circle>
-        <text x="50" y="120" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;fill: rgb(243, 65, 11) ;
-        font-size:130px "># SOFT WARE ENGINEER</text>
+        <text x="50" y="120" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;fill: rgb(243, 235, 11) ;
+        font-size:130px "># SOFT WARE ENGINEER
+            <animate attributeName="fill" from="rgb(255, 238, 0)" dur="3s" to="rgb(246, 246, 3) " fill="freeze" />
+        </text>
     </svg>
     <hr>
     <hr>
 
     <svg width="10000" height="220">
-        <circle cx="100" cy="100" r="600" style="fill: rgb(11, 243, 84) ;">
+        <circle cx="100" cy="100" r="600" style="fill: rgb(205, 121, 241) ;">
             <animate attributeName="cx" begin="0s" dur="7s" from=" rgb(215, 9, 242);50" to="100%"
                 repeatCount="indefinite" fill="url(#grad4)" />
         </circle>
         <text id="TextElement" x="200" y="150 " style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size:150px;fill: rgb(243, 65, 11); ">
+            font-size:150px;fill: rgb(243, 231, 11); ">
             Thanish website
-            <animate attributeName="fill" from="rgb(255, 238, 0)" dur="7s" to=" rgb(243, 65, 11) " fill="freeze" />
+            <animate attributeName="fill" from="rgb(255, 238, 0)" dur="3s" to="rgb(246, 246, 3) " fill="freeze" />
 
         </text>
 
@@ -180,7 +206,7 @@
     <canvas id="canvas" width="400" height="400" style="background-color:rgb(0, 255, 128);">
     </canvas>
     <img src="images/hokages4.jpg">
-    <img src="images/my file.jpg">
+    <img src="images/Trip.jpg">
     <script type="text/javascript">
         const canvas = document.getElementById("canvas");
         const ctx = canvas.getContext("2d");
@@ -604,16 +630,16 @@
         </text>
         Sorry, your browser does not support inline SVG.
     </svg>
-   
+
 
     <div id="grad1">dtrt</div>
-  
+
     <div id="grad2">rtd</div>
-    
+
 
     <div id="grad3">cfgc></div>
-   
-       
+
+
 </body>
 
 </html>

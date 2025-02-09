@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
 <style>
     h1 {
         color: rgb(249, 159, 3), rgb(7, 246, 63);
@@ -109,22 +110,22 @@
 
 <body style="  color: firebrick;border: 4px inset #ffa601;background-image: url('images/6hokage.webp');">
     <ul id="ft">
-        <li id="t"><a href="images/Lw0Znk5J.png"  class="font-effect-fire">Thanish</a></li>
-        <li id="t"><a href="#news"  class="font-effect-fire">Thanish`s school</a></li>
+        <li id="t"><a href="images/Trip.jpg"  class="font-effect-fire">Thanish</a></li>
+        <li id="t"><a href="#news"  class="font-effect-fire">Education</a></li>
         <li id="t"><a href="#contact"  class="font-effect-fire">Home</a></li>
         <li id="t"><a href="images/games/game1.html"  class="font-effect-fire">Aim</a></li>
         <li id="t"><a href="layout.html"  class="font-effect-fire">Achiuments</a></li>
     </ul>
     <br>
-   
+    
    
     <svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="100" cy="100" r="400" style="fill: rgb(242, 123, 255) ; opacity: 0.5;">
+        <circle cx="100" cy="100" r="200" style="fill: rgb(4, 245, 241) ; opacity: 5;">
             <animate attributeName="cx" begin="0s" dur="5s" from=" rgb(215, 9, 242);50" to="100%"
                 repeatCount="indefinite" fill="url(#grad4)" />
 
         </circle>
-        <text x="50" y="120" style="font-family: Georgia, 'Times New Roman', Times, serif;
+        <text x="50" y="120" style="font-family: Sofia, sans-serif;
         font-size:125px;fill: rgb(2, 174, 254);">SOFT WARE ENGINEER
            
         </text>
@@ -133,11 +134,11 @@
    <hr>
 
     <svg width="100%" height="220">
-        <circle cx="100" cy="100" r="400" style="fill: rgb(205, 121, 241) ; opacity: 0.5;">
+        <circle cx="100" cy="100" r="200" style="fill: rgb(4, 253, 220) ; opacity: 5;">
             <animate attributeName="cx" begin="0s" dur="4s" from=" rgb(215, 9, 242);50" to="100%"
                 repeatCount="indefinite" fill="url(#grad4)" />
         </circle>
-        <text id="TextElement" x="200" y="150 " style="font-family:  Georgia, 'Times New Roman', Times, serif;
+        <text id="TextElement" x="200" y="150 " style="font-family:Sofia, sans-serif;
             font-size:140px;fill: rgb(1, 153, 254); opacity: 2; ">
             Thanish website#
            
@@ -148,97 +149,15 @@
    <hr>
    
 
-    <canvas id="canvas" width="400" height="400" style="background-color:rgb(0, 255, 128);">
-    </canvas>
-    <img src="images/hokages4.jpg">
-    <img src="images/Trip.jpg">
-    <script type="text/javascript">
-        const canvas = document.getElementById("canvas");
-        const ctx = canvas.getContext("2d");
-        let radius = canvas.height / 2;
-        ctx.translate(radius, radius);
-        radius = radius * 0.90
-        setInterval(drawClock, 1000);
-
-        function drawClock() {
-            drawFace(ctx, radius);
-            drawNumbers(ctx, radius);
-            drawTime(ctx, radius);
-        }
-
-        function drawFace(ctx, radius) {
-            const grad = ctx.createRadialGradient(0, 0, radius * 0.95, 0, 0, radius * 1.05);
-            grad.addColorStop(0, '#333');
-            grad.addColorStop(0.5, 'white');
-            grad.addColorStop(1, '#333');
-            ctx.beginPath();
-            ctx.arc(0, 0, radius, 0, 2 * Math.PI);
-            ctx.fillStyle = 'white';
-            ctx.fill();
-            ctx.strokeStyle = grad;
-            ctx.lineWidth = radius * 0.1;
-            ctx.stroke();
-            ctx.beginPath();
-            ctx.arc(0, 0, radius * 0.1, 0, 2 * Math.PI);
-            ctx.fillStyle = '#333';
-            ctx.fill();
-        }
-
-        function drawNumbers(ctx, radius) {
-            ctx.font = radius * 0.15 + "px arial";
-            ctx.textBaseline = "middle";
-            ctx.textAlign = "center";
-            for (let num = 1; num < 13; num++) {
-                let ang = num * Math.PI / 6;
-                ctx.rotate(ang);
-                ctx.translate(0, -radius * 0.85);
-                ctx.rotate(-ang);
-                ctx.fillText(num.toString(), 0, 0);
-                ctx.rotate(ang);
-                ctx.translate(0, radius * 0.85);
-                ctx.rotate(-ang);
-            }
-        }
-
-        function drawTime(ctx, radius) {
-            const now = new Date();
-            let hour = now.getHours();
-            let minute = now.getMinutes();
-            let second = now.getSeconds();
-            //hour
-            hour = hour % 12;
-            hour = (hour * Math.PI / 6) +
-                (minute * Math.PI / (6 * 60)) +
-                (second * Math.PI / (360 * 60));
-            drawHand(ctx, hour, radius * 0.5, radius * 0.07);
-            //minute
-            minute = (minute * Math.PI / 30) + (second * Math.PI / (30 * 60));
-            drawHand(ctx, minute, radius * 0.8, radius * 0.07);
-            // second
-            second = (second * Math.PI / 30);
-            drawHand(ctx, second, radius * 0.9, radius * 0.02);
-        }
-
-        function drawHand(ctx, pos, length, width) {
-            ctx.beginPath();
-            ctx.lineWidth = width;
-            ctx.lineCap = "round";
-            ctx.moveTo(0, 0);
-            ctx.rotate(pos);
-            ctx.lineTo(0, -length);
-            ctx.stroke();
-            ctx.rotate(-pos);
-        }
-
-    </script>
+    
 <hr>
     <table >
         <tr>
             <td >
                <ul>
-                    <h3 ><ins  class="font-effect-fire" >TERM-1</ins></h3>
+                    <h3 ><ins class="font-effect-neon" >TERM-1</ins></h3>
                     <li>
-                        <ins  class="font-effect-fire">Lesson-1</ins>
+                        <ins class="font-effect-neon">Lesson-1</ins>
                        <ul>
                             <li><a href="term-1/lesson-1/excercise-1.1.html"  class="font-effect-fire" class="font-effect-fire">Excercsie-1.1</a> </li>
                             <li><a href="term-1/lesson-1/excercise-1.2.html"  class="font-effect-fire" class="font-effect-fire">Excercise-1.2</a></li>
@@ -251,7 +170,7 @@
                    
                    
                     <li>
-                        <ins  class="font-effect-fire" >Lesson-2</ins>
+                         <ins  class="font-effect-neon" >Lesson-2</ins>
                        <ul>
                             <li><a href="term-1/lesson-2/excercise-2.1,2.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-1,2</a></li>
                             <li><a href="term-1/lesson-2/excercise-2,3.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-3</a></li>
@@ -276,7 +195,7 @@
 
 
                     <li>
-                        <ins  class="font-effect-fire">Lesson-3</ins>
+                         <ins  class="font-effect-neon">Lesson-3</ins>
                        <ul>
                             <li><a href="term-1/lesson-3/excercise-3.1.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-1</a></li>
                             <li><a href="term-1/lesson-3/excercise-3.2.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-2</a></li>
@@ -289,7 +208,7 @@
                    
                    
                     <li>
-                        <ins  class="font-effect-fire"> Lesson-4</ins>
+                         <ins  class="font-effect-neon"> Lesson-4</ins>
                        <ul>
                             <li><a href="term-1/lesson-4/excercise-4.1,2,3,4.html"  class="font-effect-fire" class="font-effect-fire">Excercise-1,2,3,4</a></li>
                             <li><a href="term-1/lesson-4/excercise-4.5,6,7,8,9,10.html"  class="font-effect-fire" class="font-effect-fire">Excercise-5,6,7,8,9,10</a></li>
@@ -317,7 +236,7 @@
             </td>
             <td>
                 <li>
-                    <ins  class="font-effect-fire"  >Lesson-5</ins>
+                     <ins  class="font-effect-neon"  >Lesson-5</ins>
                    <ul>
                         <li><a href="term-1/lesson-5/excercise-5.1.html"  class="font-effect-fire">Excercise-1</a></li>
                         <li><a href="term-1/lesson-5/excercise-5.2.html"  class="font-effect-fire">Excercise-2</a></li>
@@ -336,10 +255,10 @@
                    </ul>
                 </li>
                
-                <h3><ins  class="font-effect-fire"  >TERM-2</ins></h3>
+                <h3> <ins  class="font-effect-neon"  >TERM-2</ins></h3>
                <ul>
                     <li>
-                        <ins  class="font-effect-fire"  >Lesson-1</ins>
+                         <ins  class="font-effect-neon"  >Lesson-1</ins>
                        <ul>
                             <li><a href="term-2/lesson1/t2-l1-e1.html"  class="font-effect-fire">excercise-1</a></li>
                             <li><a href="term-2/lesson1/l-1-e2.html"  class="font-effect-fire">excercise-2</a></li>
@@ -371,7 +290,7 @@
                    
                    
                     <li>
-                        <ins  class="font-effect-fire">Lesson-2</ins>
+                         <ins  class="font-effect-neon">Lesson-2</ins>
                        <ul>
                             <li><a href="term-2/lesson2/l-2,e-1.html"  class="font-effect-fire">excercise-1</a></li>
                             <li><a href="term-2/lesson2/l-2,e-2.html"  class="font-effect-fire">excercise-2</a></li>
@@ -391,7 +310,7 @@
             <td>
                 
                 <li>
-                    <ins  class="font-effect-fire">Lesson-3</ins>
+                     <ins  class="font-effect-neon">Lesson-3</ins>
                    <ul>
                         <li><a href="term-2/lesson3/l-3,e-1.html"  class="font-effect-fire">excercise-1</a></li>
                         <li><a href="term-2/lesson3/l-3,e-2.html"  class="font-effect-fire">excercise-2</a></li>
@@ -405,7 +324,7 @@
                    </ul>
                 </li>
                 <li>
-                    <ins  class="font-effect-fire">Lesson-4</ins>
+                     <ins  class="font-effect-neon">Lesson-4</ins>
                    <ul>
                         <li><a href="term-2/lesson4/l-4,e-1.html"  class="font-effect-fire">excercise-1</a></li>
                         <li><a href="term-2/lesson4/l-4,e-2.html"  class="font-effect-fire">excercise-2</a></li>
@@ -419,7 +338,7 @@
                         <li><a href="term-2/lesson4/l-4,e-10.html"  class="font-effect-fire">excercise-10</a></li>
                    </ul>
                 </li> 
-                <h3><ins  class="font-effect-fire">JavaScript</ins></h3>
+                <h3> <ins  class="font-effect-neon">JavaScript</ins></h3>
                <ul>
                     <li><a href="javascript/introduction.html"  class="font-effect-fire">Introduction</a></li>
                     <li><a href="javascript/output.html"  class="font-effect-fire">Output</a></li>
@@ -436,7 +355,7 @@
             </td>
             <td>
 
-                <h3><ins  class="font-effect-fire">Subjects noties</ins>
+                <h3> <ins  class="font-effect-neon">Subjects noties</ins>
                 </h3>
                <ul>
                     <li><a href="noties/cs.html"  class="font-effect-fire">C.S</a></li>
@@ -469,15 +388,15 @@
                 <a href="noties/gimp.html"  class="font-effect-fire">gimp</a>
                
                
-                <h3><ins  class="font-effect-fire">Games in html</ins>
+                <h3> <ins  class="font-effect-neon">Games in html</ins>
                 </h3>
                 <br>
                 <a href="images/games/game1.html"  class="font-effect-fire">GAME-1</a>
-                <h3 ><ins  class="font-effect-fire"> ASSIGNMENTS</ins>
+                <h3 > <ins  class="font-effect-neon"> ASSIGNMENTS</ins>
                 </h3>
                <ul>
                     <li>
-                        <ins  class="font-effect-fire"> Assignments</ins>
+                         <ins  class="font-effect-neon"> Assignments</ins>
                        <ul>
                             <li><a href="assignments/assignments-1.html"  class="font-effect-fire"> Assignments-1</a></li>
                             <li><a href="assignments/assignment-2.html"  class="font-effect-fire"> Assignments-2</a></li>
@@ -490,7 +409,7 @@
                    
                    
                     <li>
-                        <ins  class="font-effect-fire">pratice</ins>
+                         <ins  class="font-effect-neon">pratice</ins>
                        <ul>
                             <li><a href="assignments/practice/task3.html"  class="font-effect-fire">while loop</a></li>
                             <li><a href="assignments/practice/task4.html"  class="font-effect-fire">for loop</a></li>
@@ -500,7 +419,7 @@
                   
             </td>
             <td>
-                <h3><ins  class="font-effect-fire">SVG FILES</ins></h3>
+                <h3> <ins  class="font-effect-neon">SVG FILES</ins></h3>
                <ul>
                     <li><a href="svgfiles/rectangle.html"  class="font-effect-fire">rectangle</a></li>
                     <li><a href="svgfiles/circle.html"  class="font-effect-fire">circle</a></li>
@@ -517,7 +436,7 @@
                     <li><a href="svgfiles/lyout.html"  class="font-effect-fire">lyout</a></li>
 
                </ul>
-                <h3><ins  class="font-effect-fire">SVG FILES IN HTML</ins>
+                <h3> <ins  class="font-effect-neon">SVG FILES IN HTML</ins>
                 </h3>
                <ul>
                     <li><a href="html/colors.html"  class="font-effect-fire">Colors in html</a></li>

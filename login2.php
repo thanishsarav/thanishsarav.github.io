@@ -1,4 +1,49 @@
-<html>
+<?php  
+$user = '';
+$password = "";
+$error = "";
+$success = false;
+
+
+if (isset($_POST['submit'])) {
+  $success = false;
+  $user = $_POST['email'];
+  $password = $_POST['password'];
+  
+  include "db.php";
+  //writing query for the user record
+  $sql = "SELECT * FROM users WHERE username = '$user'";
+  //sql query data storing
+  
+
+  $result = mysqli_query($dbconn, $sql);
+  //record's count are storing
+  $count = mysqli_num_rows($result);
+  //if the count are greter than 0
+  // in the result there are so much of records select one record and storing 
+  if ($count > 0) {
+    $row = mysqli_fetch_assoc($result);
+   
+    //checking password if avaliable in the record
+    if ($row['password'] == $password) {
+      $success = true;
+      $_SESSION['login'] = $user;
+    } else {
+      $error = "Invalid Password";
+    }
+  } else {
+    echo "Error deleting record: " . mysqli_error($conn);
+  } 
+  mysqli_close($dbconn);
+  if ($success) {
+    header("Location:register2.html"); 
+  }
+}
+
+
+// sql to delete a record
+
+?><html>
 <style>
     input[type=email],
     input[type=password] {
@@ -131,7 +176,15 @@
 </style>
 
 <body>
-    
+<?php if ($error) { ?>
+<div> <!-- Error box -->
+   <?php echo $error ?>
+</div>
+        <!-- /.info-box-content -->
+      </div>
+    </div>
+    <!-- Error box -->
+  <?php }; ?>  
 
     <div class="container">
         <!-- Left section-->
@@ -150,7 +203,7 @@
                 <br>
                 <input type="checkbox" value="forgot password" style=" margin-left:30px;">Verified
                <br>
-                <input type="submit" value="login">
+                <input type="submit" value="login" name="submit" >
                 <br>
                 <p>Check if the data are correct</p>
 

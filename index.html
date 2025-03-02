@@ -1,483 +1,102 @@
 <html>
 
 <head>
-    <title>thanish webside</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
-<style>
-    h1 {
-        color: rgb(249, 159, 3), rgb(7, 246, 63);
-        text-align: center;
-        font-size: xxx-large;
-        font-family: 'Courier New', Courier, monospace;
-    }
 
-    #p01 {
-        color: rgb(9, 242, 9);
-        font-size: large;
-        text-align: right;
+    <style>
+        #header {
+            border: 4px solid rgb(0, 170, 255);
+            height: 70px;
+            text-align: center;
+            font-family:cursive;
+            border-style: inset;
+            font-size: 50px;
+            letter-spacing: 5px;
+            color: rgb(21, 145, 157);
+            text-shadow: 5px 5px 15px #02f6f6;
+            background-color: #d0fdfd;
+        }
 
-    }
+        #menu {
+            border: 4px inset rgb(0, 195, 255);
+            height: 50px;
+            border-style: outset;
+            font-family: "Sofia", sans-serif;
+        }
 
-    table {
-        width: 100%;
-        border: 4px inset rgb(251, 168, 2);
-       background-image: url("images/pw.webp");
-        border-spacing: 13px;
-        background-repeat: no-repeat;
-    }
+        #content {
+            border: 4px outset rgb(0, 157, 255);
+            height: 700px;
+            border-style: inset;
+        }
 
-    td {
-        vertical-align: top;
-        border: 4px inset rgb(251, 168, 2);
-        outline-color: #ffa601;
-    }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
 
-    img {
-        height: 410px;
-        width: 500px;
-    }
+        li {
+            float: left;
+        }
 
-    ins {
-        font-size: larger;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: center;
-    }
+        li a {
+            display: block;
+            color: rgb(144, 231, 253);
+            text-shadow: 2px 2px 4px #3dbaf9;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
 
-    h3 {
-        font-size: x-large;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        li a:hover {
+            background-color: rgb(154, 219, 252);
+            color: rgb(241, 244, 246);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           
+        }
 
-    }
+        #header:hover {
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-    li {
-        font-size: large;
-        color: firebrick;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-shadow: rgb(199, 31, 31);
-    }
+        }
 
-    #ft{
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333333;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        border: 4px inset rgb(251, 168, 2);
-    }
+        iframe {
+            border: 1px inset rgb(0, 174, 255);
+            height: 700px;
+            width: 100%;
+            background-image: url('images/6hokage.webp');
 
-    #t {
-        float: left;
-        font-family:Georgia, 'Times New Roman', Times, serif;
-    }
+        }
+    </style>
 
-    #t a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 16px;
-        text-decoration: none;
-        
-    }
+</head>
 
-    #t a:hover {
-        background-color: #ffa601;
-    }
+<body>
 
-
-
-   
-
-    div {
-        width: 100px;
-        height: 100px;
-        background-color: red;
-        position: relative;
-        animation-name: example;
-        animation-duration: 4s;
-        animation-delay: 2s;
-       
-    }
-
-    
-
-
-  
-</style>
-
-<body style="  color: firebrick;border: 4px inset #ffa601;background-image: url('images/6hokage.webp');">
-    <ul id="ft">
-        <li id="t"><a href="images/Trip.jpg"  class="font-effect-fire">Thanish</a></li>
-        <li id="t"><a href="#news"  class="font-effect-fire">Education</a></li>
-        <li id="t"><a href="#contact"  class="font-effect-fire">Home</a></li>
-        <li id="t"><a href="images/games/game1.html"  class="font-effect-fire">Aim</a></li>
-        <li id="t"><a href="layout.html"  class="font-effect-fire">Achiuments</a></li>
-    </ul>
     <br>
-    
-   
-    <svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="100" cy="100" r="200" style="fill: rgb(4, 245, 241) ; opacity: 5;">
-            <animate attributeName="cx" begin="0s" dur="5s" from=" rgb(215, 9, 242);50" to="100%"
-                repeatCount="indefinite" fill="url(#grad4)" />
+    <div id="header" >Thanish's website# </div>
+    <br>
+    <div id="menu">
+        <ul>
+            <li><a href="old.html" class="font-effect-fire">Home</a></li>
+            <li><a href="https://www.w3schools.com" class="font-effect-fire">About</a></li>
+            <li><a href="htmllessons.html" target="iframe1" class="font-effect-fire">HTML</a></li>
+            <li><a href="javascript/js-1.html" target="iframe1" class="font-effect-fire">JavaScript</a></li>
+            <li><a href="svgfiles/svglessons.html" target="iframe1" class="font-effect-fire">SVG</a></li>
+            <li><a href="css/csslessons.html" target="iframe1" class="font-effect-fire">CSS</a></li>
+            <li><a href="bootstraplesson.html" target="iframe1" class="font-effect-fire">Boostrap#</a></li>
+            <li><a href="assignments/pages.html" target="iframe1" class="font-effect-fire">layouts</a></li>
+            <li><a href="phplesson.html" target="iframe1" class="font-effect-fire">PHP</a></li>
+            <li><a href="howto-lessons.html" target="iframe1" class="font-effect-fire">HOW TO</a></li>
+            <li><a href="sqllesson.html" target="iframe1" class="font-effect-fire">SQL</a></li>
+        </ul>
+    </div>
 
-        </circle>
-        <text x="50" y="120" style="font-family: Sofia, sans-serif;
-        font-size:125px;fill: rgb(2, 174, 254);">SOFT WARE ENGINEER
-           
-        </text>
-    </svg>
-   
-   <hr>
-
-    <svg width="100%" height="220">
-        <circle cx="100" cy="100" r="200" style="fill: rgb(4, 253, 220) ; opacity: 5;">
-            <animate attributeName="cx" begin="0s" dur="4s" from=" rgb(215, 9, 242);50" to="100%"
-                repeatCount="indefinite" fill="url(#grad4)" />
-        </circle>
-        <text id="TextElement" x="200" y="150 " style="font-family:Sofia, sans-serif;
-            font-size:140px;fill: rgb(1, 153, 254); opacity: 2; ">
-            Thanish website#
-           
-
-        </text>
-
-    </svg>
-   <hr>
-   
-
-    
-<hr>
-    <table >
-        <tr>
-            <td >
-               <ul>
-                    <h3 ><ins class="font-effect-neon" >TERM-1</ins></h3>
-                    <li>
-                        <ins class="font-effect-neon">Lesson-1</ins>
-                       <ul>
-                            <li><a href="term-1/lesson-1/excercise-1.1.html"  class="font-effect-fire" class="font-effect-fire">Excercsie-1.1</a> </li>
-                            <li><a href="term-1/lesson-1/excercise-1.2.html"  class="font-effect-fire" class="font-effect-fire">Excercise-1.2</a></li>
-                            <li><a href="term-1/lesson-1/excercise-1.3.html"  class="font-effect-fire" class="font-effect-fire">Excercise-1.3</a></li>
-                            <li><a href="term-1/lesson-1/excercise-1,4.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-4</a></li>
-                            <li><a href="term-1/lesson-1/excercise-1,5.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-5</a></li>
-                            <li><a href="term-1/lesson-1/excercise-1,6.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-6</a></li>
-                       </ul>
-                    </li>
-                   
-                   
-                    <li>
-                         <ins  class="font-effect-neon" >Lesson-2</ins>
-                       <ul>
-                            <li><a href="term-1/lesson-2/excercise-2.1,2.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-1,2</a></li>
-                            <li><a href="term-1/lesson-2/excercise-2,3.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-3</a></li>
-                            <li><a href="term-1/lesson-2/excercise-2.4,5.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-4,5</a></li>
-                            <li><a href="term-1/lesson-2/excercise-2.6.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-6</a></li>
-                            <li><a href="term-1/lesson-2/excercise-2.7,8,9.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-7,8,9</a></li>
-                            <li><a href="term-1/lesson-2/excercise-2.10,11.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-10,11</a></li>
-                            <li><a href="term-1/lesson-2/excercise-2.12,13,14.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-12,13,14</a></li>
-                            <li><a href="term-1/lesson-2/excercise-2.15.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-15</a></li>
-                            <li><a href="term-1/lesson-2/excercise-2.16.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-16</a></li>
-                            <li><a href="term-1/lesson-2/excercise-2.17,18.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-17,18</a></li>
-                            <li><a href="term-1/lesson-2/excercise-2.19,20.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-19,20</a></li>
-                            <li><a href="term-1/lesson-2/excercise-2.21.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-21</a></li>
-                            <li><a href="term-1/lesson-2/excercise-2.22,23.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-22,23</a></li>
-
-                       </ul>
-                    </li>
-
-                   
-                   
-
-
-
-                    <li>
-                         <ins  class="font-effect-neon">Lesson-3</ins>
-                       <ul>
-                            <li><a href="term-1/lesson-3/excercise-3.1.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-1</a></li>
-                            <li><a href="term-1/lesson-3/excercise-3.2.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-2</a></li>
-                            <li><a href="term-1/lesson-3/excercise-3.3.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-3</a></li>
-                            <li><a href="term-1/lesson-3/excercise-3.4.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-4</a></li>
-                            <li><a href="term-1/lesson-3/excercise-3.5,6,7.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-5,6,7</a></li>
-                            <li><a href="term-1/lesson-3/excercise-3.8.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-8</a></li>
-                       </ul>
-                    </li>
-                   
-                   
-                    <li>
-                         <ins  class="font-effect-neon"> Lesson-4</ins>
-                       <ul>
-                            <li><a href="term-1/lesson-4/excercise-4.1,2,3,4.html"  class="font-effect-fire" class="font-effect-fire">Excercise-1,2,3,4</a></li>
-                            <li><a href="term-1/lesson-4/excercise-4.5,6,7,8,9,10.html"  class="font-effect-fire" class="font-effect-fire">Excercise-5,6,7,8,9,10</a></li>
-                            <li><a href="term-1/lesson-4/excercise-4.11.html"  class="font-effect-fire" class="font-effect-fire">Excercise-11</a></li>
-                            <li><a href="term-1/lesson-4/excercise-4.12.html"  class="font-effect-fire" class="font-effect-fire">Excercise-12</a></li>
-                            <li><a href="term-1/lesson-4/excercise-4.13.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-13</a></li>
-                            <li><a href="term-1/lesson-4/excercise-4.14.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-14</a></li>
-                            <li><a href="term-1/lesson-4/excercise-4.15.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-15</a></li>
-                            <li><a href="term-1/lesson-4/excercise-4.16.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-16</a></li>
-                            <li><a href="term-1/lesson-4/excercise-4.17.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-17</a></li>
-                            <li><a href="term-1/lesson-4/excercise-4.18.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-18</a></li>
-                            <li><a href="term-1/lesson-4/excercise-4.19.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-19</a></li>
-                            <li><a href="term-1/lesson-4/excercise-4.20.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-20</a></li>
-                            <li><a href="term-1/lesson-4/excercise-4.21.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-21</a></li>
-                            <li><a href="term-1/lesson-4/excercise-4.22.html"  class="font-effect-fire" class="font-effect-fire"> Excercise-22</a></li>
-
-                       </ul>
-
-                    </li>
-                   
-                   
-                   
-                   
-
-            </td>
-            <td>
-                <li>
-                     <ins  class="font-effect-neon"  >Lesson-5</ins>
-                   <ul>
-                        <li><a href="term-1/lesson-5/excercise-5.1.html"  class="font-effect-fire">Excercise-1</a></li>
-                        <li><a href="term-1/lesson-5/excercise-5.2.html"  class="font-effect-fire">Excercise-2</a></li>
-                        <li><a href="term-1/lesson-5/excercise-5.3.html"  class="font-effect-fire">Excercise-3</a></li>
-                        <li><a href="term-1/lesson-5/excercise-5.4.html"  class="font-effect-fire"> Excercise-4</a></li>
-                        <li><a href="term-1/lesson-5/excercise-5.5.html"  class="font-effect-fire">Excercise-5</a></li>
-                        <li><a href="term-1/lesson-5/excercise-5.6.html"  class="font-effect-fire">Excercise-6</a></li>
-                        <li><a href="term-1/lesson-5/excercise-5.7.html"  class="font-effect-fire">Excercise-7</a></li>
-                        <li><a href="term-1/lesson-5/excercise-5.8.html"  class="font-effect-fire">Excercise-8</a></li>
-                        <li><a href="term-1/lesson-5/excercise-5.9.html"  class="font-effect-fire">Excercise-9</a></li>
-                        <li><a href="term-1/lesson-5/excercise-5.10.html"  class="font-effect-fire">Excercise-10</a></li>
-                        <li><a href="term-1/lesson-5/excercise-5.11.html"  class="font-effect-fire">Excercise-11</a></li>
-                        <li><a href="term-1/lesson-5/excercise-5.12.html"  class="font-effect-fire">Excercise-12</a></li>
-
-
-                   </ul>
-                </li>
-               
-                <h3> <ins  class="font-effect-neon"  >TERM-2</ins></h3>
-               <ul>
-                    <li>
-                         <ins  class="font-effect-neon"  >Lesson-1</ins>
-                       <ul>
-                            <li><a href="term-2/lesson1/t2-l1-e1.html"  class="font-effect-fire">excercise-1</a></li>
-                            <li><a href="term-2/lesson1/l-1-e2.html"  class="font-effect-fire">excercise-2</a></li>
-                            <li><a href="term-2/lesson1/l-1,e-3.html"  class="font-effect-fire">excercise-3</a></li>
-                            <li><a href="term-2/lesson1/l-1,e-4.html"  class="font-effect-fire">excercise-4</a></li>
-                            <li><a href="term-2/lesson1/l-1,e-5.html"  class="font-effect-fire">excercise-5</a></li>
-                            <li><a href="term-2/lesson1/l-1,e-6.html"  class="font-effect-fire">excercise-6</a></li>
-                            <li><a href="term-2/lesson1/l-1,e-7.html"  class="font-effect-fire">excercise-7</a></li>
-                            <li><a href="term-2/lesson1/l-1,e-8.html"  class="font-effect-fire">excercise-8</a></li>
-                            <li><a href="term-2/lesson1/l-1,e-9.html"  class="font-effect-fire">excercise-9</a></li>
-                            <li><a href="term-2/lesson1/l-1,e-10.html"  class="font-effect-fire">excercise-10</a></li>
-                            <li><a href="term-2/lesson1/l-1,e-11.html"  class="font-effect-fire">excercise-11</a></li>
-                            <li><a href="term-2/lesson1/l-1,e-12.html"  class="font-effect-fire">excercise-12</a></li>
-                            <li><a href="term-2/lesson1/l-1,e-13.html"  class="font-effect-fire">excercise-13</a></li>
-                            <li><a href="term-2/lesson1/l-1,e-14.html"  class="font-effect-fire">excercise-14</a></li>
-                            <li><a href="term-2/lesson1/l-1,e-15.html"  class="font-effect-fire">excercise-15</a></li>
-                            <li><a href="term-2/lesson1/l-1,e-16.html"  class="font-effect-fire">excercise-16</a></li>
-                            <li><a href="term-2/lesson1/l-1,e-17.html"  class="font-effect-fire">excercise-17</a></li>
-                            <li><a href="term-2/lesson1/l-1,e-18.html"  class="font-effect-fire">excercise-18</a></li>
-                            <li><a href="term-2/lesson1/l-1,e-19.html"  class="font-effect-fire">excercise-19</a></li>
-                            <li><a href="term-2/lesson1/l-1,e-20.html"  class="font-effect-fire">excercise-20</a></li>
-                            <li><a href="term-2/lesson1/l-1,e-21.html"  class="font-effect-fire">excercise-21</a></li>
-                            <li><a href="term-2/lesson1/l-1,e-23.html"  class="font-effect-fire">excercise-22</a></li>
-                            <li><a href="term-2/lesson1/l-1,Q-3.4.html"  class="font-effect-fire">excercise-23</a></li>
-                            <li><a href="term-2/lesson1/l-1,Q-3.2.html"  class="font-effect-fire">excercise-24</a></li>
-                            <li><a href="term-2/lesson1/l-1,Q-3.3.html"  class="font-effect-fire">excercise-25</a></li>
-                       </ul>
-                    </li>
-                   
-                   
-                    <li>
-                         <ins  class="font-effect-neon">Lesson-2</ins>
-                       <ul>
-                            <li><a href="term-2/lesson2/l-2,e-1.html"  class="font-effect-fire">excercise-1</a></li>
-                            <li><a href="term-2/lesson2/l-2,e-2.html"  class="font-effect-fire">excercise-2</a></li>
-                            <li><a href="term-2/lesson2/l-2,e-3.html"  class="font-effect-fire">excercise-3</a></li>
-                            <li><a href="term-2/lesson2/l-2,e-4.html"  class="font-effect-fire">excercise-4</a></li>
-                            <li><a href="term-2/lesson2/l-2,e-5.html"  class="font-effect-fire">excercise-5</a></li>
-
-                       </ul>
-                    </li>
-                   
-                   
-                   
-                   
-                   
-
-            </td>
-            <td>
-                
-                <li>
-                     <ins  class="font-effect-neon">Lesson-3</ins>
-                   <ul>
-                        <li><a href="term-2/lesson3/l-3,e-1.html"  class="font-effect-fire">excercise-1</a></li>
-                        <li><a href="term-2/lesson3/l-3,e-2.html"  class="font-effect-fire">excercise-2</a></li>
-                        <li><a href="term-2/lesson3/l-3,e-3.html"  class="font-effect-fire">excercise-3</a></li>
-                        <li><a href="term-2/lesson3/l-3,e-4.html"  class="font-effect-fire">excercise-4</a></li>
-                        <li><a href="term-2/lesson3/l-3,e-5.html"  class="font-effect-fire">excercise-5</a></li>
-                        <li><a href="term-2/lesson3/l-3,e-6.html"  class="font-effect-fire">excercise-6</a></li>
-                        <li><a href="term-2/lesson3/l-3,e-7.html"  class="font-effect-fire">excercise-7</a></li>
-                        <li><a href="term-2/lesson3/l-3,e-8.html"  class="font-effect-fire">excercise-8</a></li>
-                        <li><a href="term-2/lesson3/l-3,e-9.html"  class="font-effect-fire">excercise-9</a></li>
-                   </ul>
-                </li>
-                <li>
-                     <ins  class="font-effect-neon">Lesson-4</ins>
-                   <ul>
-                        <li><a href="term-2/lesson4/l-4,e-1.html"  class="font-effect-fire">excercise-1</a></li>
-                        <li><a href="term-2/lesson4/l-4,e-2.html"  class="font-effect-fire">excercise-2</a></li>
-                        <li><a href="term-2/lesson4/l-4,e-3.html"  class="font-effect-fire">excercise-3</a></li>
-                        <li><a href="term-2/lesson4/l-4,e-4.html"  class="font-effect-fire">excercise-4</a></li>
-                        <li><a href="term-2/lesson4/l-4,e-5.html"  class="font-effect-fire">excercise-5</a></li>
-                        <li><a href="term-2/lesson4/l-4,e-6.html"  class="font-effect-fire">excercise-6</a></li>
-                        <li><a href="term-2/lesson4/l-4,e-7.html"  class="font-effect-fire">excercise-7</a></li>
-                        <li><a href="term-2/lesson4/l-4,e-8.html"  class="font-effect-fire">excercise-8</a></li>
-                        <li><a href="term-2/lesson4/l-4,e-9.html"  class="font-effect-fire">excercise-9</a></li>
-                        <li><a href="term-2/lesson4/l-4,e-10.html"  class="font-effect-fire">excercise-10</a></li>
-                   </ul>
-                </li> 
-                <h3> <ins  class="font-effect-neon">JavaScript</ins></h3>
-               <ul>
-                    <li><a href="javascript/introduction.html"  class="font-effect-fire">Introduction</a></li>
-                    <li><a href="javascript/output.html"  class="font-effect-fire">Output</a></li>
-                    <li><a href="javascript/statments.html"  class="font-effect-fire">statments</a></li>
-                    <li><a href="javascript/comment.html"  class="font-effect-fire">comment</a></li>
-                    <li><a href="javascript/syntex.html"  class="font-effect-fire">syntax</a></li>
-                    <li><a href="javascript/variables.html"  class="font-effect-fire">Variables</a></li>
-                    <li><a href="javascript/tutorails point/operators.html"  class="font-effect-fire">operators</a></li>
-                    <li><a href="javascript/tutorails point/if..else.html"  class="font-effect-fire">if..else</a></li>
-                    <li><a href="mutiplecation.html"  class="font-effect-fire">mutiplication</a></li>
-
-               </ul>
-
-            </td>
-            <td>
-
-                <h3> <ins  class="font-effect-neon">Subjects noties</ins>
-                </h3>
-               <ul>
-                    <li><a href="noties/cs.html"  class="font-effect-fire">C.S</a></li>
-                    <li><a href="noties/english.html"  class="font-effect-fire">English</a></li>
-                    <li><a href="noties/maths.html"  class="font-effect-fire">Maths</a></li>
-                    <li><a href="noties/tamil.html"  class="font-effect-fire">Tamil</a></li>
-                    <li><a href="noties/sicence/physics.html"  class="font-effect-fire">physics</a></li>
-                    <li><a href="noties/sicence/chemistry.html"  class="font-effect-fire">chemistry</a></li>
-                    <li><a href="noties/sicence/biology.html"  class="font-effect-fire">biology</a></li>
-                    <li><a href="noties/social.html/history.html"  class="font-effect-fire">History</a></li>
-                    <li><a href="noties/social.html/civise.html"  class="font-effect-fire">Civise</a></li>
-                    <li><a href="noties/social.html/geography.html"  class="font-effect-fire">Geography</a></li>
-                    <li><a href="noties/hindi.html"  class="font-effect-fire">Hindi</a></li>
-                    <li><a href="noties/hometask.html/loops.html"  class="font-effect-fire">hometask</a></li>
-
-               </ul>
-               
-               
-                <a href="task.html"  class="font-effect-fire">tasks</a>
-                <br>
-                <a href="gimp.html"  class="font-effect-fire">gimp</a><br>
-                <a href="activity.html"  class="font-effect-fire">My Activity Log</a>
-                <br>
-                <a href="javascript.html"  class="font-effect-fire">javascript</a>
-                <br>
-                <a href="assignments/croplist.html"  class="font-effect-fire">Croplist</a>
-               
-               
-                <br>
-                <a href="noties/gimp.html"  class="font-effect-fire">gimp</a>
-               
-               
-                <h3> <ins  class="font-effect-neon">Games in html</ins>
-                </h3>
-                <br>
-                <a href="images/games/game1.html"  class="font-effect-fire">GAME-1</a>
-                <h3 > <ins  class="font-effect-neon"> ASSIGNMENTS</ins>
-                </h3>
-               <ul>
-                    <li>
-                         <ins  class="font-effect-neon"> Assignments</ins>
-                       <ul>
-                            <li><a href="assignments/assignments-1.html"  class="font-effect-fire"> Assignments-1</a></li>
-                            <li><a href="assignments/assignment-2.html"  class="font-effect-fire"> Assignments-2</a></li>
-                            <li><a href="assignments/assignments-3.html"  class="font-effect-fire"> Assignments-3</a></li>
-                            <li><a href="assignments/familytree.html"  class="font-effect-fire">Familytree</a></li>
-                            <li><a href="assignments/timetable.html"  class="font-effect-fire">timetable</a></li>
-                            <li><a href="svgfiles/svgimagelist.html"  class="font-effect-fire">My SVG Images</a></li>
-                       </ul>
-                    </li>
-                   
-                   
-                    <li>
-                         <ins  class="font-effect-neon">pratice</ins>
-                       <ul>
-                            <li><a href="assignments/practice/task3.html"  class="font-effect-fire">while loop</a></li>
-                            <li><a href="assignments/practice/task4.html"  class="font-effect-fire">for loop</a></li>
-                            <li><a href="assignments/practice/task5.html"  class="font-effect-fire">do while loop</a></li>
-                       </ul>
-                    </li>
-                  
-            </td>
-            <td>
-                <h3> <ins  class="font-effect-neon">SVG FILES</ins></h3>
-               <ul>
-                    <li><a href="svgfiles/rectangle.html"  class="font-effect-fire">rectangle</a></li>
-                    <li><a href="svgfiles/circle.html"  class="font-effect-fire">circle</a></li>
-                    <li><a href="svgfiles/ellispe.html"  class="font-effect-fire">ellipse</a></li>
-                    <li><a href="svgfiles/polygon.html"  class="font-effect-fire">polygon</a></li>
-                    <li><a href="svgfiles/polyline.html"  class="font-effect-fire">polyline</a></li>
-                    <li><a href="svgfiles/path.html"  class="font-effect-fire">path</a></li>
-                    <li><a href="svgfiles/line.html"  class="font-effect-fire">line</a></li>
-                    <li><a href="svgfiles/text.html"  class="font-effect-fire">text</a></li>
-                    <li><a href="svgfiles/stoking.html"  class="font-effect-fire">stoking</a></li>
-                    <li><a href="svgfiles/example.html"  class="font-effect-fire">Examples</a></li>
-                    <li><a href="svgfiles/blureffects.html"  class="font-effect-fire">feGaussianBlur</a></li>
-                    <li><a href="svgfiles/dropshadow.html"  class="font-effect-fire">dropshadow</a></li>
-                    <li><a href="svgfiles/lyout.html"  class="font-effect-fire">lyout</a></li>
-
-               </ul>
-                <h3> <ins  class="font-effect-neon">SVG FILES IN HTML</ins>
-                </h3>
-               <ul>
-                    <li><a href="html/colors.html"  class="font-effect-fire">Colors in html</a></li>
-                    <li><a href="html/css.html"  class="font-effect-fire">CSS styles</a></li>
-                    <li><a href="html/quotations.html"  class="font-effect-fire">Quotation</a></li>
-                    <li><a href="html/pagetitle.html"  class="font-effect-fire">Pagetitle</a></li>
-                    <li><a href="html/links.html"  class="font-effect-fire">links</a></li>
-                    <li><a href="html/images.html"  class="font-effect-fire">Images</a></li>
-                    <li><a href="html/favicon.html"  class="font-effect-fire">Favicon</a></li>
-                    <li><a href="html/tables.html"  class="font-effect-fire">Html Table</a></li>
-                    <li><a href="html/tableborder.html"  class="font-effect-fire">Table Border</a></li>
-                    <li><a href="html/colspan&rowspan.html"  class="font-effect-fire">colspan&rowspan</a></li>
-                    <li><a href="html/padding&spacing.html"  class="font-effect-fire">padding&spacing</a></li>
-                    <li><a href="html/tableheaders.html"  class="font-effect-fire">Table headers</a></li>
-                    <li><a href="html/tablesize.html"  class="font-effect-fire">Table size</a></li>
-                    <li><a href="html/tablestyle.html"  class="font-effect-fire">Table style</a></li>
-                    <li><a href="html/lists.html"  class="font-effect-fire">list</a></li>
-                    <li><a href="html/block&inline.html"  class="font-effect-fire">block&inline</a></li>
-                    <li><a href="html/div.html"  class="font-effect-fire">div</a></li>
-                    <li><a href="html/colgroup.html"  class="font-effect-fire">colgroup</a></li>
-                    <li><a href="html/id.html"  class="font-effect-fire">id</a></li>
-                    <li><a href="html/head.html"  class="font-effect-fire">head</a></li>
-                    <li><a href="html/iframs.html"  class="font-effect-fire">iframe</a></li>
-                    <li><a href="html/javascript.html"  class="font-effect-fire">javascript</a></li>
-                    <li><a href="html/filepath.html"  class="font-effect-fire">filepath</a></li>
-                    <li><a href="html/lyout.html"  class="font-effect-fire">layout</a></li>
-                    <li><a href="html/responsive.html"  class="font-effect-fire">responsive</a></li>
-                    <li><a href="html/computercode.html"  class="font-effect-fire">computercode</a></li>
-                    <li><a href="html/entities.html"  class="font-effect-fire">entities</a></li>
-                    <li><a href="html/semantices.html"  class="font-effect-fire">semantices</a></li>
-               </ul>
-               
-               
-                
-            </td>
-        </tr>
-
-    </table>
-   
- 
-
+    <div id="content">
+        <iframe src="" name="iframe1"></iframe>
+    </div>
 </body>
 
 </html>

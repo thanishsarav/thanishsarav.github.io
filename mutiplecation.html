@@ -5,16 +5,16 @@
 </head>
 
 <body style=" background-image: conic-gradient(rgb(43, 255, 6), yellow, rgb(10, 137, 211), rgb(246, 141, 3), rgb(239, 14, 14), rgb(239, 14, 216));">
-    <a href="index.html">back to home</a>
-    <br>
+    
     <h3><ins><b>Multiplecation table</b> What number you what</ins></h3>
     <br>
     <input type="text" id="myid" />
-    <input type="submit" onclick="printTable()" />
+    <br>
+    <input type="submit" onclick="printTable()" style="background-color: aqua;" />
     <br>
     
  
-    <div id="table" style="border: 2px solid firebrick;color: rgb(79, 7, 146);background-color: azure;font-size: larger;
+    <div id="table" style="border: 2px inset rgb(239, 2, 2);color: rgb(79, 7, 146);background-color: azure;font-size: larger;
     overflow: scroll;width: 300px;height: 300px;">
 
     </div>
@@ -30,7 +30,7 @@
             var number = parseInt(textnumber.value);
             alert(number)
             if(!number) {
-                number = 2;
+                number = 1;
             }
 
             var table = document.getElementById("table");
